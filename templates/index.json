@@ -29,41 +29,30 @@
       }
     },
     "story_craft": {
-      "type": "multicolumn",
+      "type": "amesh-photo-banner",
       "blocks": {
         "our_story": {
-          "type": "column",
+          "type": "banner",
           "settings": {
-            "title": "Our Story",
-            "text": "<p></p>",
-            "link_label": "",
-            "link": "shopify://pages/our-story"
+            "image_filename": "amesh-our-story.webp",
+            "heading": "Our Story",
+            "link": "/pages/our-story"
           }
         },
         "craft": {
-          "type": "column",
+          "type": "banner",
           "settings": {
-            "title": "Craft",
-            "text": "<p></p>",
-            "link_label": "",
-            "link": "shopify://pages/craft"
+            "image_filename": "amesh-craft.webp",
+            "heading": "Craft",
+            "link": "/pages/craft"
           }
         }
       },
       "block_order": ["our_story", "craft"],
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "square",
-        "column_alignment": "center",
-        "background_style": "none",
-        "color_scheme": "scheme-1",
-        "columns_desktop": 2,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "layout": "two-column",
         "padding_top": 0,
-        "padding_bottom": 36
+        "padding_bottom": 0
       }
     },
     "featured_collection": {
@@ -95,113 +84,68 @@
       }
     },
     "archive_banner": {
-      "type": "image-banner",
+      "type": "amesh-photo-banner",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "archive": {
+          "type": "banner",
           "settings": {
+            "image_filename": "amesh-archive.webp",
             "heading": "Archive",
-            "heading_size": "h1"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "View archive",
-            "button_link_1": "shopify://pages/archive",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "link": "/pages/archive"
           }
         }
       },
-      "block_order": ["heading", "button"],
+      "block_order": ["archive"],
       "settings": {
-        "image_overlay_opacity": 20,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "image_behavior": "none",
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-4",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "layout": "full-width",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "circularity_banner": {
-      "type": "image-banner",
+      "type": "amesh-photo-banner",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "circularity": {
+          "type": "banner",
           "settings": {
+            "image_filename": "amesh-circularity.webp",
             "heading": "Circularity",
-            "heading_size": "h1"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Learn more",
-            "button_link_1": "shopify://pages/circularity",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "link": "/pages/circularity"
           }
         }
       },
-      "block_order": ["heading", "button"],
+      "block_order": ["circularity"],
       "settings": {
-        "image_overlay_opacity": 20,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "image_behavior": "none",
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-4",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "layout": "full-width",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "press_global": {
-      "type": "multicolumn",
+      "type": "amesh-photo-banner",
       "blocks": {
         "press": {
-          "type": "column",
+          "type": "banner",
           "settings": {
-            "title": "Press",
-            "text": "<p></p>",
-            "link_label": "",
-            "link": "shopify://pages/press"
+            "image_filename": "amesh-press.webp",
+            "heading": "Press",
+            "link": "/pages/press"
           }
         },
         "amesh_global": {
-          "type": "column",
+          "type": "banner",
           "settings": {
-            "title": "AMESH Global",
-            "text": "<p></p>",
-            "link_label": "",
-            "link": "shopify://pages/amesh-global"
+            "image_filename": "amesh-global.webp",
+            "heading": "AMESH Global",
+            "link": "/pages/amesh-global"
           }
         }
       },
       "block_order": ["press", "amesh_global"],
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "square",
-        "column_alignment": "center",
-        "background_style": "none",
-        "color_scheme": "scheme-1",
-        "columns_desktop": 2,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "layout": "two-column",
         "padding_top": 0,
-        "padding_bottom": 52
+        "padding_bottom": 0
       }
     }
   },

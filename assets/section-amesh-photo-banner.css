@@ -1,0 +1,69 @@
+.amesh-photo-banner {
+  display: grid;
+  gap: 0;
+}
+
+.amesh-photo-banner--two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.amesh-photo-banner--full-width {
+  grid-template-columns: 1fr;
+}
+
+.amesh-photo-banner__item {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.amesh-photo-banner--two-column .amesh-photo-banner__item {
+  aspect-ratio: 1.05 / 1;
+}
+
+.amesh-photo-banner--full-width .amesh-photo-banner__item {
+  aspect-ratio: 2.1 / 1;
+}
+
+.amesh-photo-banner__media {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease;
+}
+
+.amesh-photo-banner__item:hover .amesh-photo-banner__media {
+  transform: scale(1.03);
+}
+
+.amesh-photo-banner__caption {
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  font-family: var(--font-heading-family);
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  z-index: 1;
+}
+
+@media screen and (max-width: 749px) {
+  .amesh-photo-banner--two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .amesh-photo-banner__caption {
+    left: 1.5rem;
+    bottom: 1.5rem;
+    font-size: 1.5rem;
+  }
+}
