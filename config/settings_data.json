@@ -59,11 +59,22 @@
             "secondary_button_label": "#FFFFFF",
             "shadow": "#121212"
           }
+        },
+        "scheme-6": {
+          "settings": {
+            "background": "#FFFFFF",
+            "background_gradient": "",
+            "text": "#E74C3C",
+            "button": "#121212",
+            "button_label": "#FFFFFF",
+            "secondary_button_label": "#E74C3C",
+            "shadow": "#121212"
+          }
         }
       },
-      "type_header_font": "assistant_n4",
+      "type_header_font": "oswald_n7",
       "heading_scale": 100,
-      "type_body_font": "assistant_n4",
+      "type_body_font": "rubik_n4",
       "body_scale": 100,
       "page_width": 1200,
       "spacing_sections": 0,
@@ -155,9 +166,9 @@
       "badge_position": "bottom left",
       "badge_corner_radius": 40,
       "sale_badge_color_scheme": "scheme-4",
-      "sold_out_badge_color_scheme": "scheme-3",
+      "sold_out_badge_color_scheme": "scheme-6",
       "brand_headline": "",
-      "brand_description": "<p></p>",
+      "brand_description": "<p>A Celebration of Colour, Culture, Community and Craftsmanship.</p>",
       "brand_image_width": 100,
       "social_twitter_link": "",
       "social_facebook_link": "",

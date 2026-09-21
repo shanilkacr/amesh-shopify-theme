@@ -210,6 +210,10 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   display: none !important;
 }
 
+.text-accent-red {
+  color: #e74c3c;
+}
+
 .visually-hidden {
   position: absolute !important;
   overflow: hidden;
