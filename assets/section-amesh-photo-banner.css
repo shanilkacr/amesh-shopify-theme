@@ -1,6 +1,7 @@
 .amesh-photo-banner {
   display: grid;
   gap: 0;
+  width: 100%;
 }
 
 .amesh-photo-banner--two-column {
@@ -17,14 +18,7 @@
   overflow: hidden;
   color: #ffffff;
   text-decoration: none;
-}
-
-.amesh-photo-banner--two-column .amesh-photo-banner__item {
-  aspect-ratio: 1.05 / 1;
-}
-
-.amesh-photo-banner--full-width .amesh-photo-banner__item {
-  aspect-ratio: 2.1 / 1;
+  height: 60vh;
 }
 
 .amesh-photo-banner__media {
@@ -59,6 +53,10 @@
 @media screen and (max-width: 749px) {
   .amesh-photo-banner--two-column {
     grid-template-columns: 1fr;
+  }
+
+  .amesh-photo-banner__item {
+    height: 60vh !important;
   }
 
   .amesh-photo-banner__caption {

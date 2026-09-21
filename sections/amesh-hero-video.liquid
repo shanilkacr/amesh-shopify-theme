@@ -1,0 +1,47 @@
+{{ 'section-amesh-hero-video.css' | asset_url | stylesheet_tag }}
+
+<div class="amesh-hero">
+  <div class="amesh-hero__video-wrapper">
+    <video
+      class="amesh-hero__video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="metadata"
+    >
+      <source src="{{ 'amesh-hero-video.webm' | asset_url }}" type="video/webm">
+    </video>
+  </div>
+  <div class="amesh-hero__mobile-fallback">
+    <h1 class="amesh-hero__mobile-heading text-accent-red">{{ section.settings.heading }}</h1>
+  </div>
+  {%- if section.settings.tagline != blank -%}
+    <p class="amesh-hero__tagline">{{ section.settings.tagline }}</p>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "AMESH hero video",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading (mobile fallback)",
+      "default": "AMESH"
+    },
+    {
+      "type": "text",
+      "id": "tagline",
+      "label": "Tagline",
+      "default": "A Celebration of Colour, Culture, Community and Craftsmanship"
+    }
+  ],
+  "presets": [
+    {
+      "name": "AMESH hero video"
+    }
+  ]
+}
+{% endschema %}

@@ -5,9 +5,13 @@
     padding-top: {{ section.settings.padding_top }}px;
     padding-bottom: {{ section.settings.padding_bottom }}px;
   }
+
+  .amesh-photo-banner-{{ section.id }} .amesh-photo-banner__item {
+    height: {{ section.settings.height }};
+  }
 {%- endstyle -%}
 
-<div class="amesh-photo-banner amesh-photo-banner--{{ section.settings.layout }} page-width section-{{ section.id }}-padding">
+<div class="amesh-photo-banner amesh-photo-banner--{{ section.settings.layout }} amesh-photo-banner-{{ section.id }} section-{{ section.id }}-padding">
   {%- for block in section.blocks -%}
     <a
       href="{{ block.settings.link }}"
@@ -38,6 +42,17 @@
         { "value": "full-width", "label": "Full width" }
       ],
       "default": "two-column"
+    },
+    {
+      "type": "select",
+      "id": "height",
+      "label": "Height",
+      "options": [
+        { "value": "100vh", "label": "Full screen" },
+        { "value": "80vh", "label": "Large" },
+        { "value": "60vh", "label": "Medium" }
+      ],
+      "default": "100vh"
     },
     {
       "type": "range",

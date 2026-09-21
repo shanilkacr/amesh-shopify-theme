@@ -1,31 +1,10 @@
 {
   "sections": {
     "hero": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "AMESH",
-            "heading_size": "h0",
-            "accent_color": true
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>A Celebration of Colour, Culture, Community and Craftsmanship</p>"
-          }
-        }
-      },
-      "block_order": ["heading", "text"],
+      "type": "amesh-hero-video",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 60,
-        "padding_bottom": 36
+        "heading": "AMESH",
+        "tagline": "A Celebration of Colour, Culture, Community and Craftsmanship"
       }
     },
     "story_craft": {
@@ -51,6 +30,7 @@
       "block_order": ["our_story", "craft"],
       "settings": {
         "layout": "two-column",
+        "height": "100vh",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -64,10 +44,10 @@
         "show_description": false,
         "description_style": "body",
         "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 2,
+        "products_to_show": 16,
+        "columns_desktop": 4,
         "color_scheme": "scheme-1",
-        "full_width": false,
+        "full_width": true,
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
@@ -79,8 +59,8 @@
         "show_rating": false,
         "quick_add": "none",
         "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "archive_banner": {
@@ -98,6 +78,7 @@
       "block_order": ["archive"],
       "settings": {
         "layout": "full-width",
+        "height": "100vh",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -117,6 +98,7 @@
       "block_order": ["circularity"],
       "settings": {
         "layout": "full-width",
+        "height": "80vh",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -144,6 +126,7 @@
       "block_order": ["press", "amesh_global"],
       "settings": {
         "layout": "two-column",
+        "height": "100vh",
         "padding_top": 0,
         "padding_bottom": 0
       }

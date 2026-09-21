@@ -1,0 +1,50 @@
+.amesh-hero {
+  width: 100%;
+}
+
+.amesh-hero__video-wrapper {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+}
+
+.amesh-hero__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.amesh-hero__mobile-fallback {
+  display: flex;
+  justify-content: center;
+  padding: 6rem 2rem 2rem;
+}
+
+.amesh-hero__mobile-heading {
+  font-size: 5rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.amesh-hero__tagline {
+  text-align: center;
+  padding: 0 2rem 3rem;
+  margin: 0;
+}
+
+@media screen and (min-width: 750px) {
+  .amesh-hero__video-wrapper {
+    display: block;
+  }
+
+  .amesh-hero__mobile-fallback {
+    display: none;
+  }
+
+  .amesh-hero__tagline {
+    padding: 3rem 2rem;
+  }
+}
