@@ -1,0 +1,68 @@
+{
+  "sections": {
+    "hero": {
+      "type": "amesh-photo-banner",
+      "blocks": {
+        "b1": {
+          "type": "banner",
+          "settings": { "image_filename": "amesh-page-circularity-1.jpeg" }
+        }
+      },
+      "block_order": ["b1"],
+      "settings": {
+        "layout": "full-width",
+        "height": "100vh",
+        "overlay_heading": "Circularity",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "tackling": {
+      "type": "amesh-split-content",
+      "settings": {
+        "image_filename": "amesh-page-circularity-2.webp",
+        "image_position": "right",
+        "heading": "Tackling Sri Lanka's textile waste mountains",
+        "text": "<p>At the heart of our mission is the belief that social and environmental responsibility are inseparable. We create innovative, sustainable design solutions that prioritize the well-being of people, the planet, and our ecosystems. Guided by the principles of reclaiming, reusing and repurposing we craft beautiful, functional products that make a positive impact.</p><p>Sri Lanka’s textile industry produces over 30,000 tonnes of waste annually with over 300 factories operating in the garment industry. AMESH secondary textiles are sourced as pre-consumer textiles and waste materials collected locally. Every piece we create is made from upcycled, deadstock, and end-roll materials, along with trims salvaged from Sri Lanka’s textile markets—materials once discarded as waste and destined for landfills. Through thoughtful reconditioning, reprinting, and embellishment techniques, we breathe new life into these resources, transforming them into unique, one-of-a-kind products.</p>"
+      }
+    },
+    "responsible": {
+      "type": "amesh-split-content",
+      "settings": {
+        "image_filename": "amesh-page-circularity-3.webp",
+        "image_position": "left",
+        "heading": "Responsible production",
+        "text": "<p>AMESH is on a continuous journey of exploring innovative approaches to sourcing, making, and crafting. With “resourcefulness” at its core, the brand reimagines traditional artisan techniques through refined detailing, vibrant colour, and a celebration of homemaking. Studio leftovers are re-woven into new textures and patterns, turning waste into beauty.</p><p>In partnership with local SMEs, AMESH ensures fair compensation above industry standards, fostering financial stability for its makers. A flexible, work-from-home model supports craftswomen—particularly mothers—enabling them to balance work and family life.</p><p>The brand rejects mass production in favour of limited-edition capsule collections, offering trans-seasonal pieces designed for a shared wardrobe concept. AMESH exists to educate, empower, and inspire a new Sri Lankan identity.</p>"
+      }
+    },
+    "discover-more": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Discover more",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "one-of-a-kind",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "swipe_on_mobile": false,
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": ["hero", "tackling", "responsible", "discover-more"]
+}

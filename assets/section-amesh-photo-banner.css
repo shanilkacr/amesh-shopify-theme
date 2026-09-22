@@ -1,3 +1,7 @@
+.amesh-photo-banner-wrap {
+  position: relative;
+}
+
 .amesh-photo-banner {
   display: grid;
   gap: 0;
@@ -6,6 +10,14 @@
 
 .amesh-photo-banner--two-column {
   grid-template-columns: repeat(2, 1fr);
+}
+
+.amesh-photo-banner--three-column {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.amesh-photo-banner--four-column {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .amesh-photo-banner--full-width {
@@ -29,8 +41,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   transition: transform 0.4s ease;
 }
 
@@ -49,8 +61,25 @@
   z-index: 1;
 }
 
+.amesh-photo-banner__overlay-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: #ffffff;
+  font-family: var(--font-heading-family);
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-align: center;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
 @media screen and (max-width: 749px) {
-  .amesh-photo-banner--two-column {
+  .amesh-photo-banner--two-column,
+  .amesh-photo-banner--three-column,
+  .amesh-photo-banner--four-column {
     grid-template-columns: 1fr;
   }
 
@@ -60,5 +89,9 @@
 
   .amesh-photo-banner__caption {
     font-size: 1.3rem;
+  }
+
+  .amesh-photo-banner__overlay-heading {
+    font-size: 1.8rem;
   }
 }

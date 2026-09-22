@@ -1,0 +1,56 @@
+{{ 'section-amesh-split-content.css' | asset_url | stylesheet_tag }}
+
+<div class="amesh-split amesh-split--image-{{ section.settings.image_position }}">
+  <div class="amesh-split__media">
+    <div
+      class="amesh-split__image"
+      style="background-image: url({{ section.settings.image_filename | asset_url }});"
+    ><span aria-hidden="true"></span></div>
+  </div>
+  <div class="amesh-split__content">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="amesh-split__heading">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+    {%- if section.settings.text != blank -%}
+      <div class="amesh-split__text rte">{{ section.settings.text }}</div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "AMESH split content",
+  "settings": [
+    {
+      "type": "text",
+      "id": "image_filename",
+      "label": "Image asset filename"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image position",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "AMESH split content"
+    }
+  ]
+}
+{% endschema %}
