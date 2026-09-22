@@ -1,0 +1,36 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gallery": {
+      "type": "amesh-photo-banner",
+      "blocks": {
+        "b1": { "type": "banner", "settings": { "image_filename": "amesh-page-archive-1.webp", "heading": "The lotus pond" } },
+        "b2": { "type": "banner", "settings": { "image_filename": "amesh-page-archive-2.webp", "heading": "Paddy field play" } },
+        "b3": { "type": "banner", "settings": { "image_filename": "amesh-page-archive-3.webp", "heading": "A sunrise pilgrimage" } },
+        "b4": { "type": "banner", "settings": { "image_filename": "amesh-page-archive-4.webp", "heading": "Under the mango tree" } },
+        "b5": { "type": "banner", "settings": { "image_filename": "amesh-page-archive-5.webp", "heading": "Beyond borders" } },
+        "b6": { "type": "banner", "settings": { "image_filename": "amesh-page-archive-6.webp", "heading": "Flower boys" } },
+        "b7": { "type": "banner", "settings": { "image_filename": "amesh-page-archive-7.jpeg", "heading": "Journey of hope" } },
+        "b8": { "type": "banner", "settings": { "image_filename": "amesh-page-archive-8.webp", "heading": "Bengaluru" } },
+        "b9": { "type": "banner", "settings": { "image_filename": "amesh-page-archive-9.webp", "heading": "Shanoli" } },
+        "b10": { "type": "banner", "settings": { "image_filename": "amesh-page-archive-10.webp", "heading": "Tamil Nadu" } }
+      },
+      "block_order": ["b1", "b2", "b3", "b4", "b5", "b6", "b7", "b8", "b9", "b10"],
+      "settings": {
+        "layout": "two-column",
+        "height": "100vh",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": ["gallery"]
+}

@@ -11,22 +11,27 @@
   }
 {%- endstyle -%}
 
-<div class="amesh-photo-banner amesh-photo-banner--{{ section.settings.layout }} amesh-photo-banner-{{ section.id }} section-{{ section.id }}-padding">
-  {%- for block in section.blocks -%}
-    <a
-      href="{{ block.settings.link }}"
-      class="amesh-photo-banner__item"
-      {{ block.shopify_attributes }}
-    >
-      <div
-        class="amesh-photo-banner__media"
-        style="background-image: url({{ block.settings.image_filename | asset_url }});"
-      ><span aria-hidden="true"></span></div>
-      {%- if block.settings.heading != blank -%}
-        <span class="amesh-photo-banner__caption">{{ block.settings.heading }}</span>
-      {%- endif -%}
-    </a>
-  {%- endfor -%}
+<div class="amesh-photo-banner-wrap amesh-photo-banner-{{ section.id }} section-{{ section.id }}-padding">
+  {%- if section.settings.overlay_heading != blank -%}
+    <span class="amesh-photo-banner__overlay-heading">{{ section.settings.overlay_heading }}</span>
+  {%- endif -%}
+  <div class="amesh-photo-banner amesh-photo-banner--{{ section.settings.layout }}">
+    {%- for block in section.blocks -%}
+      <a
+        href="{{ block.settings.link }}"
+        class="amesh-photo-banner__item"
+        {{ block.shopify_attributes }}
+      >
+        <div
+          class="amesh-photo-banner__media"
+          style="background-image: url({{ block.settings.image_filename | asset_url }});"
+        ><span aria-hidden="true"></span></div>
+        {%- if block.settings.heading != blank -%}
+          <span class="amesh-photo-banner__caption">{{ block.settings.heading }}</span>
+        {%- endif -%}
+      </a>
+    {%- endfor -%}
+  </div>
 </div>
 
 {% schema %}
@@ -39,6 +44,8 @@
       "label": "Layout",
       "options": [
         { "value": "two-column", "label": "Two columns" },
+        { "value": "three-column", "label": "Three columns" },
+        { "value": "four-column", "label": "Four columns" },
         { "value": "full-width", "label": "Full width" }
       ],
       "default": "two-column"
@@ -50,9 +57,16 @@
       "options": [
         { "value": "100vh", "label": "Full screen" },
         { "value": "80vh", "label": "Large" },
-        { "value": "60vh", "label": "Medium" }
+        { "value": "60vh", "label": "Medium" },
+        { "value": "40vh", "label": "Small" }
       ],
       "default": "100vh"
+    },
+    {
+      "type": "text",
+      "id": "overlay_heading",
+      "label": "Overlay heading",
+      "info": "Optional heading centered across the whole banner"
     },
     {
       "type": "range",
