@@ -25,6 +25,7 @@
       "settings": {
         "layout": "four-column",
         "height": "40vh",
+        "image_fit": "contain",
         "padding_top": 0,
         "padding_bottom": 0
       }
