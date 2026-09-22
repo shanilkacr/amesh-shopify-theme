@@ -1,6 +1,12 @@
 {{ 'section-amesh-hero-video.css' | asset_url | stylesheet_tag }}
 
-<div class="amesh-hero">
+{%- style -%}
+  .amesh-hero-{{ section.id }} .amesh-hero__overlay-text {
+    mix-blend-mode: {{ section.settings.overlay_blend_mode }};
+  }
+{%- endstyle -%}
+
+<div class="amesh-hero amesh-hero-{{ section.id }}">
   <div class="amesh-hero__scroll-area">
     <div class="amesh-hero__video-wrapper">
       <video
@@ -39,6 +45,31 @@
       "id": "tagline",
       "label": "Tagline",
       "default": "A Celebration of Colour, Culture, Community and Craftsmanship"
+    },
+    {
+      "type": "select",
+      "id": "overlay_blend_mode",
+      "label": "Overlay text blend mode",
+      "info": "Controls how the scrolling gradient heading blends with the video behind it",
+      "options": [
+        { "value": "normal", "label": "Normal" },
+        { "value": "multiply", "label": "Multiply" },
+        { "value": "screen", "label": "Screen" },
+        { "value": "overlay", "label": "Overlay" },
+        { "value": "darken", "label": "Darken" },
+        { "value": "lighten", "label": "Lighten" },
+        { "value": "color-dodge", "label": "Color dodge" },
+        { "value": "color-burn", "label": "Color burn" },
+        { "value": "hard-light", "label": "Hard light" },
+        { "value": "soft-light", "label": "Soft light" },
+        { "value": "difference", "label": "Difference" },
+        { "value": "exclusion", "label": "Exclusion" },
+        { "value": "hue", "label": "Hue" },
+        { "value": "saturation", "label": "Saturation" },
+        { "value": "color", "label": "Color" },
+        { "value": "luminosity", "label": "Luminosity" }
+      ],
+      "default": "color"
     }
   ],
   "presets": [
