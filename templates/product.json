@@ -3,15 +3,18 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title"
+        },
+        "description": {
+          "type": "description"
+        },
+        "shipping_note": {
+          "type": "text",
+          "settings": {
+            "text": "Free worldwide shipping",
+            "text_style": "body"
+          }
         },
         "price": {
           "type": "price"
@@ -23,9 +26,6 @@
             "swatch_shape": "circle"
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector"
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -33,25 +33,50 @@
             "show_gift_card_recipient": true
           }
         },
-        "description": {
-          "type": "description"
-        },
-        "share": {
-          "type": "share",
+        "details_tab": {
+          "type": "collapsible_tab",
           "settings": {
-            "share_label": "Share"
+            "heading": "Details",
+            "icon": "none",
+            "content": "<p>One of a kind — no two pieces are exactly alike. Handcrafted by artisan knitters in Sri Lanka using deadstock and upcycled yarns.</p>"
+          }
+        },
+        "size_fit_tab": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Size & Fit",
+            "icon": "none",
+            "content": "<p>This piece is designed with a relaxed, versatile fit. Refer to the product description for specific details, or contact us for sizing guidance.</p>"
+          }
+        },
+        "care_tab": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Care",
+            "icon": "none",
+            "content": "<p>Hand wash cold or dry clean only. Reshape and dry flat. Do not tumble dry, bleach, or iron directly on embellishments.</p>"
+          }
+        },
+        "note_tab": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Note",
+            "icon": "none",
+            "content": "<p>As each piece is handmade, slight variations in colour, texture and embellishment are part of its one-of-a-kind character.</p>"
           }
         }
       },
       "block_order": [
-        "vendor",
         "title",
+        "description",
+        "shipping_note",
         "price",
         "variant_picker",
-        "quantity_selector",
         "buy_buttons",
-        "description",
-        "share"
+        "details_tab",
+        "size_fit_tab",
+        "care_tab",
+        "note_tab"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -69,24 +94,17 @@
         "padding_bottom": 12
       }
     },
-    "disclosures": {
-      "type": "disclosures",
-      "settings": {
-        "padding_top": 36,
-        "padding_bottom": 0
-      }
-    },
     "related-products": {
       "type": "related-products",
       "settings": {
-        "heading": "You may also like",
+        "heading": "Discover more",
         "heading_size": "h2",
         "products_to_show": 4,
         "columns_desktop": 4,
         "color_scheme": "scheme-1",
         "image_ratio": "square",
         "image_shape": "default",
-        "show_secondary_image": true,
+        "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
         "columns_mobile": "2",
@@ -97,7 +115,6 @@
   },
   "order": [
     "main",
-    "disclosures",
     "related-products"
   ]
 }
