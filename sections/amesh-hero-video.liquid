@@ -2,7 +2,7 @@
 
 <div class="amesh-hero">
   <div class="amesh-hero__scroll-area">
-    <div class="amesh-hero__video-wrapper" id="AmeshHeroVideoWrapper-{{ section.id }}">
+    <div class="amesh-hero__video-wrapper">
       <video
         class="amesh-hero__video"
         autoplay
@@ -15,36 +15,14 @@
       </video>
     </div>
     <div class="amesh-hero__sticky-wrap">
-      <span class="amesh-hero__overlay-text" id="AmeshHeroOverlayText-{{ section.id }}">{{ section.settings.heading }}</span>
+      <span class="amesh-hero__overlay-text">{{ section.settings.heading }}</span>
     </div>
   </div>
-  <h1 class="amesh-hero__mobile-heading text-accent-red">{{ section.settings.heading }}</h1>
+  <h1 class="amesh-hero__heading text-accent-red">{{ section.settings.heading }}</h1>
   {%- if section.settings.tagline != blank -%}
     <p class="amesh-hero__tagline">{{ section.settings.tagline }}</p>
   {%- endif -%}
 </div>
-
-<script>
-(function () {
-  var overlay = document.getElementById('AmeshHeroOverlayText-{{ section.id }}');
-  var videoWrap = document.getElementById('AmeshHeroVideoWrapper-{{ section.id }}');
-  if (!overlay || !videoWrap) return;
-
-  function update() {
-    var videoBottom = videoWrap.getBoundingClientRect().bottom;
-    var textTop = overlay.getBoundingClientRect().top;
-    if (textTop >= videoBottom) {
-      overlay.classList.add('amesh-hero__overlay-text--solid');
-    } else {
-      overlay.classList.remove('amesh-hero__overlay-text--solid');
-    }
-  }
-
-  document.addEventListener('scroll', update, { passive: true });
-  window.addEventListener('resize', update);
-  update();
-})();
-</script>
 
 {% schema %}
 {
