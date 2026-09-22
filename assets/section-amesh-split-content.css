@@ -56,4 +56,9 @@
   .amesh-split--image-right {
     direction: ltr;
   }
+
+  .amesh-split__content {
+    max-width: none;
+    text-align: center;
+  }
 }

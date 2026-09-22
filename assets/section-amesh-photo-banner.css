@@ -76,19 +76,26 @@
   white-space: nowrap;
 }
 
+/*
+ * On mobile the source site keeps the same column count as desktop for these
+ * galleries (it never collapses to a single column) but swaps the tall,
+ * viewport-height panels for a compact, roughly-square tile so the grid stays
+ * scannable. The `height` setting from the section (100vh/80vh/60vh/40vh) is a
+ * desktop-only concept, so it's overridden here rather than reused at a smaller
+ * unit.
+ */
 @media screen and (max-width: 749px) {
-  .amesh-photo-banner--two-column,
-  .amesh-photo-banner--three-column,
-  .amesh-photo-banner--four-column {
-    grid-template-columns: 1fr;
+  .amesh-photo-banner__item {
+    height: auto;
+    aspect-ratio: 1 / 1;
   }
 
-  .amesh-photo-banner__item {
-    height: 60vh !important;
+  .amesh-photo-banner--full-width .amesh-photo-banner__item {
+    aspect-ratio: 4 / 3;
   }
 
   .amesh-photo-banner__caption {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   .amesh-photo-banner__overlay-heading {
