@@ -30,12 +30,12 @@
       <ul class="amesh-footer-bar__links list-unstyled">
         <li><a href="{{ pages.contact.url | default: '/pages/contact' }}">Contact</a></li>
         <li>
-          <a href="{{ shop.policies.refund_policy.url | default: pages.contact.url | default: '/pages/contact' }}">
+          <a href="{{ shop.policies['refund-policy'].url | default: pages.contact.url | default: '/pages/contact' }}">
             Returns & Shipping
           </a>
         </li>
-        {%- if shop.policies.privacy_policy.url != blank -%}
-          <li><a href="{{ shop.policies.privacy_policy.url }}">Privacy Policy</a></li>
+        {%- if shop.policies['privacy-policy'].url != blank -%}
+          <li><a href="{{ shop.policies['privacy-policy'].url }}">Privacy Policy</a></li>
         {%- endif -%}
         {%- if settings.social_instagram_link != blank -%}
           <li><a href="{{ settings.social_instagram_link }}" target="_blank" rel="noopener">Instagram</a></li>
