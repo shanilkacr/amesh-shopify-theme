@@ -147,6 +147,7 @@
   .header__icon--search {
     width: auto;
     padding: 0 0.8rem;
+    text-decoration: none;
   }
 
   .header__icon-search-text {
@@ -157,6 +158,47 @@
   .cart-count-bubble {
     background-color: #e74c3c;
     color: #ffffff;
+  }
+
+  @media screen and (max-width: 989px) {
+    .header__icons {
+      display: none;
+    }
+
+    .header > .header__search {
+      display: none;
+    }
+
+    .header {
+      grid-template-columns: 1fr auto;
+      grid-template-areas: 'heading icons';
+    }
+
+    .header header-drawer {
+      grid-area: icons;
+      justify-self: end;
+      margin-left: 0;
+    }
+
+    .header__heading,
+    .header__heading-link {
+      justify-self: start;
+    }
+  }
+
+  .menu-drawer__search-cart-row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .menu-drawer__search-cart-row .header__icon--search {
+    padding: 0;
+  }
+
+  .menu-drawer__search-cart-row .header__icon--cart {
+    margin-right: 0;
   }
 {%- endstyle -%}
 
