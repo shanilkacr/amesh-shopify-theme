@@ -2,6 +2,7 @@
 
 {%- style -%}
   .amesh-hero-{{ section.id }} .amesh-hero__overlay-text {
+    color: {{ section.settings.overlay_text_color }};
     mix-blend-mode: {{ section.settings.overlay_blend_mode }};
   }
 {%- endstyle -%}
@@ -47,10 +48,17 @@
       "default": "A Celebration of Colour, Culture, Community and Craftsmanship"
     },
     {
+      "type": "color",
+      "id": "overlay_text_color",
+      "label": "Overlay text color",
+      "info": "Solid color that blends into the video via the blend mode below — the blended look comes from the blend mode, not a gradient",
+      "default": "#67FFFF"
+    },
+    {
       "type": "select",
       "id": "overlay_blend_mode",
       "label": "Overlay text blend mode",
-      "info": "Controls how the scrolling gradient heading blends with the video behind it",
+      "info": "Controls how the flat-colored heading blends with the video behind it",
       "options": [
         { "value": "normal", "label": "Normal" },
         { "value": "multiply", "label": "Multiply" },
