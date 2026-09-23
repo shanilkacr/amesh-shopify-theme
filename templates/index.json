@@ -14,7 +14,8 @@
       "settings": {
         "heading": "AMESH",
         "tagline": "A Celebration of Colour, Culture, Community and Craftsmanship",
-        "overlay_blend_mode": "difference"
+        "overlay_text_color": "#ff00ff",
+        "overlay_blend_mode": "screen"
       }
     },
     "story_craft": {
