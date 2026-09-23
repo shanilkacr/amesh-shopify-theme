@@ -129,7 +129,11 @@
           {% endif %}
         >
           {%- if collection.products.size == 0 -%}
-            <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
+            <div
+              class="collection collection--empty{% unless section.settings.full_width %} page-width{% endunless %}"
+              id="product-grid"
+              data-id="{{ section.id }}"
+            >
               <div class="loading-overlay gradient"></div>
               <div class="title-wrapper center">
                 <h2 class="title title--primary">
@@ -144,7 +148,7 @@
             </div>
           {%- else -%}
             <div
-              class="collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
+              class="collection{% if section.settings.filter_type != 'vertical' and section.settings.full_width == false %} page-width{% endif %}"
             >
               <div class="loading-overlay gradient"></div>
               <ul
@@ -246,6 +250,13 @@
       "label": "t:sections.all.colors.label",
       "info": "t:sections.all.colors.has_cards_info",
       "default": "scheme-1"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Make product grid full width",
+      "info": "Removes the side page margins so the product grid spans the full browser width",
+      "default": false
     },
     {
       "type": "header",
