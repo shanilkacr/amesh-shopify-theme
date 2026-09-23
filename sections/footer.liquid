@@ -29,14 +29,20 @@
       <small class="amesh-footer-bar__copyright">&copy; AMESH Studios {{ 'now' | date: '%Y' }}</small>
       <ul class="amesh-footer-bar__links list-unstyled">
         <li><a href="{{ pages.contact.url | default: '/pages/contact' }}">Contact</a></li>
-        <li>
-          <a href="{{ shop.policies['refund-policy'].url | default: pages.contact.url | default: '/pages/contact' }}">
-            Returns & Shipping
-          </a>
-        </li>
-        {%- if shop.policies['privacy-policy'].url != blank -%}
-          <li><a href="{{ shop.policies['privacy-policy'].url }}">Privacy Policy</a></li>
-        {%- endif -%}
+        {%- liquid
+          assign returns_shipping_url = pages.contact.url | default: '/pages/contact'
+          for policy in shop.policies
+            if policy.url contains 'refund' or policy.url contains 'shipping'
+              assign returns_shipping_url = policy.url
+            endif
+          endfor
+        -%}
+        <li><a href="{{ returns_shipping_url }}">Returns & Shipping</a></li>
+        {%- for policy in shop.policies -%}
+          {%- if policy.url contains 'privacy' -%}
+            <li><a href="{{ policy.url }}">Privacy Policy</a></li>
+          {%- endif -%}
+        {%- endfor -%}
         {%- if settings.social_instagram_link != blank -%}
           <li><a href="{{ settings.social_instagram_link }}" target="_blank" rel="noopener">Instagram</a></li>
         {%- endif -%}
