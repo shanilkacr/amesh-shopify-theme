@@ -24,7 +24,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  filter: saturate(0.62) contrast(0.87) brightness(1.05);
+  filter: saturate(0.4) contrast(0.8) brightness(1.08);
 }
 
 .amesh-hero__sticky-wrap {
