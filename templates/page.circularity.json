@@ -14,7 +14,7 @@
       "blocks": {
         "b1": {
           "type": "banner",
-          "settings": { "image_filename": "amesh-page-circularity-1.jpeg" }
+          "settings": { "image_filename": "amesh-page-circularity-hero.webp" }
         }
       },
       "block_order": ["b1"],
@@ -27,21 +27,85 @@
       }
     },
     "tackling": {
-      "type": "amesh-split-content",
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": { "heading": "Tackling Sri Lanka's textile waste mountains", "heading_size": "h1" }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At the heart of our mission is the belief that social and environmental responsibility are inseparable. We create innovative, sustainable design solutions that prioritize the well-being of people, the planet, and our ecosystems. Guided by the principles of reclaiming, reusing and repurposing we craft beautiful, functional products that make a positive impact.</p><p>Sri Lanka’s textile industry produces over 30,000 tonnes of waste annually with over 300 factories operating in the garment industry. AMESH secondary textiles are sourced as pre-consumer textiles and waste materials collected locally. Every piece we create is made from upcycled, deadstock, and end-roll materials, along with trims salvaged from Sri Lanka’s textile markets—materials once discarded as waste and destined for landfills. Through thoughtful reconditioning, reprinting, and embellishment techniques, we breathe new life into these resources, transforming them into unique, one-of-a-kind products.</p>"
+          }
+        }
+      },
+      "block_order": ["heading", "text"],
       "settings": {
-        "image_filename": "amesh-page-circularity-2.webp",
-        "image_position": "right",
-        "heading": "Tackling Sri Lanka's textile waste mountains",
-        "text": "<p>At the heart of our mission is the belief that social and environmental responsibility are inseparable. We create innovative, sustainable design solutions that prioritize the well-being of people, the planet, and our ecosystems. Guided by the principles of reclaiming, reusing and repurposing we craft beautiful, functional products that make a positive impact.</p><p>Sri Lanka’s textile industry produces over 30,000 tonnes of waste annually with over 300 factories operating in the garment industry. AMESH secondary textiles are sourced as pre-consumer textiles and waste materials collected locally. Every piece we create is made from upcycled, deadstock, and end-roll materials, along with trims salvaged from Sri Lanka’s textile markets—materials once discarded as waste and destined for landfills. Through thoughtful reconditioning, reprinting, and embellishment techniques, we breathe new life into these resources, transforming them into unique, one-of-a-kind products.</p>"
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "padding_top": 60,
+        "padding_bottom": 20
       }
     },
     "responsible": {
-      "type": "amesh-split-content",
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": { "heading": "Responsible production", "heading_size": "h1" }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>AMESH is on a continuous journey of exploring innovative approaches to sourcing, making, and crafting. With “resourcefulness” at its core, the brand reimagines traditional artisan techniques through refined detailing, vibrant colour, and a celebration of homemaking. Studio leftovers are re-woven into new textures and patterns, turning waste into beauty.</p><p>In partnership with local SMEs, AMESH ensures fair compensation above industry standards, fostering financial stability for its makers. A flexible, work-from-home model supports craftswomen—particularly mothers—enabling them to balance work and family life.</p><p>The brand rejects mass production in favour of limited-edition capsule collections, offering trans-seasonal pieces designed for a shared wardrobe concept.</p><p>AMESH exists to educate, empower, and inspire a new Sri Lankan identity.</p>"
+          }
+        }
+      },
+      "block_order": ["heading", "text"],
       "settings": {
-        "image_filename": "amesh-page-circularity-3.webp",
-        "image_position": "left",
-        "heading": "Responsible production",
-        "text": "<p>AMESH is on a continuous journey of exploring innovative approaches to sourcing, making, and crafting. With “resourcefulness” at its core, the brand reimagines traditional artisan techniques through refined detailing, vibrant colour, and a celebration of homemaking. Studio leftovers are re-woven into new textures and patterns, turning waste into beauty.</p><p>In partnership with local SMEs, AMESH ensures fair compensation above industry standards, fostering financial stability for its makers. A flexible, work-from-home model supports craftswomen—particularly mothers—enabling them to balance work and family life.</p><p>The brand rejects mass production in favour of limited-edition capsule collections, offering trans-seasonal pieces designed for a shared wardrobe concept. AMESH exists to educate, empower, and inspire a new Sri Lankan identity.</p>"
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "waste-image": {
+      "type": "amesh-photo-banner",
+      "blocks": {
+        "b1": {
+          "type": "banner",
+          "settings": { "image_filename": "amesh-page-circularity-waste.webp" }
+        }
+      },
+      "block_order": ["b1"],
+      "settings": {
+        "layout": "full-width",
+        "height": "80vh",
+        "image_fit": "cover",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "gallery": {
+      "type": "amesh-photo-banner",
+      "blocks": {
+        "g1": { "type": "banner", "settings": { "image_filename": "amesh-page-circularity-gallery-1.webp" } },
+        "g2": { "type": "banner", "settings": { "image_filename": "amesh-page-circularity-gallery-2.webp" } },
+        "g3": { "type": "banner", "settings": { "image_filename": "amesh-page-circularity-gallery-3.webp" } },
+        "g4": { "type": "banner", "settings": { "image_filename": "amesh-page-circularity-gallery-4.webp" } }
+      },
+      "block_order": ["g1", "g2", "g3", "g4"],
+      "settings": {
+        "layout": "four-column",
+        "height": "60vh",
+        "image_fit": "cover",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "discover-more": {
@@ -73,5 +137,5 @@
       }
     }
   },
-  "order": ["hero", "tackling", "responsible", "discover-more"]
+  "order": ["hero", "tackling", "responsible", "waste-image", "gallery", "discover-more"]
 }
