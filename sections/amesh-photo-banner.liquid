@@ -6,8 +6,10 @@
     padding-bottom: {{ section.settings.padding_bottom }}px;
   }
 
-  .amesh-photo-banner-{{ section.id }} .amesh-photo-banner__item {
-    height: {{ section.settings.height }};
+  @media screen and (min-width: 750px) {
+    .amesh-photo-banner-{{ section.id }} .amesh-photo-banner__item {
+      height: {{ section.settings.height }};
+    }
   }
 {%- endstyle -%}
 

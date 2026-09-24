@@ -4,7 +4,8 @@
       "type": "amesh-hero-video",
       "settings": {
         "heading": "AMESH",
-        "tagline": "A Celebration of Colour, Culture, Community and Craftsmanship"
+        "tagline": "A Celebration of Colour, Culture, Community and Craftsmanship",
+        "overlay_blend_mode": "difference"
       }
     },
     "story_craft": {

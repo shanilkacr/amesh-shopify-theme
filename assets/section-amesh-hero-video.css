@@ -5,8 +5,7 @@
 .amesh-hero__scroll-area {
   position: relative;
   width: 100%;
-  height: 100vh;
-  display: none;
+  height: 133vh;
   background-color: #ffffff;
   isolation: isolate;
 }
@@ -29,7 +28,7 @@
 
 .amesh-hero__sticky-wrap {
   position: sticky;
-  top: 45vh;
+  top: 32vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -38,48 +37,26 @@
 }
 
 .amesh-hero__overlay-text {
-  font-family: var(--font-heading-family);
-  font-weight: 700;
-  font-size: 9vw;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 7vw;
   line-height: 1;
   text-transform: uppercase;
-  letter-spacing: 0.02em;
+  letter-spacing: normal;
   white-space: nowrap;
-  background-image: linear-gradient(90deg, #3b5bfd 0%, #8b5cf6 45%, #2dd4bf 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-  mix-blend-mode: color;
-}
-
-.amesh-hero__heading {
-  font-family: var(--font-heading-family);
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 4rem;
-  margin: 6rem 2rem 1rem;
+  color: #67FFFF;
+  mix-blend-mode: difference;
+  isolation: isolate;
 }
 
 .amesh-hero__tagline {
   text-align: center;
-  padding: 0 2rem 4rem;
+  padding: 2rem 2rem 4rem;
   margin: 0;
 }
 
 @media screen and (min-width: 750px) {
-  .amesh-hero__scroll-area {
-    display: block;
-    height: 160vh;
-  }
-
-  .amesh-hero__heading {
-    font-size: 6rem;
-    margin: 5rem 2rem 1.5rem;
-  }
-
   .amesh-hero__tagline {
-    padding: 0 2rem 5rem;
+    padding: 2rem 2rem 5rem;
   }
 }

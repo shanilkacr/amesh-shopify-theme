@@ -1,25 +1,17 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "gallery": {
       "type": "amesh-photo-banner",
       "blocks": {
-        "b1": { "type": "banner", "settings": { "image_filename": "amesh-page-global-1.png", "heading": "LVMH PRIX 2022" } },
-        "b2": { "type": "banner", "settings": { "image_filename": "amesh-page-global-2.png", "heading": "MBFW Berlin 2019" } },
-        "b3": { "type": "banner", "settings": { "image_filename": "amesh-page-global-3.png", "heading": "IFS London 2019" } },
-        "b4": { "type": "banner", "settings": { "image_filename": "amesh-page-global-4.jpg", "heading": "Circular Design Challenge India 2023" } },
-        "b5": { "type": "banner", "settings": { "image_filename": "amesh-page-global-5.jpeg", "heading": "“Homecoming” Barefoot Gallery 2024" } },
-        "b6": { "type": "banner", "settings": { "image_filename": "amesh-page-global-6.jpeg", "heading": "ARKA 2025" } }
+        "b1": { "type": "banner", "settings": { "image_filename": "amesh-page-global-lvmh.webp", "heading": "LVMH PRIX 2022" } },
+        "b2": { "type": "banner", "settings": { "image_filename": "amesh-page-global-berlin.png", "heading": "MBFW Berlin 2019" } },
+        "b3": { "type": "banner", "settings": { "image_filename": "amesh-page-global-ifs-london.png", "heading": "IFS London 2019" } },
+        "b4": { "type": "banner", "settings": { "image_filename": "amesh-page-global-circular-design.png", "heading": "Circular Design Challenge India 2023" } },
+        "b5": { "type": "banner", "settings": { "image_filename": "amesh-page-global-tbilisi.jpg", "heading": "MBFW Tbilsi 2020" } },
+        "b6": { "type": "banner", "settings": { "image_filename": "amesh-page-global-homecoming.jpeg", "heading": "“Homecoming” Barefoot Gallery 2024" } },
+        "b7": { "type": "banner", "settings": { "image_filename": "amesh-page-global-arka.jpeg", "heading": "ARKA 2025" } }
       },
-      "block_order": ["b1", "b2", "b3", "b4", "b5", "b6"],
+      "block_order": ["b1", "b2", "b3", "b4", "b5", "b6", "b7"],
       "settings": {
         "layout": "two-column",
         "height": "100vh",

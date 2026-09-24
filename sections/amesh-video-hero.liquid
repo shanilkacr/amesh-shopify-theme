@@ -1,0 +1,72 @@
+{{ 'section-amesh-video-hero.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .amesh-video-hero-{{ section.id }} .amesh-video-hero__heading {
+    color: {{ section.settings.heading_color }};
+    mix-blend-mode: {{ section.settings.heading_blend_mode }};
+  }
+{%- endstyle -%}
+
+<div class="amesh-video-hero amesh-video-hero-{{ section.id }}">
+  <video
+    class="amesh-video-hero__video"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="metadata"
+  >
+    <source src="{{ section.settings.video_filename | asset_url }}" type="video/webm">
+  </video>
+  {%- if section.settings.heading != blank -%}
+    <div class="amesh-video-hero__overlay">
+      <span class="amesh-video-hero__heading">{{ section.settings.heading }}</span>
+    </div>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "AMESH video hero",
+  "settings": [
+    {
+      "type": "text",
+      "id": "video_filename",
+      "label": "Video asset filename"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "select",
+      "id": "heading_blend_mode",
+      "label": "Heading blend mode",
+      "options": [
+        { "value": "normal", "label": "Normal" },
+        { "value": "multiply", "label": "Multiply" },
+        { "value": "screen", "label": "Screen" },
+        { "value": "overlay", "label": "Overlay" },
+        { "value": "darken", "label": "Darken" },
+        { "value": "lighten", "label": "Lighten" },
+        { "value": "difference", "label": "Difference" },
+        { "value": "exclusion", "label": "Exclusion" },
+        { "value": "color", "label": "Color" }
+      ],
+      "default": "difference"
+    }
+  ],
+  "presets": [
+    {
+      "name": "AMESH video hero"
+    }
+  ]
+}
+{% endschema %}

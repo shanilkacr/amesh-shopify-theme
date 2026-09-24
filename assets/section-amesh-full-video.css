@@ -1,0 +1,10 @@
+.amesh-full-video {
+  width: 100%;
+  line-height: 0;
+}
+
+.amesh-full-video__video {
+  width: 100%;
+  height: auto;
+  display: block;
+}

@@ -211,7 +211,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 
 .text-accent-red {
-  color: #e74c3c !important;
+  color: #e74c3c;
 }
 
 main[data-template="collection"] .collection.page-width {
