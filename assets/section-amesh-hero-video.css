@@ -44,6 +44,9 @@
   text-transform: uppercase;
   letter-spacing: normal;
   white-space: nowrap;
+  color: #67FFFF;
+  mix-blend-mode: difference;
+  isolation: isolate;
 }
 
 .amesh-hero__tagline {
