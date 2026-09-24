@@ -5,7 +5,7 @@
 .amesh-hero__scroll-area {
   position: relative;
   width: 100%;
-  height: 160vh;
+  height: 133vh;
   background-color: #ffffff;
   isolation: isolate;
 }
@@ -46,28 +46,14 @@
   white-space: nowrap;
 }
 
-.amesh-hero__heading {
-  font-family: var(--font-heading-family);
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 4rem;
-  margin: 6rem 2rem 1rem;
-}
-
 .amesh-hero__tagline {
   text-align: center;
-  padding: 0 2rem 4rem;
+  padding: 2rem 2rem 4rem;
   margin: 0;
 }
 
 @media screen and (min-width: 750px) {
-  .amesh-hero__heading {
-    font-size: 6rem;
-    margin: 5rem 2rem 1.5rem;
-  }
-
   .amesh-hero__tagline {
-    padding: 0 2rem 5rem;
+    padding: 2rem 2rem 5rem;
   }
 }
