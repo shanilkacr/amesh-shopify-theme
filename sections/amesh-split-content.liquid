@@ -1,12 +1,25 @@
 {{ 'section-amesh-split-content.css' | asset_url | stylesheet_tag }}
 
-<div class="amesh-split amesh-split--image-{{ section.settings.image_position }}">
-  <div class="amesh-split__media">
-    <div
-      class="amesh-split__image"
-      style="background-image: url({{ section.settings.image_filename | asset_url }});"
-    ><span aria-hidden="true"></span></div>
-  </div>
+<div
+  class="amesh-split amesh-split--image-{{ section.settings.image_position }}{% if section.settings.image_height_mode == 'natural' %} amesh-split--natural-media{% endif %}"
+>
+  {%- if section.settings.image_height_mode == 'natural' -%}
+    <div class="amesh-split__media amesh-split__media--natural">
+      <img
+        class="amesh-split__image amesh-split__image--natural"
+        src="{{ section.settings.image_filename | asset_url }}"
+        alt=""
+        loading="lazy"
+      >
+    </div>
+  {%- else -%}
+    <div class="amesh-split__media">
+      <div
+        class="amesh-split__image"
+        style="background-image: url({{ section.settings.image_filename | asset_url }});"
+      ><span aria-hidden="true"></span></div>
+    </div>
+  {%- endif -%}
   <div class="amesh-split__content amesh-split__content--{{ section.settings.content_vertical_align }}">
     {%- if section.settings.heading != blank -%}
       <h2 class="amesh-split__heading">{{ section.settings.heading }}</h2>
@@ -45,6 +58,17 @@
       "type": "richtext",
       "id": "text",
       "label": "Text"
+    },
+    {
+      "type": "select",
+      "id": "image_height_mode",
+      "label": "Image height",
+      "options": [
+        { "value": "fixed_ratio", "label": "Fixed 4:3 crop" },
+        { "value": "natural", "label": "Natural image height" }
+      ],
+      "info": "Natural height lets the image's own aspect ratio set the row height, matching the source site's tall portrait shots",
+      "default": "fixed_ratio"
     },
     {
       "type": "select",
