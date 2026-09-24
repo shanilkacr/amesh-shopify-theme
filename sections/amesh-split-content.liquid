@@ -7,7 +7,7 @@
       style="background-image: url({{ section.settings.image_filename | asset_url }});"
     ><span aria-hidden="true"></span></div>
   </div>
-  <div class="amesh-split__content">
+  <div class="amesh-split__content amesh-split__content--{{ section.settings.content_vertical_align }}">
     {%- if section.settings.heading != blank -%}
       <h2 class="amesh-split__heading">{{ section.settings.heading }}</h2>
     {%- endif -%}
@@ -45,6 +45,17 @@
       "type": "richtext",
       "id": "text",
       "label": "Text"
+    },
+    {
+      "type": "select",
+      "id": "content_vertical_align",
+      "label": "Content vertical alignment",
+      "options": [
+        { "value": "start", "label": "Top" },
+        { "value": "center", "label": "Center" },
+        { "value": "end", "label": "Bottom" }
+      ],
+      "default": "center"
     }
   ],
   "presets": [

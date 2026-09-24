@@ -1,0 +1,33 @@
+{{ 'section-amesh-full-video.css' | asset_url | stylesheet_tag }}
+
+<div class="amesh-full-video">
+  <video
+    class="amesh-full-video__video"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="metadata"
+  >
+    <source src="{{ section.settings.video_filename | asset_url }}" type="video/webm">
+  </video>
+</div>
+
+{% schema %}
+{
+  "name": "AMESH full-width video",
+  "settings": [
+    {
+      "type": "text",
+      "id": "video_filename",
+      "label": "Video asset filename",
+      "info": "Filename of a .webm video already uploaded to the theme's assets folder"
+    }
+  ],
+  "presets": [
+    {
+      "name": "AMESH full-width video"
+    }
+  ]
+}
+{% endschema %}

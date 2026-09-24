@@ -9,15 +9,74 @@
  */
 {
   "sections": {
-    "content": {
+    "intro": {
       "type": "amesh-split-content",
       "settings": {
         "image_filename": "amesh-page-our-story.webp",
         "image_position": "left",
         "heading": "AMESH",
-        "text": "<p>London-born Amesh Wijesekera, a BA graduate from the Academy of Design in Colombo, apprenticed with Future Laboratory, Edeline Lee, and Dame Zandra Rhodes in London before launching his eponymous label in 2019. Celebrated for his eclectic use of colour and textiles, AMESH blends artisanal techniques in hand-weaving, knitting and crochet with repurposed pre-consumer waste from Sri Lanka’s apparel industry to create trans-seasonal, gender-fluid pieces. His work draws inspiration from Sri Lankan heritage, childhood memories, and the island’s multicultural landscapes.</p><p>AMESH represented Sri Lanka at the International Fashion Showcase in London 2019, in collaboration with the British Fashion Council, University of the Arts London, the British Council, and Somerset House. In 2022, he became the first Sri Lankan designer nominated for the prestigious LVMH Prize in Paris.</p><p>First discovered at the Mercedes-Benz runways in Colombo, he has since showcased internationally in London, Berlin, Tbilisi, Delhi and Dhaka. In 2023, he was named the UK winner and a finalist of the Circular Design Challenge in India.</p><p>Expanding beyond fashion, AMESH debuted his first solo textile art exhibition on canvas at Barefoot Gallery, Colombo in 2024. His work continues to reimagine South Asian beauty and identity, while exploring themes of gender expression and youth culture.</p><p>Every AMESH piece is handmade in Sri Lanka with love and care.</p>"
+        "content_vertical_align": "start",
+        "text": "<p>London-born Amesh Wijesekera, a BA graduate from the Academy of Design in Colombo, apprenticed with Future Laboratory, Edeline Lee, and Dame Zandra Rhodes in London before launching his eponymous label in 2019. Celebrated for his eclectic use of colour and textiles, AMESH blends artisanal techniques in hand-weaving, knitting and crochet with repurposed pre-consumer waste from Sri Lanka’s apparel industry to create trans-seasonal, gender-fluid pieces. His work draws inspiration from Sri Lankan heritage, childhood memories, and the island’s multicultural landscapes.</p>"
+      }
+    },
+    "craft_video": {
+      "type": "amesh-full-video",
+      "settings": {
+        "video_filename": "amesh-our-story-craft-video.webm"
+      }
+    },
+    "history": {
+      "type": "amesh-split-content",
+      "settings": {
+        "image_filename": "amesh-page-our-story-berlin-show.jpg",
+        "image_position": "right",
+        "content_vertical_align": "end",
+        "text": "<p>AMESH represented Sri Lanka at the International Fashion Showcase in London 2019, in collaboration with the British Fashion Council, University of the Arts London, the British Council, and Somerset House. In 2022, he became the first Sri Lankan designer nominated for the prestigious LVMH Prize in Paris.</p><p>First discovered at the Mercedes-Benz runways in Colombo, he has since showcased internationally in London, Berlin, Tbilisi, Delhi and Dhaka. In 2023, he was named the UK winner and a finalist of the Circular Design Challenge in India.</p><p>Expanding beyond fashion, AMESH debuted his first solo textile art exhibition on canvas at Barefoot Gallery, Colombo in 2024. His work continues to reimagine South Asian beauty and identity, while exploring themes of gender expression and youth culture.</p><p>Every AMESH piece is handmade in Sri Lanka with love and care.</p>"
+      }
+    },
+    "explore_more": {
+      "type": "amesh-photo-banner",
+      "blocks": {
+        "banner-0": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-global.webp",
+            "heading": "AMESH Global",
+            "link": "shopify://pages/amesh-global"
+          }
+        },
+        "banner-1": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-craft.webp",
+            "heading": "Craft",
+            "link": "shopify://pages/craft"
+          }
+        },
+        "banner-2": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-press.webp",
+            "heading": "Press",
+            "link": "shopify://pages/press"
+          }
+        },
+        "banner-3": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-circularity.webp",
+            "heading": "Circularity",
+            "link": "shopify://pages/circularity"
+          }
+        }
+      },
+      "block_order": ["banner-0", "banner-1", "banner-2", "banner-3"],
+      "settings": {
+        "layout": "four-column",
+        "height": "80vh",
+        "image_fit": "cover"
       }
     }
   },
-  "order": ["content"]
+  "order": ["intro", "craft_video", "history", "explore_more"]
 }

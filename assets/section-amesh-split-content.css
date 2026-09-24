@@ -1,7 +1,7 @@
 .amesh-split {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
+  align-items: stretch;
   gap: 4rem;
   padding: 4rem 4rem;
 }
@@ -29,6 +29,17 @@
 
 .amesh-split__content {
   max-width: 46rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.amesh-split__content--start {
+  justify-content: flex-start;
+}
+
+.amesh-split__content--end {
+  justify-content: flex-end;
 }
 
 .amesh-split__heading {
