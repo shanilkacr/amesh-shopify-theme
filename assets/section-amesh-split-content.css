@@ -45,13 +45,13 @@
 }
 
 .amesh-split--natural-media .amesh-split__content {
-  max-width: 68rem !important;
-  padding: 8rem 8rem 4rem 14rem;
+  max-width: 74rem !important;
+  padding: 26rem 8rem 4rem 14rem;
 }
 
 .amesh-split--natural-media.amesh-split--image-right .amesh-split__content {
-  max-width: 68rem !important;
-  padding: 8rem 14rem 4rem 8rem;
+  max-width: 74rem !important;
+  padding: 26rem 14rem 4rem 8rem;
 }
 
 .amesh-split__content {
