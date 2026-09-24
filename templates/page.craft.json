@@ -10,24 +10,12 @@
 {
   "sections": {
     "hero": {
-      "type": "amesh-photo-banner",
-      "blocks": {
-        "b1": {
-          "type": "banner",
-          "settings": { "image_filename": "amesh-page-craft-hero-1.png" }
-        },
-        "b2": {
-          "type": "banner",
-          "settings": { "image_filename": "amesh-page-craft-hero-2.png" }
-        }
-      },
-      "block_order": ["b1", "b2"],
+      "type": "amesh-video-hero",
       "settings": {
-        "layout": "two-column",
-        "height": "100vh",
-        "overlay_heading": "Craft",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "video_filename": "amesh-page-craft-video-1.webm",
+        "heading": "Craft",
+        "heading_color": "#FFFFFF",
+        "heading_blend_mode": "difference"
       }
     },
     "intro": {
@@ -63,13 +51,34 @@
         "text": "<p>AMESH ARTISANAL knitwear is crafted using deadstock wool and cotton yarns, sourced from local knitting centres in Sri Lanka. These high-quality yarns originate from the Scandinavian region and comply with strict EU standards for harvesting and processing. Because only limited quantities are available for commercial-scale production, our designs are shaped by the materials we can access.</p><p>This intentional limitation drives our creativity, allowing us to produce truly one-of-a-kind pieces that reflect the values of slow fashion. Each garment is handmade by skilled, home-based female knitters—empowering them with financial independence and the ability to support their families.</p>"
       }
     },
-    "weaving": {
-      "type": "amesh-split-content",
+    "weaving-text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": { "heading": "Handloom Weaving", "heading_size": "h1" }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With origins tracing back centuries, the art of handloom weaving has been preserved and passed down through generations of master weavers. We are committed to adapting new and traditional techniques while preserving and reviving a once-dying heritage. Made entirely by hand using ethically sourced fibres consuming minimum energy and resources to produce. First hand dyed, then hand spun and meticulously handwoven on a traditional handloom, these textiles are made with expert precision and care. AMESH is committed to adapting new and traditional techniques that are both sustainable and help improve their livelihood from the grassroot level and upwards.</p>"
+          }
+        }
+      },
+      "block_order": ["heading", "text"],
       "settings": {
-        "image_filename": "amesh-page-craft-weaving.webp",
-        "image_position": "left",
-        "heading": "Handloom Weaving",
-        "text": "<p>With origins tracing back centuries, the art of handloom weaving has been preserved and passed down through generations of master weavers. We are committed to adapting new and traditional techniques while preserving and reviving a once-dying heritage. Made entirely by hand using ethically sourced fibres consuming minimum energy and resources to produce. First hand dyed, then hand spun and meticulously handwoven on a traditional handloom, these textiles are made with expert precision and care.</p>"
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "padding_top": 60,
+        "padding_bottom": 40
+      }
+    },
+    "weaving-video": {
+      "type": "amesh-full-video",
+      "settings": {
+        "video_filename": "amesh-page-craft-video-2.webm"
       }
     },
     "discover-more": {
@@ -101,5 +110,5 @@
       }
     }
   },
-  "order": ["hero", "intro", "knitting", "weaving", "discover-more"]
+  "order": ["hero", "intro", "knitting", "weaving-text", "weaving-video", "discover-more"]
 }
