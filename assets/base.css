@@ -220,6 +220,10 @@ main[data-template="collection"] .collection.page-width {
   padding-right: 0;
 }
 
+main[data-template="index"] .product-grid {
+  column-gap: 0;
+  row-gap: 0;
+}
 
 .visually-hidden {
   position: absolute !important;
