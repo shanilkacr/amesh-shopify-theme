@@ -5,9 +5,10 @@
 .amesh-hero__scroll-area {
   position: relative;
   width: 100%;
-  height: 133vh;
+  height: 100vh;
   background-color: #ffffff;
   isolation: isolate;
+  overflow: hidden;
 }
 
 .amesh-hero__video-wrapper {
@@ -15,7 +16,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -27,13 +28,15 @@
 }
 
 .amesh-hero__sticky-wrap {
-  position: sticky;
-  top: 32vh;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
   display: flex;
+  align-items: center;
   justify-content: center;
   pointer-events: none;
-  z-index: 1;
 }
 
 .amesh-hero__overlay-text {
@@ -46,7 +49,6 @@
   white-space: nowrap;
   color: #67FFFF;
   mix-blend-mode: color;
-  isolation: isolate;
 }
 
 .amesh-hero__tagline {
