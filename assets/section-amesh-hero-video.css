@@ -45,7 +45,7 @@
   letter-spacing: normal;
   white-space: nowrap;
   color: #67FFFF;
-  mix-blend-mode: difference;
+  mix-blend-mode: color;
   isolation: isolate;
 }
 
