@@ -39,16 +39,9 @@
   pointer-events: none;
 }
 
-.amesh-hero__overlay-text {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 600;
-  font-size: 7vw;
-  line-height: 1;
-  text-transform: uppercase;
-  letter-spacing: normal;
-  white-space: nowrap;
-  color: #67FFFF;
-  mix-blend-mode: color;
+.amesh-hero__overlay-canvas {
+  display: block;
+  pointer-events: none;
 }
 
 .amesh-hero__tagline {

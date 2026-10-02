@@ -2,35 +2,38 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap">
 
-{%- style -%}
-  .amesh-hero-{{ section.id }} .amesh-hero__overlay-text {
-    color: {{ section.settings.overlay_text_color }};
-    mix-blend-mode: {{ section.settings.overlay_blend_mode }};
-  }
-{%- endstyle -%}
-
-<div class="amesh-hero amesh-hero-{{ section.id }}">
+<div class="amesh-hero amesh-hero-{{ section.id }}" data-amesh-hero>
   <div class="amesh-hero__scroll-area">
     <div class="amesh-hero__video-wrapper">
       <video
         class="amesh-hero__video"
+        data-amesh-hero-video
         autoplay
         muted
         loop
         playsinline
-        preload="metadata"
+        preload="auto"
+        crossorigin="anonymous"
       >
         <source src="{{ 'amesh-hero-video.webm' | asset_url }}" type="video/webm">
       </video>
     </div>
     <div class="amesh-hero__sticky-wrap">
-      <span class="amesh-hero__overlay-text">{{ section.settings.heading }}</span>
+      <h1 class="visually-hidden">{{ section.settings.heading }}</h1>
+      <canvas
+        class="amesh-hero__overlay-canvas"
+        data-amesh-hero-canvas
+        data-heading="{{ section.settings.heading | escape }}"
+        aria-hidden="true"
+      ></canvas>
     </div>
   </div>
   {%- if section.settings.tagline != blank -%}
     <p class="amesh-hero__tagline">{{ section.settings.tagline }}</p>
   {%- endif -%}
 </div>
+
+<script src="{{ 'amesh-hero-video.js' | asset_url }}" defer="defer"></script>
 
 {% schema %}
 {
@@ -47,38 +50,6 @@
       "id": "tagline",
       "label": "Tagline",
       "default": "A Celebration of Colour, Culture, Community and Craftsmanship"
-    },
-    {
-      "type": "color",
-      "id": "overlay_text_color",
-      "label": "Overlay text color",
-      "info": "Solid color that blends into the video via the blend mode below — the blended look comes from the blend mode, not a gradient",
-      "default": "#67FFFF"
-    },
-    {
-      "type": "select",
-      "id": "overlay_blend_mode",
-      "label": "Overlay text blend mode",
-      "info": "Controls how the flat-colored heading blends with the video behind it",
-      "options": [
-        { "value": "normal", "label": "Normal" },
-        { "value": "multiply", "label": "Multiply" },
-        { "value": "screen", "label": "Screen" },
-        { "value": "overlay", "label": "Overlay" },
-        { "value": "darken", "label": "Darken" },
-        { "value": "lighten", "label": "Lighten" },
-        { "value": "color-dodge", "label": "Color dodge" },
-        { "value": "color-burn", "label": "Color burn" },
-        { "value": "hard-light", "label": "Hard light" },
-        { "value": "soft-light", "label": "Soft light" },
-        { "value": "difference", "label": "Difference" },
-        { "value": "exclusion", "label": "Exclusion" },
-        { "value": "hue", "label": "Hue" },
-        { "value": "saturation", "label": "Saturation" },
-        { "value": "color", "label": "Color" },
-        { "value": "luminosity", "label": "Luminosity" }
-      ],
-      "default": "color"
     }
   ],
   "presets": [
