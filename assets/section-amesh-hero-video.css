@@ -5,10 +5,9 @@
 .amesh-hero__scroll-area {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 138vh;
   background-color: #ffffff;
   isolation: isolate;
-  overflow: hidden;
 }
 
 .amesh-hero__video-wrapper {
@@ -16,7 +15,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -27,21 +26,28 @@
   display: block;
 }
 
+/* blend must sit on the sticky element itself: sticky creates a stacking context, so a blended child could only see its own empty group */
 .amesh-hero__sticky-wrap {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: sticky;
+  top: 38vh;
   width: 100%;
-  height: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
   pointer-events: none;
+  color: #67ffff;
+  mix-blend-mode: difference;
 }
 
-.amesh-hero__overlay-canvas {
-  display: block;
-  pointer-events: none;
+.amesh-hero__overlay-text {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 9.3vw;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: normal;
+  white-space: nowrap;
+  color: inherit;
 }
 
 .amesh-hero__tagline {
