@@ -3650,3 +3650,73 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+/* Typography matched to ameshstudios.com (measured: Rubik 400, 16px nav, 14px copy, 12px product cards) */
+body,
+.text-body,
+.rte,
+.rte p,
+.rte li,
+.footer,
+.price,
+.price-item {
+  letter-spacing: normal;
+  font-weight: 400;
+}
+
+.rte,
+.rte p,
+.rte li,
+.amesh-split__text,
+.amesh-split__text p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #1d1d1d;
+}
+
+.header__menu-item,
+.header__menu-item span,
+.header__active-menu-item {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 2rem;
+  text-transform: none;
+  color: #1d1d1d;
+}
+
+.header__submenu .header__menu-item,
+.header__submenu a {
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.footer a,
+.footer small,
+.amesh-footer-bar__links a,
+.amesh-footer-bar__copyright {
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.6rem;
+  color: #1d1d1d;
+}
+
+.amesh-footer-bar__links a {
+  text-transform: capitalize;
+}
+
+.card__heading,
+.card__heading a,
+.card-information,
+.card-information .price,
+.card-information .price-item {
+  font-family: var(--font-body-family);
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.5;
+  text-transform: none;
+  color: #1d1d1d;
+}

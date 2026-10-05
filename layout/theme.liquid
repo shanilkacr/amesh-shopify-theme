@@ -123,14 +123,14 @@
       {% endfor %}
 
       {{ scheme_classes | prepend: 'body' }} {
-        color: rgba(var(--color-foreground), 0.75);
+        color: #1d1d1d;
         background-color: rgb(var(--color-background));
       }
 
       :root {
         --font-body-family: 'Rubik', sans-serif;
         --font-body-style: normal;
-        --font-body-weight: 300;
+        --font-body-weight: 400;
         --font-body-weight-bold: 500;
 
         --font-heading-family: 'Oswald', sans-serif;
@@ -267,9 +267,9 @@
         flex-direction: column;
         min-height: 100%;
         margin: 0;
-        font-size: 1.5rem;
-        letter-spacing: 0.06rem;
-        line-height: calc(1 + 0.8 / var(--font-body-scale));
+        font-size: 1.6rem;
+        letter-spacing: normal;
+        line-height: 1.5;
         font-family: var(--font-body-family);
         font-style: var(--font-body-style);
         font-weight: var(--font-body-weight);
