@@ -54,6 +54,12 @@
   justify-content: flex-start;
 }
 
+.amesh-split__heading--logo img {
+  display: block;
+  width: 87px;
+  height: 27px;
+}
+
 .amesh-split--natural-media .amesh-split__heading {
   margin: 0 0 20px;
   font-size: 2.7rem;
@@ -88,6 +94,21 @@
 
 .amesh-split__text p + p {
   margin-top: 1em;
+}
+
+@media screen and (min-width: 1025px) {
+  .amesh-split--natural-media {
+    min-height: 100vh;
+  }
+
+  .amesh-split--natural-media .amesh-split__content {
+    justify-content: center;
+    padding: 0 138px;
+  }
+
+  .amesh-split--natural-media.amesh-split--image-right .amesh-split__content {
+    padding: 0 94px;
+  }
 }
 
 @media screen and (max-width: 749px) {

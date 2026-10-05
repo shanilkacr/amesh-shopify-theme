@@ -22,7 +22,11 @@
   {%- endif -%}
   <div class="amesh-split__content amesh-split__content--{{ section.settings.content_vertical_align }}">
     {%- if section.settings.heading != blank -%}
-      <h2 class="amesh-split__heading">{{ section.settings.heading }}</h2>
+      {%- if section.settings.image_height_mode == 'natural' and section.settings.heading == 'AMESH' -%}
+        <h2 class="amesh-split__heading amesh-split__heading--logo"><img src="{{ 'amesh-logo.webp' | asset_url }}" alt="AMESH" width="87" height="27" loading="lazy"></h2>
+      {%- else -%}
+        <h2 class="amesh-split__heading">{{ section.settings.heading }}</h2>
+      {%- endif -%}
     {%- endif -%}
     {%- if section.settings.text != blank -%}
       <div class="amesh-split__text rte">{{ section.settings.text }}</div>
