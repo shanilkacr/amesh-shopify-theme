@@ -1,0 +1,42 @@
+{{ 'section-amesh-image-strip.css' | asset_url | stylesheet_tag }}
+
+{%- assign files = section.settings.image_filenames | newline_to_br | strip_newlines | split: '<br />' -%}
+<div class="amesh-image-strip" style="--amesh-strip-duration: {{ section.settings.duration }}s;">
+  <div class="amesh-image-strip__track">
+    {%- for round in (1..2) -%}
+      {%- for file in files -%}
+        {%- assign f = file | strip -%}
+        {%- if f != blank -%}
+          <div class="amesh-image-strip__item"{% if round == 2 %} aria-hidden="true"{% endif %}>
+            <img src="{{ f | asset_url }}" alt="" loading="lazy" width="356" height="475">
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "AMESH image strip",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "image_filenames",
+      "label": "Image asset filenames",
+      "info": "One filename per line, from the theme assets"
+    },
+    {
+      "type": "range",
+      "id": "duration",
+      "label": "Scroll duration",
+      "min": 20,
+      "max": 200,
+      "step": 10,
+      "unit": "s",
+      "default": 90
+    }
+  ],
+  "presets": [{ "name": "AMESH image strip" }]
+}
+{% endschema %}

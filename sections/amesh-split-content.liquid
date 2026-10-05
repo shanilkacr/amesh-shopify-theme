@@ -1,7 +1,7 @@
 {{ 'section-amesh-split-content.css' | asset_url | stylesheet_tag }}
 
 <div
-  style="{% if section.settings.text_max_width > 0 %}--amesh-split-text-width: {{ section.settings.text_max_width }}px;{% endif %}{% if section.settings.desktop_row_height > 0 %} --amesh-split-row-height: {{ section.settings.desktop_row_height }}vh;{% endif %}{% if section.settings.text_padding_percent > 0 %} --amesh-split-pad: {{ section.settings.text_padding_percent }}%;{% endif %}"
+  style="{% if section.settings.text_max_width > 0 %}--amesh-split-text-width: {{ section.settings.text_max_width }}px;{% endif %}{% if section.settings.desktop_row_height > 0 %} --amesh-split-row-height: {{ section.settings.desktop_row_height }}vh;{% endif %}{% if section.settings.text_padding_percent > 0 %} --amesh-split-pad: {{ section.settings.text_padding_percent }}%;{% endif %}{% if section.settings.heading_size_px > 0 %} --amesh-split-heading-size: {{ section.settings.heading_size_px }}px;{% endif %}"
   class="amesh-split amesh-split--image-{{ section.settings.image_position }}{% if section.settings.text_padding_percent > 0 %} amesh-split--pad-pct{% endif %}{% if section.settings.image_height_mode == 'natural' %} amesh-split--natural-media{% endif %}"
 >
   {%- if section.settings.image_height_mode == 'natural' -%}
@@ -86,6 +86,12 @@
       "id": "text_padding_percent",
       "label": "Desktop text side padding (%)",
       "info": "Percent of the column width, so text width scales with the screen. Overrides the fixed text width"
+    },
+    {
+      "type": "number",
+      "id": "heading_size_px",
+      "label": "Heading size (px)",
+      "info": "Leave empty for the default 25px"
     },
     {
       "type": "range",

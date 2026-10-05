@@ -67,7 +67,7 @@
 .amesh-split--natural-media .amesh-split__heading {
   margin: 0 0 20px;
   font-family: var(--font-body-family);
-  font-size: 25px;
+  font-size: var(--amesh-split-heading-size, 25px);
   font-weight: 400;
   letter-spacing: normal;
   text-transform: none;
