@@ -12,18 +12,89 @@
     "gallery": {
       "type": "amesh-photo-banner",
       "blocks": {
-        "b1": { "type": "banner", "settings": { "image_filename": "amesh-page-archive-1.webp", "heading": "The lotus pond" } },
-        "b2": { "type": "banner", "settings": { "image_filename": "amesh-page-archive-2.webp", "heading": "Paddy field play" } },
-        "b3": { "type": "banner", "settings": { "image_filename": "amesh-page-archive-3.webp", "heading": "A sunrise pilgrimage" } },
-        "b4": { "type": "banner", "settings": { "image_filename": "amesh-page-archive-4.webp", "heading": "Under the mango tree" } },
-        "b5": { "type": "banner", "settings": { "image_filename": "amesh-page-archive-5.webp", "heading": "Beyond borders" } },
-        "b6": { "type": "banner", "settings": { "image_filename": "amesh-page-archive-6.webp", "heading": "Flower boys" } },
-        "b7": { "type": "banner", "settings": { "image_filename": "amesh-page-archive-7.jpeg", "heading": "Journey of hope" } },
-        "b8": { "type": "banner", "settings": { "image_filename": "amesh-page-archive-8.webp", "heading": "Bengaluru" } },
-        "b9": { "type": "banner", "settings": { "image_filename": "amesh-page-archive-9.webp", "heading": "Shanoli" } },
-        "b10": { "type": "banner", "settings": { "image_filename": "amesh-page-archive-10.webp", "heading": "Tamil Nadu" } }
+        "b1": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-page-archive-1.webp",
+            "heading": "The lotus pond"
+          }
+        },
+        "b2": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-page-archive-2.webp",
+            "heading": "Paddy field play"
+          }
+        },
+        "b3": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-page-archive-3.webp",
+            "heading": "A sunrise pilgrimage"
+          }
+        },
+        "b4": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-page-archive-4.webp",
+            "heading": "Under the mango tree"
+          }
+        },
+        "b5": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-page-archive-5.webp",
+            "heading": "Beyond borders"
+          }
+        },
+        "b6": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-page-archive-6.webp",
+            "heading": "Flower boys"
+          }
+        },
+        "b7": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-page-archive-7.jpeg",
+            "heading": "Journey of hope"
+          }
+        },
+        "b8": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-page-archive-8.webp",
+            "heading": "Bengaluru"
+          }
+        },
+        "b9": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-page-archive-9.webp",
+            "heading": "Shanoli"
+          }
+        },
+        "b10": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-page-archive-10.webp",
+            "heading": "Tamil Nadu"
+          }
+        }
       },
-      "block_order": ["b1", "b2", "b3", "b4", "b5", "b6", "b7", "b8", "b9", "b10"],
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8",
+        "b9",
+        "b10"
+      ],
       "settings": {
         "layout": "two-column",
         "height": "100vh",
@@ -32,33 +103,14 @@
       }
     },
     "discover-more": {
-      "type": "featured-collection",
+      "type": "amesh-discover-more",
       "settings": {
-        "title": "Discover more",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "one-of-a-kind",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "heading": "Discover more"
       }
     }
   },
-  "order": ["gallery", "discover-more"]
+  "order": [
+    "gallery",
+    "discover-more"
+  ]
 }
