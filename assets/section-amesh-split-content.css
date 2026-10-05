@@ -50,7 +50,7 @@
 .amesh-split--natural-media .amesh-split__content,
 .amesh-split--natural-media.amesh-split--image-right .amesh-split__content {
   max-width: none;
-  padding: 10px 61px 10px 60px;
+  padding: 10px 61px 25px 60px;
   justify-content: flex-start;
 }
 
