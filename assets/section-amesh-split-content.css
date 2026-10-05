@@ -61,11 +61,6 @@
 }
 
 .amesh-split__content {
-  max-width: 26rem;
-  padding: 0;
-}
-
-.amesh-split__content {
   max-width: 46rem;
   display: flex;
   flex-direction: column;
