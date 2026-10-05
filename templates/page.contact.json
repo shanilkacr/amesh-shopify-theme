@@ -1,25 +1,38 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "main": {
-      "type": "main-page",
+    "content": {
+      "type": "rich-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Contact us</h2><p><a href=\"mailto:info@amesh-studios.com\">info@amesh-studios.com</a></p><p><a href=\"https://www.instagram.com/amesh.wijesekera/?hl=en\">Instagram</a></p><p><a href=\"https://wa.me/447704917897\">+44 7704 917897</a></p><p>Our home studio is based in Colombo, Sri Lanka and open by appointment only.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
       "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "form": {
-      "type": "contact-form",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
+        "desktop_content_position": "left",
+        "content_alignment": "left",
         "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
-    "main",
-    "form"
+    "content"
   ]
 }

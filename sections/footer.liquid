@@ -28,24 +28,11 @@
     <div class="amesh-footer-bar__left">
       <small class="amesh-footer-bar__copyright">&copy; AMESH Studios {{ 'now' | date: '%Y' }}</small>
       <ul class="amesh-footer-bar__links list-unstyled">
-        <li><a href="{{ pages.contact.url | default: '/pages/contact' }}">Contact</a></li>
-        {%- liquid
-          assign returns_shipping_url = pages.contact.url | default: '/pages/contact'
-          for policy in shop.policies
-            if policy.url contains 'refund' or policy.url contains 'shipping'
-              assign returns_shipping_url = policy.url
-            endif
-          endfor
-        -%}
-        <li><a href="{{ returns_shipping_url }}">Returns & Shipping</a></li>
-        {%- for policy in shop.policies -%}
-          {%- if policy.url contains 'privacy' -%}
-            <li><a href="{{ policy.url }}">Privacy Policy</a></li>
-          {%- endif -%}
-        {%- endfor -%}
-        {%- if settings.social_instagram_link != blank -%}
-          <li><a href="{{ settings.social_instagram_link }}" target="_blank" rel="noopener">Instagram</a></li>
-        {%- endif -%}
+        <li><a href="/pages/contact">Contact</a></li>
+        <li><a href="/pages/returns-shipping">Returns &amp; Shipping</a></li>
+        <li><a href="/pages/privacy-policy">Privacy Policy</a></li>
+        <li><a href="{{ settings.social_instagram_link | default: 'https://www.instagram.com/amesh.wijesekera/' }}" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="mailto:info@amesh-studios.com">Email</a></li>
       </ul>
     </div>
 
