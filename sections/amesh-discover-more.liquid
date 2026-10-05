@@ -1,14 +1,17 @@
 {{ 'section-amesh-discover-more.css' | asset_url | stylesheet_tag }}
 
 <section class="amesh-discover-more">
-  <h2 class="amesh-discover-more__heading">{{ section.settings.heading }}</h2>
+  <h2 class="amesh-discover-more__heading">
+    <a class="amesh-discover-more__link" href="{{ section.settings.link | default: routes.all_products_collection_url }}">{{ section.settings.heading }}</a>
+  </h2>
 </section>
 
 {% schema %}
 {
   "name": "AMESH discover more",
   "settings": [
-    { "type": "text", "id": "heading", "label": "Heading", "default": "Discover more" }
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Discover more" },
+    { "type": "url", "id": "link", "label": "Link", "info": "Leave empty to link to the all-products page" }
   ],
   "presets": [{ "name": "AMESH discover more" }]
 }
