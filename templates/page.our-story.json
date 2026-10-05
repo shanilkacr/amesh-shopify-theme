@@ -81,7 +81,7 @@
       ],
       "settings": {
         "layout": "four-column",
-        "height": "80vh",
+        "height": "50vh",
         "overlay_heading": "",
         "image_fit": "cover",
         "padding_top": 0,
