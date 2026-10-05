@@ -101,14 +101,20 @@
     min-height: 100vh;
   }
 
-  .amesh-split--natural-media .amesh-split__content {
-    justify-content: center;
-    padding: 0 138px;
-  }
-
+  .amesh-split--natural-media .amesh-split__content,
   .amesh-split--natural-media.amesh-split--image-right .amesh-split__content {
     justify-content: center;
-    padding: 0 94px;
+    align-items: center;
+    padding: 0 40px;
+  }
+
+  .amesh-split--natural-media .amesh-split__content > * {
+    width: 100%;
+    max-width: 436px;
+  }
+
+  .amesh-split--natural-media.amesh-split--image-right .amesh-split__content > * {
+    max-width: 525px;
   }
 }
 
