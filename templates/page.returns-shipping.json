@@ -1,0 +1,45 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "content": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Returns & Shipping",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>All return shipping costs are the responsibility of the customer unless the item received is faulty or incorrect.</p><p>We take great care in ensuring the quality of our products before shipping. In the rare event of an incorrect, damaged, or faulty item for which we are responsible, please contact us immediately within 2 days of receiving your order. If a replacement is available, we will offer an exchange or a store credit voucher.</p><h2>Shipping</h2><p>All Orders Are Shipped Via DHL Express worldwide. We offer free domestic and International shipping. All orders are subject to availability.</p><p>Please note that international shipping times may vary depending on the destination and may be subject to unforeseen delays such as customs processing or transit disruptions.</p><h2>Domestic Shipping</h2><p>Free domestic shipping in Sri Lanka with our local courier partner.</p><h2>International Shipping</h2><ul><li>Free worldwide shipping.</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "content"
+  ]
+}
