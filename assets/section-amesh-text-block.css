@@ -1,0 +1,37 @@
+.amesh-text-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 35vh;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.amesh-text-block__inner {
+  width: 100%;
+  max-width: 923px;
+}
+
+.amesh-text-block__heading {
+  margin: 0 0 20px;
+  font-family: var(--font-body-family);
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.2;
+  text-transform: none;
+}
+
+.amesh-text-block__text,
+.amesh-text-block__text p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media screen and (max-width: 749px) {
+  .amesh-text-block {
+    min-height: 0;
+    padding: 3rem 2rem;
+  }
+}

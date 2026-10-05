@@ -62,8 +62,12 @@
 
 .amesh-split--natural-media .amesh-split__heading {
   margin: 0 0 20px;
-  font-size: 2.7rem;
-  line-height: 1;
+  font-family: var(--font-body-family);
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: normal;
+  text-transform: none;
+  line-height: 1.2;
 }
 
 .amesh-split__content {
@@ -98,7 +102,7 @@
 
 @media screen and (min-width: 1025px) {
   .amesh-split--natural-media {
-    min-height: 100vh;
+    min-height: var(--amesh-split-row-height, 100vh);
   }
 
   .amesh-split--natural-media .amesh-split__content,
@@ -110,11 +114,11 @@
 
   .amesh-split--natural-media .amesh-split__content > * {
     width: 100%;
-    max-width: 436px;
+    max-width: var(--amesh-split-text-width, 436px);
   }
 
   .amesh-split--natural-media.amesh-split--image-right .amesh-split__content > * {
-    max-width: 525px;
+    max-width: var(--amesh-split-text-width, 525px);
   }
 }
 

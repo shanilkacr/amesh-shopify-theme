@@ -1,6 +1,7 @@
 {{ 'section-amesh-split-content.css' | asset_url | stylesheet_tag }}
 
 <div
+  style="{% if section.settings.text_max_width > 0 %}--amesh-split-text-width: {{ section.settings.text_max_width }}px;{% endif %}{% if section.settings.desktop_row_height > 0 %} --amesh-split-row-height: {{ section.settings.desktop_row_height }}vh;{% endif %}"
   class="amesh-split amesh-split--image-{{ section.settings.image_position }}{% if section.settings.image_height_mode == 'natural' %} amesh-split--natural-media{% endif %}"
 >
   {%- if section.settings.image_height_mode == 'natural' -%}
@@ -73,6 +74,28 @@
       ],
       "info": "Natural height lets the image's own aspect ratio set the row height, matching the source site's tall portrait shots",
       "default": "fixed_ratio"
+    },
+    {
+      "type": "range",
+      "id": "text_max_width",
+      "label": "Desktop text width",
+      "info": "0 = automatic",
+      "min": 0,
+      "max": 700,
+      "step": 4,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "desktop_row_height",
+      "label": "Desktop row height",
+      "info": "0 = full screen. Only applies with natural image height",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "vh",
+      "default": 0
     },
     {
       "type": "select",

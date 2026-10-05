@@ -3720,3 +3720,16 @@ body,
   text-transform: none;
   color: #1d1d1d;
 }
+
+/* headings are Rubik 400 on the live site; only the homepage hero uses Oswald (set explicitly there) */
+h1, h2, h3, h4, h5, h6,
+.h0, .h1, .h2, .h3, .h4, .h5 {
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.featured-collection .title,
+.featured-collection h2 {
+  font-size: 24px;
+  line-height: 1.3;
+}

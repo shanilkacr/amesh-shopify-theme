@@ -23,9 +23,10 @@
 }
 
 .amesh-video-hero__heading {
-  font-family: var(--font-heading-family);
+  font-family: var(--font-body-family);
   font-weight: 400;
-  font-size: 5vw;
+  font-size: 48px;
+  letter-spacing: normal;
   text-transform: none;
 }
 
@@ -35,6 +36,6 @@
   }
 
   .amesh-video-hero__heading {
-    font-size: 3rem;
+    font-size: 32px;
   }
 }
