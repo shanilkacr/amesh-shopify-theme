@@ -1,4 +1,5 @@
 .amesh-image-strip {
+  container-type: inline-size;
   overflow: hidden;
   width: 100%;
   padding-bottom: 6px;
@@ -15,8 +16,8 @@
 }
 
 .amesh-image-strip__item {
-  flex: 0 0 25vw;
-  width: 25vw;
+  flex: 0 0 25cqw;
+  width: 25cqw;
   aspect-ratio: 3 / 4;
 }
 
@@ -41,7 +42,7 @@
 
 @media screen and (max-width: 749px) {
   .amesh-image-strip__item {
-    flex-basis: 50vw;
-    width: 50vw;
+    flex-basis: 50cqw;
+    width: 50cqw;
   }
 }
