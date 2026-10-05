@@ -1,10 +1,19 @@
 .amesh-full-video {
   width: 100%;
   line-height: 0;
+  height: 50vh;
+  overflow: hidden;
 }
 
 .amesh-full-video__video {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
+}
+
+@media screen and (min-width: 1025px) {
+  .amesh-full-video {
+    height: 100vh;
+  }
 }

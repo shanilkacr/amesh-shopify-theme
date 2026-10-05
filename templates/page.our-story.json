@@ -75,7 +75,7 @@
       "block_order": ["banner-0", "banner-1", "banner-2", "banner-3"],
       "settings": {
         "layout": "four-column",
-        "height": "80vh",
+        "height": "50vh",
         "image_fit": "cover"
       }
     }

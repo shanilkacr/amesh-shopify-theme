@@ -107,6 +107,7 @@
   }
 
   .amesh-split--natural-media.amesh-split--image-right .amesh-split__content {
+    justify-content: center;
     padding: 0 94px;
   }
 }
