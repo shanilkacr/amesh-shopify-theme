@@ -4181,3 +4181,11 @@ cart-drawer .drawer__close .icon {
     max-width: 25% !important;
   }
 }
+
+/* font smoothing matched to the live site (antialiased everywhere) so text renders at the same weight on macOS */
+html,
+body,
+body * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
