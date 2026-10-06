@@ -56,14 +56,16 @@
           "type": "banner",
           "settings": {
             "image_filename": "amesh-page-global-homecoming.jpeg",
-            "heading": "“Homecoming” Barefoot Gallery 2024"
+            "heading": "“Homecoming” Barefoot Gallery 2024",
+            "image_position_y": 0
           }
         },
         "b7": {
           "type": "banner",
           "settings": {
             "image_filename": "amesh-page-global-arka.jpeg",
-            "heading": "ARKA 2025"
+            "heading": "ARKA 2025",
+            "image_position_y": 100
           }
         }
       },
