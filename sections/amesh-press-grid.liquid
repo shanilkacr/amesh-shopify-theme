@@ -2,9 +2,10 @@
 
 <div class="amesh-press-grid" style="--amesh-press-overlay: {{ section.settings.overlay_opacity | divided_by: 100.0 }};">
   {%- for col in (1..5) -%}
+    {%- assign col_key = col | append: '' -%}
     <div class="amesh-press-grid__column">
       {%- for block in section.blocks -%}
-        {%- if block.settings.column == col -%}
+        {%- if block.settings.column == col_key -%}
           {%- assign link = block.settings.link -%}
           <{% if link != blank %}a href="{{ link }}"{% if link contains 'http' %} target="_blank" rel="noopener"{% endif %}{% else %}div{% endif %}
             class="amesh-press-grid__tile"
