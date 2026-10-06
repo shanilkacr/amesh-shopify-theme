@@ -3781,8 +3781,9 @@ h1, h2, h3, h4, h5, h6,
   .header__icons .header__search {
     position: absolute;
     left: calc(86.04% - 8px);
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
+    bottom: 0;
+    align-items: center;
   }
 
   .header__icons .header__icon-search-text {
