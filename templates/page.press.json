@@ -401,7 +401,8 @@
       "type": "amesh-discover-more",
       "settings": {
         "heading": "Discover more",
-        "min_height_px": 150
+        "min_height_px": 150,
+        "heading_line_height_px": 36
       }
     }
   },

@@ -1,6 +1,6 @@
 {{ 'section-amesh-discover-more.css' | asset_url | stylesheet_tag }}
 
-<section class="amesh-discover-more"{% if section.settings.min_height_px > 0 %} style="--amesh-discover-height: {{ section.settings.min_height_px }}px;"{% endif %}>
+<section class="amesh-discover-more"{% if section.settings.min_height_px > 0 or section.settings.heading_line_height_px > 0 %} style="{% if section.settings.min_height_px > 0 %}--amesh-discover-height: {{ section.settings.min_height_px }}px;{% endif %}{% if section.settings.heading_line_height_px > 0 %} --amesh-discover-lh: {{ section.settings.heading_line_height_px }}px;{% endif %}"{% endif %}>
   <h2 class="amesh-discover-more__heading">
     <a class="amesh-discover-more__link" href="{{ section.settings.link | default: routes.all_products_collection_url }}">{{ section.settings.heading }}</a>
   </h2>
@@ -12,6 +12,7 @@
   "settings": [
     { "type": "text", "id": "heading", "label": "Heading", "default": "Discover more" },
     { "type": "number", "id": "min_height_px", "label": "Desktop row height (px)", "info": "Leave empty for the default 134px" },
+    { "type": "number", "id": "heading_line_height_px", "label": "Heading line height (px)", "info": "Leave empty for the default 24px" },
     { "type": "url", "id": "link", "label": "Link", "info": "Leave empty to link to the all-products page" }
   ],
   "presets": [{ "name": "AMESH discover more" }]
