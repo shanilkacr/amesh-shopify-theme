@@ -28,6 +28,20 @@
           class="amesh-photo-banner__media"
           style="background-image: url({{ block.settings.image_filename | asset_url }}); background-size: {{ section.settings.image_fit }}; background-position: center {% if block.settings.image_position_y != blank %}{{ block.settings.image_position_y }}{% else %}{{ section.settings.image_position_y }}{% endif %}%;{% if section.settings.image_fit == 'contain' %} background-color: #f3f3f3;{% endif %}"
         ><span aria-hidden="true"></span></div>
+        {%- if block.settings.video_filename != blank -%}
+          <video
+            class="amesh-photo-banner__video"
+            style="object-position: center {% if block.settings.image_position_y != blank %}{{ block.settings.image_position_y }}{% else %}{{ section.settings.image_position_y }}{% endif %}%;"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-hidden="true"
+          >
+            <source src="{{ block.settings.video_filename | asset_url }}" type="video/webm">
+          </video>
+        {%- endif -%}
         {%- if block.settings.heading != blank -%}
           <span class="amesh-photo-banner__caption">{{ block.settings.heading }}</span>
         {%- endif -%}
@@ -125,6 +139,7 @@
           "label": "Image asset filename",
           "info": "Filename of an image already uploaded to the theme's assets folder, e.g. amesh-our-story.webp"
         },
+        { "type": "text", "id": "video_filename", "label": "Video asset filename", "info": "Optional. Plays as a looping muted background; the image is the fallback" },
         {
           "type": "text",
           "id": "heading",

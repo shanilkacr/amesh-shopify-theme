@@ -16,14 +16,16 @@
           "type": "banner",
           "settings": {
             "image_filename": "amesh-page-global-lvmh.webp",
-            "heading": "LVMH PRIX 2022"
+            "heading": "LVMH PRIX 2022",
+            "video_filename": "amesh-page-global-video-lvmh.webm"
           }
         },
         "b2": {
           "type": "banner",
           "settings": {
             "image_filename": "amesh-page-global-berlin.png",
-            "heading": "MBFW Berlin 2019"
+            "heading": "MBFW Berlin 2019",
+            "video_filename": "amesh-page-global-video-berlin.webm"
           }
         },
         "b3": {
@@ -38,14 +40,16 @@
           "type": "banner",
           "settings": {
             "image_filename": "amesh-page-global-circular-design.png",
-            "heading": "Circular Design Challenge India 2023"
+            "heading": "Circular Design Challenge India 2023",
+            "video_filename": "amesh-page-global-video-cdc.webm"
           }
         },
         "b5": {
           "type": "banner",
           "settings": {
             "image_filename": "amesh-page-global-tbilisi.jpg",
-            "heading": "MBFW Tbilsi 2020"
+            "heading": "MBFW Tbilsi 2020",
+            "video_filename": "amesh-page-global-video-tbilisi.webm"
           }
         },
         "b6": {
