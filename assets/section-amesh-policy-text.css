@@ -1,0 +1,103 @@
+.amesh-policy {
+  padding: 10px 0 40px;
+}
+
+.amesh-policy__inner {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.amesh-policy__title {
+  margin: 0 0 20px;
+  font-family: var(--font-body-family);
+  font-weight: 400;
+  letter-spacing: normal;
+  text-transform: none;
+  color: #1d1d1d;
+}
+
+.amesh-policy__body,
+.amesh-policy__body p,
+.amesh-policy__body li {
+  font-family: var(--font-body-family);
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.amesh-policy__body p {
+  margin: 0 0 14px;
+}
+
+.amesh-policy__body ul,
+.amesh-policy__body ol {
+  margin: 0 0 14px;
+  padding-left: 40px;
+}
+
+.amesh-policy__body h2,
+.amesh-policy__body h3,
+.amesh-policy__body h4 {
+  margin: 14px 0;
+  font-family: var(--font-body-family);
+  font-weight: 400;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.amesh-policy--returns .amesh-policy__title {
+  font-size: 25px;
+  line-height: 25px;
+}
+
+.amesh-policy--returns .amesh-policy__body,
+.amesh-policy--returns .amesh-policy__body p,
+.amesh-policy--returns .amesh-policy__body li {
+  font-size: 13px;
+  line-height: 19.5px;
+  color: #1d1d1d;
+}
+
+.amesh-policy--returns .amesh-policy__body h2,
+.amesh-policy--returns .amesh-policy__body h3,
+.amesh-policy--returns .amesh-policy__body h4 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #1d1d1d;
+}
+
+.amesh-policy--privacy .amesh-policy__title {
+  font-size: 31px;
+  line-height: 31px;
+}
+
+.amesh-policy--privacy .amesh-policy__body,
+.amesh-policy--privacy .amesh-policy__body p,
+.amesh-policy--privacy .amesh-policy__body li {
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.amesh-policy--privacy .amesh-policy__body strong,
+.amesh-policy--privacy .amesh-policy__body b,
+.amesh-policy--privacy .amesh-policy__body h2,
+.amesh-policy--privacy .amesh-policy__body h3,
+.amesh-policy--privacy .amesh-policy__body h4 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #333333;
+}
+
+.amesh-policy--privacy .amesh-policy__body a {
+  font-size: 14px;
+  color: #1d1d1d;
+}
+
+@media screen and (max-width: 749px) {
+  .amesh-policy {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

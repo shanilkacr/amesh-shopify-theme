@@ -1,0 +1,36 @@
+{{ 'section-amesh-contact-info.css' | asset_url | stylesheet_tag }}
+
+<section class="amesh-contact-info">
+  <div class="amesh-contact-info__inner">
+    <h2 class="amesh-contact-info__heading">{{ section.settings.heading }}</h2>
+    <ul class="amesh-contact-info__links" role="list">
+      {%- if section.settings.email != blank -%}
+        <li><a href="mailto:{{ section.settings.email }}">{{ section.settings.email }}</a></li>
+      {%- endif -%}
+      {%- if section.settings.instagram_url != blank -%}
+        <li><a href="{{ section.settings.instagram_url }}" target="_blank" rel="noopener">Instagram</a></li>
+      {%- endif -%}
+      {%- if section.settings.phone != blank -%}
+        <li><a href="{{ section.settings.phone_url }}" target="_blank" rel="noopener">{{ section.settings.phone }}</a></li>
+      {%- endif -%}
+    </ul>
+    {%- if section.settings.note != blank -%}
+      <p class="amesh-contact-info__note">{{ section.settings.note }}</p>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "AMESH contact info",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Contact us" },
+    { "type": "text", "id": "email", "label": "Email" },
+    { "type": "url", "id": "instagram_url", "label": "Instagram link" },
+    { "type": "text", "id": "phone", "label": "Phone (shown)" },
+    { "type": "url", "id": "phone_url", "label": "Phone link" },
+    { "type": "text", "id": "note", "label": "Note" }
+  ],
+  "presets": [{ "name": "AMESH contact info" }]
+}
+{% endschema %}

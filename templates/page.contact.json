@@ -9,30 +9,40 @@
  */
 {
   "sections": {
-    "content": {
-      "type": "rich-text",
+    "hero": {
+      "type": "amesh-photo-banner",
       "blocks": {
-        "text": {
-          "type": "text",
+        "b1": {
+          "type": "banner",
           "settings": {
-            "text": "<h2>Contact us</h2><p><a href=\"mailto:info@amesh-studios.com\">info@amesh-studios.com</a></p><p><a href=\"https://www.instagram.com/amesh.wijesekera/?hl=en\">Instagram</a></p><p><a href=\"https://wa.me/447704917897\">+44 7704 917897</a></p><p>Our home studio is based in Colombo, Sri Lanka and open by appointment only.</p>"
+            "image_filename": "amesh-page-contact-hero.jpg"
           }
         }
       },
       "block_order": [
-        "text"
+        "b1"
       ],
       "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "layout": "full-width",
+        "height": "60vh",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "info": {
+      "type": "amesh-contact-info",
+      "settings": {
+        "heading": "Contact us",
+        "email": "info@amesh-studios.com",
+        "instagram_url": "https://www.instagram.com/amesh.wijesekera/?hl=en",
+        "phone": "+44 7704 917897",
+        "phone_url": "https://wa.me/447704917897",
+        "note": "Our home studio is based in Colombo, Sri Lanka and open by appointment only."
       }
     }
   },
   "order": [
-    "content"
+    "hero",
+    "info"
   ]
 }

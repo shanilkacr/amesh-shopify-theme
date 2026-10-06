@@ -1,0 +1,59 @@
+.amesh-contact-info {
+  margin-top: 100px;
+  padding: 10px 0 20px;
+  text-align: center;
+}
+
+.amesh-contact-info__inner {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.amesh-contact-info__heading {
+  margin: 0;
+  font-family: var(--font-body-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: normal;
+  text-transform: none;
+  color: #000000;
+}
+
+.amesh-contact-info__links {
+  display: flex;
+  justify-content: center;
+  gap: 82px;
+  margin: 40px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.amesh-contact-info__links a,
+.amesh-contact-info__note {
+  font-family: var(--font-body-family);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: #1d1d1d;
+  text-decoration: none;
+}
+
+.amesh-contact-info__note {
+  margin: 30px 0 0;
+}
+
+@media screen and (max-width: 749px) {
+  .amesh-contact-info {
+    margin-top: 40px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .amesh-contact-info__links {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+}
