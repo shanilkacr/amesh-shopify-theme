@@ -3825,3 +3825,95 @@ h1, h2, h3, h4, h5, h6,
   font-weight: 400;
   line-height: 15px;
 }
+
+/* search matched to the live site: full-screen dark overlay (56% black), one centred underlined input 70% wide, Playfair Display 16px, no button or results list */
+.header__search details[open] > .search-modal {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  z-index: 9998;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.56) !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  animation: none;
+}
+
+.header__search .search-modal .modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: transparent !important;
+  width: 100%;
+  height: 100%;
+}
+
+.header__search .search-modal__content {
+  position: relative;
+  z-index: 1;
+  width: 70%;
+  max-width: none;
+  height: auto;
+  padding: 0;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 0 !important;
+  display: block;
+}
+
+.header__search .search-modal__form,
+.header__search .search-modal .search,
+.header__search .search-modal .field {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.header__search .search-modal .field::before,
+.header__search .search-modal .field::after,
+.header__search .search-modal .field:hover::before,
+.header__search .search-modal .field:focus-within::after {
+  display: none !important;
+  box-shadow: none !important;
+}
+
+.header__search .search-modal .field__input {
+  width: 100%;
+  height: 25px;
+  min-height: 0;
+  padding: 0;
+  background: transparent !important;
+  color: #ffffff !important;
+  border: 0 !important;
+  border-bottom: 1px solid #ffffff !important;
+  border-radius: 3px;
+  box-shadow: none !important;
+  outline: none;
+  text-align: center;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: normal;
+  caret-color: #ffffff;
+}
+
+.header__search .search-modal .field__input::placeholder {
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.header__search .search-modal .field__label,
+.header__search .search-modal .search__button,
+.header__search .search-modal .reset__button,
+.header__search .search-modal .search-modal__close-button,
+.header__search .search-modal .predictive-search {
+  display: none !important;
+}
+
+.header__search details[open] .header__icon-search-text {
+  visibility: visible;
+}
