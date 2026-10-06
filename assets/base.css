@@ -3776,6 +3776,10 @@ h1, h2, h3, h4, h5, h6,
   justify-content: center;
 }
 
+.header__icon--cart {
+  color: #000000;
+}
+
 .header__icon--cart .icon {
   width: 23px !important;
   height: 23px !important;
