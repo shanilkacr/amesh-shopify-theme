@@ -33,7 +33,7 @@
             class="amesh-photo-banner__media amesh-photo-banner__media--hover"
             style="background-image: url({{ block.settings.hover_image_filename | asset_url }}); background-size: {{ section.settings.image_fit }}; background-position: center {% if block.settings.image_position_y != blank %}{{ block.settings.image_position_y }}{% else %}{{ section.settings.image_position_y }}{% endif %}%;"
             aria-hidden="true"
-          ></div>
+          ><span aria-hidden="true"></span></div>
         {%- endif -%}
         {%- if block.settings.video_filename != blank -%}
           <video
