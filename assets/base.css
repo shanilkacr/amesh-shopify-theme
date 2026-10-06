@@ -3747,7 +3747,7 @@ h1, h2, h3, h4, h5, h6,
 
   .header__inline-menu {
     justify-self: center;
-    margin-right: 52px;
+    margin-right: 10px;
   }
 
   .header__menu-item {
