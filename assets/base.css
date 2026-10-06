@@ -3753,6 +3753,8 @@ h1, h2, h3, h4, h5, h6,
     top: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
+    width: max-content;
+    white-space: nowrap;
   }
 
   .header__menu-item {
@@ -3773,14 +3775,14 @@ h1, h2, h3, h4, h5, h6,
     height: auto;
   }
 
-  .header__search {
+  .header__icons .header__search {
     position: absolute;
     left: calc(86.04% - 8px);
     top: 50%;
     transform: translateY(-50%);
   }
 
-  .header__icon-search-text {
+  .header__icons .header__icon-search-text {
     font-family: var(--font-body-family);
     font-size: 16px;
     font-weight: 400;
