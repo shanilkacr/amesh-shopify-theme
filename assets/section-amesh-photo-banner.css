@@ -46,6 +46,19 @@
   transition: transform 0.4s ease;
 }
 
+.amesh-photo-banner__media--hover {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.amesh-photo-banner__item--has-hover:hover .amesh-photo-banner__media--hover {
+  opacity: 1;
+}
+
+.amesh-photo-banner__item--has-hover:hover .amesh-photo-banner__media {
+  transform: none;
+}
+
 .amesh-photo-banner__video {
   position: absolute;
   top: 0;

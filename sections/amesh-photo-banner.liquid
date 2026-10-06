@@ -21,13 +21,20 @@
     {%- for block in section.blocks -%}
       <a
         href="{{ block.settings.link }}"
-        class="amesh-photo-banner__item"
+        class="amesh-photo-banner__item{% if block.settings.hover_image_filename != blank %} amesh-photo-banner__item--has-hover{% endif %}"
         {{ block.shopify_attributes }}
       >
         <div
           class="amesh-photo-banner__media"
           style="background-image: url({{ block.settings.image_filename | asset_url }}); background-size: {{ section.settings.image_fit }}; background-position: center {% if block.settings.image_position_y != blank %}{{ block.settings.image_position_y }}{% else %}{{ section.settings.image_position_y }}{% endif %}%;{% if section.settings.image_fit == 'contain' %} background-color: #f3f3f3;{% endif %}"
         ><span aria-hidden="true"></span></div>
+        {%- if block.settings.hover_image_filename != blank -%}
+          <div
+            class="amesh-photo-banner__media amesh-photo-banner__media--hover"
+            style="background-image: url({{ block.settings.hover_image_filename | asset_url }}); background-size: {{ section.settings.image_fit }}; background-position: center {% if block.settings.image_position_y != blank %}{{ block.settings.image_position_y }}{% else %}{{ section.settings.image_position_y }}{% endif %}%;"
+            aria-hidden="true"
+          ></div>
+        {%- endif -%}
         {%- if block.settings.video_filename != blank -%}
           <video
             class="amesh-photo-banner__video"
@@ -139,6 +146,7 @@
           "label": "Image asset filename",
           "info": "Filename of an image already uploaded to the theme's assets folder, e.g. amesh-our-story.webp"
         },
+        { "type": "text", "id": "hover_image_filename", "label": "Hover image asset filename", "info": "Optional. Shown instead of the main image while hovering" },
         { "type": "text", "id": "video_filename", "label": "Video asset filename", "info": "Optional. Plays as a looping muted background; the image is the fallback" },
         {
           "type": "text",

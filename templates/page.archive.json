@@ -16,70 +16,80 @@
           "type": "banner",
           "settings": {
             "image_filename": "amesh-page-archive-1.webp",
-            "heading": "The lotus pond"
+            "heading": "The lotus pond",
+            "hover_image_filename": "amesh-page-archive-hover-1.webp"
           }
         },
         "b2": {
           "type": "banner",
           "settings": {
             "image_filename": "amesh-page-archive-2.webp",
-            "heading": "Paddy field play"
+            "heading": "Paddy field play",
+            "hover_image_filename": "amesh-page-archive-hover-2.webp"
           }
         },
         "b3": {
           "type": "banner",
           "settings": {
             "image_filename": "amesh-page-archive-3.webp",
-            "heading": "A sunrise pilgrimage"
+            "heading": "A sunrise pilgrimage",
+            "hover_image_filename": "amesh-page-archive-hover-3.webp"
           }
         },
         "b4": {
           "type": "banner",
           "settings": {
             "image_filename": "amesh-page-archive-4.webp",
-            "heading": "Under the mango tree"
+            "heading": "Under the mango tree",
+            "hover_image_filename": "amesh-page-archive-hover-4.webp"
           }
         },
         "b5": {
           "type": "banner",
           "settings": {
             "image_filename": "amesh-page-archive-5.webp",
-            "heading": "Beyond borders"
+            "heading": "Beyond borders",
+            "hover_image_filename": "amesh-page-archive-hover-5.webp"
           }
         },
         "b6": {
           "type": "banner",
           "settings": {
             "image_filename": "amesh-page-archive-6.webp",
-            "heading": "Flower boys"
+            "heading": "Flower boys",
+            "hover_image_filename": "amesh-page-archive-hover-6.webp"
           }
         },
         "b7": {
           "type": "banner",
           "settings": {
             "image_filename": "amesh-page-archive-7.jpeg",
-            "heading": "Journey of hope"
+            "heading": "Journey of hope",
+            "hover_image_filename": "amesh-page-archive-hover-7.webp"
           }
         },
         "b8": {
           "type": "banner",
           "settings": {
             "image_filename": "amesh-page-archive-8.webp",
-            "heading": "Bengaluru"
+            "heading": "Bengaluru",
+            "hover_image_filename": "amesh-page-archive-hover-8.jpeg"
           }
         },
         "b9": {
           "type": "banner",
           "settings": {
             "image_filename": "amesh-page-archive-9.webp",
-            "heading": "Shanoli"
+            "heading": "Shanoli",
+            "hover_image_filename": "amesh-page-archive-hover-9.jpeg"
           }
         },
         "b10": {
           "type": "banner",
           "settings": {
             "image_filename": "amesh-page-archive-10.webp",
-            "heading": "Tamil Nadu"
+            "heading": "Tamil Nadu",
+            "hover_image_filename": "amesh-page-archive-hover-10.webp"
           }
         }
       },
