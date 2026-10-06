@@ -3768,3 +3768,32 @@ h1, h2, h3, h4, h5, h6,
     height: auto;
   }
 }
+
+/* cart icon and badge matched to the live site: 23px icon, 16px #d9534f badge, 10px Rubik, offset 14px / -7px from the icon corner */
+.header__icon--cart .svg-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__icon--cart .icon {
+  width: 23px !important;
+  height: 23px !important;
+  fill: currentColor;
+  stroke: none;
+}
+
+.header__icon--cart .cart-count-bubble {
+  width: 16px;
+  height: 16px;
+  top: 3.5px;
+  left: 24.5px;
+  bottom: auto;
+  background-color: #d9534f;
+  color: #ffffff;
+  border-radius: 100%;
+  font-family: var(--font-body-family);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+}
