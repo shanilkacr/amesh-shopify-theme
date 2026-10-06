@@ -4162,17 +4162,22 @@ cart-drawer .drawer__close .icon {
 }
 
 @media screen and (min-width: 990px) {
-  .featured-collection slider-component.page-width {
-    padding-left: 0;
-    padding-right: 0;
+  .featured-collection slider-component.page-width,
+  .collection--full-width slider-component.page-width {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
-  .featured-collection .product-grid {
+  .featured-collection .product-grid,
+  .collection--full-width .product-grid {
     margin-top: 0;
+    margin-left: 0;
+    width: 100%;
   }
 
-  .featured-collection .product-grid .grid__item {
-    width: 25%;
-    max-width: 25%;
+  .featured-collection .product-grid .grid__item,
+  .collection--full-width .product-grid .grid__item {
+    width: 25% !important;
+    max-width: 25% !important;
   }
 }
