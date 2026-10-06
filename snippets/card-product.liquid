@@ -162,6 +162,12 @@
                 {{ card_product.title | escape }}
               </a>
             </h3>
+            {%- if card_product.available == false -%}
+              <div class="amesh-card__soldout">Sold Out</div>
+            {%- endif -%}
+            {%- if card_product.type != blank -%}
+              <span class="amesh-card__type">{{ card_product.type | downcase }}</span>
+            {%- endif -%}
             <div class="card-information">
               {%- if show_vendor -%}
                 <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>

@@ -4074,3 +4074,89 @@ cart-drawer .drawer__close .icon {
 .amesh-footer-bar__newsletter-button {
   line-height: 14px;
 }
+
+/* product cards matched to the live homepage: 4 columns with no gap, ~1:0.95 image, info in a 2 x 2 grid
+   (title | Sold Out) over (type | price), 20px 30px 21px padding; "Shop all" is a plain 24px link */
+.card__inner.ratio {
+  --ratio-percent: 105.67% !important;
+}
+
+.card__badge,
+.price__badge-sold-out,
+.price__badge-sale {
+  display: none !important;
+}
+
+.card__information {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    'title sold'
+    'type price';
+  column-gap: 16px;
+  row-gap: 10px;
+  align-items: start;
+  padding: 20px 30px 21px;
+  text-align: left;
+}
+
+.card__information .card__heading {
+  grid-area: title;
+  margin: 0;
+}
+
+.card__information .amesh-card__soldout {
+  grid-area: sold;
+  justify-self: end;
+  color: #e74c3c;
+  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.card__information .amesh-card__type {
+  grid-area: type;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #1d1d1d;
+}
+
+.card__information .card-information {
+  grid-area: price;
+  justify-self: end;
+  text-align: right;
+}
+
+.card-information .price,
+.card-information .price__container,
+.card-information .price-item {
+  margin: 0;
+  text-align: right;
+}
+
+.featured-collection .center .button,
+.featured-collection .center .button:hover {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  color: #1d1d1d;
+  font-family: var(--font-body-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: normal;
+  padding: 0;
+  min-height: 0;
+  min-width: 0;
+}
+
+.featured-collection .center .button::before,
+.featured-collection .center .button::after {
+  display: none !important;
+}
+
+.featured-collection .center {
+  margin-top: 36px;
+}
