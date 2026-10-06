@@ -127,17 +127,13 @@
 
   {%- if request.page_type == 'page' and template.suffix == 'our-story' or template.suffix == 'craft' or template.suffix == 'circularity' or template.suffix == 'amesh-global' or template.suffix == 'contact' -%}
   @media screen and (min-width: 1025px) {
-    .section-header:not(.shopify-section-header-sticky) {
-      position: absolute;
+    .section-header {
+      position: fixed !important;
       top: 0;
       left: 0;
       width: 100%;
       z-index: 10;
-    }
-
-    .section-header:not(.shopify-section-header-sticky) .header-wrapper {
-      background: transparent;
-      border-bottom: none;
+      margin-bottom: 0 !important;
     }
   }
   {%- endif -%}
