@@ -19,7 +19,9 @@
   {%- endif -%}
   <div class="amesh-photo-banner amesh-photo-banner--{{ section.settings.layout }}">
     {%- for block in section.blocks -%}
+      {%- assign overlay_pct = block.settings.overlay_opacity | default: section.settings.overlay_opacity | default: 0 -%}
       <a
+        style="--amesh-overlay: {{ overlay_pct | divided_by: 100.0 }};"
         href="{{ block.settings.link }}"
         class="amesh-photo-banner__item{% if block.settings.hover_image_filename != blank %} amesh-photo-banner__item--has-hover{% endif %}"
         {{ block.shopify_attributes }}
@@ -104,6 +106,17 @@
     },
     {
       "type": "range",
+      "id": "overlay_opacity",
+      "label": "Dark overlay",
+      "info": "Default for every tile in this section; fades out on hover",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "%",
+      "default": 0
+    },
+    {
+      "type": "range",
       "id": "image_position_y",
       "label": "Image vertical position",
       "info": "Which part of a cropped photo stays in view: 0% = top, 100% = bottom",
@@ -146,6 +159,7 @@
           "label": "Image asset filename",
           "info": "Filename of an image already uploaded to the theme's assets folder, e.g. amesh-our-story.webp"
         },
+        { "type": "number", "id": "overlay_opacity", "label": "Dark overlay (%)", "info": "Black overlay over the photo that fades out on hover. Leave empty to use the section setting" },
         { "type": "text", "id": "hover_image_filename", "label": "Hover image asset filename", "info": "Optional. Shown instead of the main image while hovering" },
         { "type": "text", "id": "video_filename", "label": "Video asset filename", "info": "Optional. Plays as a looping muted background; the image is the fallback" },
         {
