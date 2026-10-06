@@ -25,7 +25,7 @@
         <div class="menu-drawer__navigation-container">
           <nav class="menu-drawer__navigation">
             <ul class="menu-drawer__menu has-submenu list-menu" role="list">
-{%- assign amesh_menu = 'Shop|/collections/all|Shop all=/collections/all;One of a kind=/collections/one-of-a-kind;Knitwear=/collections/knitwear;Shirts=/collections/shirts;Jackets=/collections/jackets;Shorts=/collections/shorts;Trousers=/collections/trousers;Accessories=/collections/accessories,Our Story|/pages/our-story,Craft|/pages/craft,Circularity|/pages/circularity,AMESH Global|/pages/amesh-global,Archive|/pages/archive,Press|/pages/press' | split: ',' -%}
+{%- assign amesh_menu = 'Shop|/collections/all,Our Story|/pages/our-story,Craft|/pages/craft,Circularity|/pages/circularity,AMESH Global|/pages/amesh-global,Archive|/pages/archive,Press|/pages/press' | split: ',' -%}
               {%- for item in amesh_menu -%}
                 {%- assign parts = item | split: '|' -%}
                 {%- assign item_title = parts[0] -%}
