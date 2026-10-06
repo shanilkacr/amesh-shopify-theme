@@ -400,7 +400,8 @@
     "discover-more": {
       "type": "amesh-discover-more",
       "settings": {
-        "heading": "Discover more"
+        "heading": "Discover more",
+        "min_height_px": 150
       }
     }
   },
