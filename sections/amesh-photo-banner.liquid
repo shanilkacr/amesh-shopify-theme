@@ -26,7 +26,7 @@
       >
         <div
           class="amesh-photo-banner__media"
-          style="background-image: url({{ block.settings.image_filename | asset_url }}); background-size: {{ section.settings.image_fit }}; background-position: center {{ section.settings.image_position_y }}%;{% if section.settings.image_fit == 'contain' %} background-color: #f3f3f3;{% endif %}"
+          style="background-image: url({{ block.settings.image_filename | asset_url }}); background-size: {{ section.settings.image_fit }}; background-position: center {% if block.settings.image_position_y != blank %}{{ block.settings.image_position_y }}{% else %}{{ section.settings.image_position_y }}{% endif %}%;{% if section.settings.image_fit == 'contain' %} background-color: #f3f3f3;{% endif %}"
         ><span aria-hidden="true"></span></div>
         {%- if block.settings.heading != blank -%}
           <span class="amesh-photo-banner__caption">{{ block.settings.heading }}</span>
@@ -118,6 +118,7 @@
       "type": "banner",
       "name": "Banner",
       "settings": [
+        { "type": "number", "id": "image_position_y", "label": "Image vertical position (%)", "info": "Leave empty to use the section setting" },
         {
           "type": "text",
           "id": "image_filename",

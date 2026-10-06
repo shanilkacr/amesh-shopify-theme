@@ -30,7 +30,8 @@
           "type": "banner",
           "settings": {
             "image_filename": "amesh-page-global-ifs-london.png",
-            "heading": "IFS London 2019"
+            "heading": "IFS London 2019",
+            "image_position_y": 0
           }
         },
         "b4": {
