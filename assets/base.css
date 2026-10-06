@@ -4096,7 +4096,7 @@ cart-drawer .drawer__close .icon {
   column-gap: 16px;
   row-gap: 10px;
   align-items: start;
-  padding: 20px 30px 21px;
+  padding: 20px 30px 21px !important;
   text-align: left;
 }
 
@@ -4159,4 +4159,20 @@ cart-drawer .drawer__close .icon {
 
 .featured-collection .center {
   margin-top: 36px;
+}
+
+@media screen and (min-width: 990px) {
+  .featured-collection slider-component.page-width {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .featured-collection .product-grid {
+    margin-top: 0;
+  }
+
+  .featured-collection .product-grid .grid__item {
+    width: 25%;
+    max-width: 25%;
+  }
 }
