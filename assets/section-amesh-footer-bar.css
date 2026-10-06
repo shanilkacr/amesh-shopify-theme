@@ -82,11 +82,85 @@
   font-size: 1.2rem;
 }
 
+/* Desktop footer placed from the live site's measurements (fitted at 1440 and 1920 wide):
+   bar height 2.92cqw + 30px, copyright left 3.96cqw + 10.6px, links left 18.75cqw + 10px,
+   form left 53.75cqw + 9px and 42.3cqw - 20px wide, controls 40px tall */
 @media screen and (min-width: 750px) {
+  .footer {
+    container-type: inline-size;
+    padding: 0 !important;
+  }
+
   .amesh-footer-bar.page-width {
+    position: relative;
+    display: block;
     max-width: none;
-    padding: 0 3.5rem;
+    padding: 0;
+    height: calc(2.92cqw + 30px);
+  }
+
+  .amesh-footer-bar__left {
+    display: contents;
+  }
+
+  .amesh-footer-bar__copyright {
+    position: absolute;
+    left: calc(3.96cqw + 10.6px);
+    top: calc(1.67cqw + 5.2px);
+    font-size: 14px;
+    line-height: 13px;
+  }
+
+  .amesh-footer-bar__links {
+    position: absolute;
+    left: calc(18.75cqw + 10px);
+    top: calc(1.67cqw + 5.2px);
+    display: flex;
     flex-wrap: nowrap;
+    column-gap: 0;
+    row-gap: 0;
+  }
+
+  .amesh-footer-bar__links a {
+    display: block;
+    padding: 0 17.6px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .amesh-footer-bar__right {
+    position: absolute;
+    left: calc(53.75cqw + 9px);
+    top: calc(1.67cqw - 4.8px);
+    width: calc(42.3cqw - 20px);
+  }
+
+  .amesh-footer-bar__newsletter-field {
+    height: 40px;
+    column-gap: 12px;
+  }
+
+  .amesh-footer-bar__newsletter-input {
+    flex: 1 1 auto;
+    min-width: 0;
+    height: 40px;
+    padding: 8px 16px;
+    border: 1px solid #1d1d1d;
+    background: #ffffff;
+    color: #1d1d1d;
+    font-size: 14px;
+    line-height: 19.6px;
+  }
+
+  .amesh-footer-bar__newsletter-button {
+    flex: 0 0 calc(17.1cqw - 18.7px);
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #1d1d1d;
+    background: #1d1d1d;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 14px;
   }
 }
 
