@@ -48,6 +48,9 @@
   letter-spacing: normal;
   white-space: nowrap;
   color: inherit;
+  flex: none;
+  width: 29.75%;
+  text-align: center;
 }
 
 .amesh-hero__tagline {
