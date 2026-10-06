@@ -4034,3 +4034,35 @@ cart-drawer .drawer__close .icon {
 .amesh-footer-bar__newsletter-input {
   font-family: var(--font-body-family);
 }
+
+/* Shop dropdown matched to the live site: no arrow, 200px white panel, 40px rows, 14px Rubik */
+.header__inline-menu summary .icon-caret {
+  display: none !important;
+}
+
+.header__inline-menu .header__submenu {
+  width: 200px;
+  min-width: 200px;
+  margin: 12px 0 0;
+  padding: 0;
+  background: #ffffff !important;
+  border: 0 !important;
+  border-radius: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12) !important;
+}
+
+.header__inline-menu .header__submenu .header__menu-item {
+  display: block;
+  padding: 0 21px;
+  font-family: var(--font-body-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: normal;
+  color: #1d1d1d;
+}
+
+.header__inline-menu .header__submenu .header__menu-item:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}

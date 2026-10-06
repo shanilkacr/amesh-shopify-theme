@@ -5,7 +5,7 @@
   {% render 'header-dropdown-menu' %}
 {% endcomment %}
 
-{%- assign amesh_menu = 'Shop|/collections/all,Our Story|/pages/our-story,Craft|/pages/craft,Circularity|/pages/circularity,AMESH Global|/pages/amesh-global,Archive|/pages/archive,Press|/pages/press' | split: ',' -%}
+{%- assign amesh_menu = 'Shop|/collections/all|Shop all=/collections/all;One of a kind=/collections/one-of-a-kind;Knitwear=/collections/knitwear;Shirts=/collections/shirts;Jackets=/collections/jackets;Shorts=/collections/shorts;Trousers=/collections/trousers;Accessories=/collections/accessories,Our Story|/pages/our-story,Craft|/pages/craft,Circularity|/pages/circularity,AMESH Global|/pages/amesh-global,Archive|/pages/archive,Press|/pages/press' | split: ',' -%}
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for item in amesh_menu -%}
