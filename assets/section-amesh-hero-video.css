@@ -29,7 +29,7 @@
 /* blend must sit on the sticky element itself: sticky creates a stacking context, so a blended child could only see its own empty group */
 .amesh-hero__sticky-wrap {
   position: sticky;
-  top: 38vh;
+  top: 343px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -42,8 +42,8 @@
   margin: 0;
   font-family: 'Oswald', sans-serif;
   font-weight: 600;
-  font-size: 9.3vw;
-  line-height: 1;
+  font-size: 134px;
+  line-height: 134px;
   text-transform: uppercase;
   letter-spacing: normal;
   white-space: nowrap;
@@ -59,5 +59,12 @@
 @media screen and (min-width: 750px) {
   .amesh-hero__tagline {
     padding: 2rem 2rem 5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .amesh-hero__overlay-text {
+    font-size: 77px;
+    line-height: 77px;
   }
 }
