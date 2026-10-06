@@ -1,0 +1,53 @@
+.amesh-press-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  column-gap: 10px;
+  align-items: start;
+  width: 100%;
+}
+
+.amesh-press-grid__column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+
+.amesh-press-grid__tile {
+  position: relative;
+  display: block;
+  height: var(--amesh-press-height, 270px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.amesh-press-grid__veil {
+  position: absolute;
+  inset: 0;
+  background: #000000;
+  opacity: var(--amesh-press-overlay, 0.2);
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.amesh-press-grid__tile:hover .amesh-press-grid__veil {
+  opacity: 0;
+}
+
+@media screen and (max-width: 749px) {
+  .amesh-press-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+
+  .amesh-press-grid__column {
+    display: contents;
+  }
+
+  .amesh-press-grid__tile {
+    height: calc(var(--amesh-press-height, 270px) * 0.6);
+  }
+}

@@ -10,73 +10,391 @@
 {
   "sections": {
     "gallery": {
-      "type": "amesh-photo-banner",
+      "type": "amesh-press-grid",
       "blocks": {
-        "b1": {
-          "type": "banner",
+        "t01": {
+          "type": "tile",
           "settings": {
-            "image_filename": "amesh-page-press-1.png"
+            "image_filename": "amesh-press-01.jpg",
+            "column": "1",
+            "tile_height": "450",
+            "link": "https://www.vogue.in/fashion/content/sri-lankan-designer-amesh-wijesekera-pays-tribute-to-his-island-country-through-the-power-of-emotional-design"
           }
         },
-        "b2": {
-          "type": "banner",
+        "t02": {
+          "type": "tile",
           "settings": {
-            "image_filename": "amesh-page-press-2.png"
+            "image_filename": "amesh-press-02.jpg",
+            "column": "2",
+            "tile_height": "270",
+            "link": "https://metalmagazine.eu/en/post/amesh"
           }
         },
-        "b3": {
-          "type": "banner",
+        "t03": {
+          "type": "tile",
           "settings": {
-            "image_filename": "amesh-page-press-3.png"
+            "image_filename": "amesh-press-03.jpg",
+            "column": "3",
+            "tile_height": "540",
+            "link": "https://www.sleek-mag.com/article/amesh-wijesekera/"
           }
         },
-        "b4": {
-          "type": "banner",
+        "t04": {
+          "type": "tile",
           "settings": {
-            "image_filename": "amesh-page-press-4.png"
+            "image_filename": "amesh-press-04.jpg",
+            "column": "4",
+            "tile_height": "270",
+            "link": "https://www.vogue.com/article/amesh-wijesekera-reference-festival"
           }
         },
-        "b5": {
-          "type": "banner",
+        "t05": {
+          "type": "tile",
           "settings": {
-            "image_filename": "amesh-page-press-5.webp"
+            "image_filename": "amesh-press-05.jpg",
+            "column": "5",
+            "tile_height": "450",
+            "link": "https://www.kaltblut-magazine.com/a-sunrise-pilgrimage-berlin-x-colombo/"
           }
         },
-        "b6": {
-          "type": "banner",
+        "t06": {
+          "type": "tile",
           "settings": {
-            "image_filename": "amesh-page-press-6.png"
+            "image_filename": "amesh-press-06.jpg",
+            "column": "1",
+            "tile_height": "270",
+            "link": "https://www.vogue.in/content/amesh-wijesekeras-new-textile-art-exhibition-in-his-hometown-colombo-explores-his-childhood"
           }
         },
-        "b7": {
-          "type": "banner",
+        "t07": {
+          "type": "tile",
           "settings": {
-            "image_filename": "amesh-page-press-7.webp"
+            "image_filename": "amesh-press-07.jpg",
+            "column": "2",
+            "tile_height": "450",
+            "link": "https://edition.cnn.com/style/article/amesh-wijesekera-style-sept/index.html"
           }
         },
-        "b8": {
-          "type": "banner",
+        "t08": {
+          "type": "tile",
           "settings": {
-            "image_filename": "amesh-page-press-8.png"
+            "image_filename": "amesh-press-08.jpg",
+            "column": "3",
+            "tile_height": "270",
+            "link": "https://www.architecturaldigest.in/story/6-sustainable-fashion-labels/"
+          }
+        },
+        "t09": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-09.jpg",
+            "column": "4",
+            "tile_height": "540"
+          }
+        },
+        "t10": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-10.jpg",
+            "column": "5",
+            "tile_height": "270",
+            "link": "https://wwd.com/fashion-news/fashion-scoops/amesh-wijesekera-wins-circular-design-challenges-uk-prize-1235783690/"
+          }
+        },
+        "t11": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-11.jpg",
+            "column": "1",
+            "tile_height": "450",
+            "link": "https://www.businessoffashion.com/news/entrepreneurship/amesh-named-as-inaugural-winner-of-reference-incubator-programme/"
+          }
+        },
+        "t12": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-12.jpg",
+            "column": "2",
+            "tile_height": "270",
+            "link": "https://www.wonderlandmagazine.com/2023/09/29/amesh-wijesekera-cdc-award/"
+          }
+        },
+        "t13": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-13.jpg",
+            "column": "3",
+            "tile_height": "450",
+            "link": "https://www.elledecor.com/it/best-of/a38610068/amesh-wijesekera-fashion-interview/"
+          }
+        },
+        "t14": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-14.jpg",
+            "column": "4",
+            "tile_height": "270",
+            "link": "https://www.grazia.co.in/fashion/sweater-weather-knitwear-marvels-11832.html"
+          }
+        },
+        "t15": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-15.jpg",
+            "column": "5",
+            "tile_height": "540",
+            "link": "https://www.lvmhprize.com/designer/amesh/"
+          }
+        },
+        "t16": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-16.jpg",
+            "column": "1",
+            "tile_height": "270"
+          }
+        },
+        "t17": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-17.jpg",
+            "column": "2",
+            "tile_height": "450"
+          }
+        },
+        "t18": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-18.jpg",
+            "column": "3",
+            "tile_height": "270"
+          }
+        },
+        "t19": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-19.jpg",
+            "column": "4",
+            "tile_height": "450"
+          }
+        },
+        "t20": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-20.jpg",
+            "column": "5",
+            "tile_height": "270"
+          }
+        },
+        "t21": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-21.jpg",
+            "column": "1",
+            "tile_height": "540"
+          }
+        },
+        "t22": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-22.jpg",
+            "column": "2",
+            "tile_height": "270"
+          }
+        },
+        "t23": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-23.jpg",
+            "column": "3",
+            "tile_height": "450"
+          }
+        },
+        "t24": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-24.jpg",
+            "column": "4",
+            "tile_height": "270"
+          }
+        },
+        "t25": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-25.jpg",
+            "column": "5",
+            "tile_height": "450"
+          }
+        },
+        "t26": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-26.jpg",
+            "column": "1",
+            "tile_height": "270"
+          }
+        },
+        "t27": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-27.jpg",
+            "column": "2",
+            "tile_height": "540"
+          }
+        },
+        "t28": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-28.jpg",
+            "column": "3",
+            "tile_height": "270"
+          }
+        },
+        "t29": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-29.jpg",
+            "column": "4",
+            "tile_height": "450"
+          }
+        },
+        "t30": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-30.jpg",
+            "column": "5",
+            "tile_height": "270",
+            "link": "https://homegrown.co.in/homegrown-creators/fashion/amesh-wijesekeras-beyond-borders-collection-celebrates-south-asian-heritage-belonging"
+          }
+        },
+        "t31": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-31.jpg",
+            "column": "1",
+            "tile_height": "450",
+            "link": "https://www.femalemag.com.sg/gallery/fashion/amesh-wijesekera-fashion-designer-label-sri-lanka/"
+          }
+        },
+        "t32": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-32.jpg",
+            "column": "2",
+            "tile_height": "270",
+            "link": "https://www.vogue.it/vogue-talents/article/mercedes-benz-berlin-fashion-week-fw-20192020"
+          }
+        },
+        "t33": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-33.jpg",
+            "column": "3",
+            "tile_height": "540"
+          }
+        },
+        "t34": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-34.jpg",
+            "column": "4",
+            "tile_height": "270"
+          }
+        },
+        "t35": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-35.jpg",
+            "column": "5",
+            "tile_height": "450",
+            "link": "https://www.somersethouse.org.uk/whats-on/international-fashion-showcase-2019"
+          }
+        },
+        "t36": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-36.jpg",
+            "column": "1",
+            "tile_height": "270"
+          }
+        },
+        "t37": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-37.jpg",
+            "column": "2",
+            "tile_height": "450"
+          }
+        },
+        "t38": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-38.jpg",
+            "column": "3",
+            "tile_height": "270"
+          }
+        },
+        "t39": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-39.jpg",
+            "column": "4",
+            "tile_height": "540"
+          }
+        },
+        "t40": {
+          "type": "tile",
+          "settings": {
+            "image_filename": "amesh-press-40.jpg",
+            "column": "5",
+            "tile_height": "270"
           }
         }
       },
       "block_order": [
-        "b1",
-        "b2",
-        "b3",
-        "b4",
-        "b5",
-        "b6",
-        "b7",
-        "b8"
+        "t01",
+        "t02",
+        "t03",
+        "t04",
+        "t05",
+        "t06",
+        "t07",
+        "t08",
+        "t09",
+        "t10",
+        "t11",
+        "t12",
+        "t13",
+        "t14",
+        "t15",
+        "t16",
+        "t17",
+        "t18",
+        "t19",
+        "t20",
+        "t21",
+        "t22",
+        "t23",
+        "t24",
+        "t25",
+        "t26",
+        "t27",
+        "t28",
+        "t29",
+        "t30",
+        "t31",
+        "t32",
+        "t33",
+        "t34",
+        "t35",
+        "t36",
+        "t37",
+        "t38",
+        "t39",
+        "t40"
       ],
       "settings": {
-        "layout": "four-column",
-        "height": "40vh",
-        "image_fit": "contain",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "overlay_opacity": 20
       }
     },
     "discover-more": {
