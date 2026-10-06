@@ -3927,6 +3927,8 @@ cart-drawer .cart-drawer__overlay {
 }
 
 cart-drawer .drawer__inner {
+  position: relative;
+  align-content: start;
   width: 350px !important;
   max-width: 100% !important;
   height: 100%;
@@ -3945,6 +3947,7 @@ cart-drawer .drawer__inner-empty {
 cart-drawer .cart-drawer__warnings {
   padding: 0;
   text-align: left;
+  justify-content: flex-start;
 }
 
 cart-drawer .cart-drawer__empty-content {
@@ -3974,8 +3977,8 @@ cart-drawer .drawer__close {
   position: absolute;
   top: 20px;
   right: 30px;
-  width: 18px;
-  height: 18px;
+  width: 18px !important;
+  height: 18px !important;
   min-width: 0;
   margin: 0;
   padding: 0;
