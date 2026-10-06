@@ -3739,8 +3739,9 @@ h1, h2, h3, h4, h5, h6,
   .header.page-width {
     max-width: none;
     min-height: 90px;
-    padding-left: 131px;
-    padding-right: 71px;
+    padding-left: 131px !important;
+    padding-right: 71px !important;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
   }
 
