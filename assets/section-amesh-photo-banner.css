@@ -113,6 +113,7 @@
   color: #ffffff;
   font-family: var(--font-body-family);
   font-size: 48px;
+  line-height: 48px;
   font-weight: 400;
   letter-spacing: normal;
   text-align: center;

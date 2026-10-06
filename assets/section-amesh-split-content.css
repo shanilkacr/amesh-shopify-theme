@@ -71,7 +71,8 @@
   font-weight: 400;
   letter-spacing: normal;
   text-transform: none;
-  line-height: 1.2;
+  line-height: var(--amesh-split-heading-lh, 25px);
+  color: #1d1d1d;
 }
 
 .amesh-split__content {

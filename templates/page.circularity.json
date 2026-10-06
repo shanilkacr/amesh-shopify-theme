@@ -42,7 +42,8 @@
         "text": "<p>At the heart of our mission is the belief that social and environmental responsibility are inseparable. We create innovative, sustainable design solutions that prioritize the well-being of people, the planet, and our ecosystems. Guided by the principles of reclaiming, reusing and repurposing we craft beautiful, functional products that make a positive impact.</p><p>Sri Lanka’s textile industry produces over 30.000 tonnes of waste annually with over 300 factories operating in the garment industry. AMESH secondary textiles are sourced as pre-consumer textiles and waste materials collected locally. Every piece we create is made from upcycled, deadstock, and end-roll materials, along with trims salvaged from Sri Lanka’s textile markets—materials once discarded as waste and destined for landfills. Through thoughtful reconditioning, reprinting, and embellishment techniques, we breathe new life into these resources, transforming them into unique, one-of-a-kind products.</p>",
         "text_padding_percent": 16,
         "heading_size_px": 24,
-        "desktop_row_height": 80
+        "desktop_row_height": 80,
+        "heading_line_height_px": 36
       }
     },
     "responsible": {
@@ -56,7 +57,8 @@
         "text": "<p>AMESH is on a continuous journey of exploring innovative approaches to sourcing, making, and crafting. With “resourcefulness” at its core, the brand reimagines traditional artisan techniques through refined detailing, vibrant colour, and a celebration of homemaking. Studio leftovers are re-woven into new textures and patterns, turning waste into beauty.</p><p>In partnership with local SMEs, AMESH ensures fair compensation above industry standards, fostering financial stability for its makers. A flexible, work-from-home model supports craftswomen—particularly mothers—enabling them to balance work and family life.</p><p>The brand rejects mass production in favour of limited-edition capsule collections, offering trans-seasonal pieces designed for a shared wardrobe concept.</p><p>AMESH exists to educate, empower, and inspire a new Sri Lankan identity.</p>",
         "text_padding_percent": 13,
         "heading_size_px": 24,
-        "desktop_row_height": 70
+        "desktop_row_height": 70,
+        "heading_line_height_px": 36
       }
     },
     "gallery": {

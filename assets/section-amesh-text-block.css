@@ -18,8 +18,9 @@
   font-size: 25px;
   font-weight: 400;
   letter-spacing: normal;
-  line-height: 1.2;
+  line-height: 25px;
   text-transform: none;
+  color: #1d1d1d;
 }
 
 .amesh-text-block__text,
