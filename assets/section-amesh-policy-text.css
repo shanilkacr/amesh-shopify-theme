@@ -38,7 +38,7 @@
 .amesh-policy__body h2,
 .amesh-policy__body h3,
 .amesh-policy__body h4 {
-  margin: 14px 0;
+  margin: 0;
   font-family: var(--font-body-family);
   font-weight: 400;
   letter-spacing: normal;
@@ -55,6 +55,12 @@
 .amesh-policy--returns .amesh-policy__body li {
   font-size: 13px;
   line-height: 19.5px;
+  color: #1d1d1d;
+}
+
+.amesh-policy--returns .amesh-policy__body a {
+  font-size: 14px;
+  line-height: 21px;
   color: #1d1d1d;
 }
 
