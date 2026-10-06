@@ -3997,3 +3997,40 @@ cart-drawer .drawer__close .icon {
   width: 14px;
   height: 14px;
 }
+
+/* product cards, Sold Out label and footer newsletter matched to the live site (measured at 1440 wide) */
+@media screen and (min-width: 990px) {
+  .card__heading,
+  .card__heading a,
+  .card-information {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .card-information .price,
+  .card-information .price-item {
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+  }
+}
+
+.badge,
+.card__badge .badge,
+.price__badge-sold-out {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  color: #e74c3c;
+  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.amesh-footer-bar__newsletter-button,
+.amesh-footer-bar__newsletter-input {
+  font-family: var(--font-body-family);
+}
