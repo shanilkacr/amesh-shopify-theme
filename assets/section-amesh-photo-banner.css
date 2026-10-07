@@ -85,14 +85,6 @@
   transition: transform 0.4s ease;
 }
 
-.amesh-photo-banner__item:hover .amesh-photo-banner__video {
-  transform: scale(1.03);
-}
-
-.amesh-photo-banner__item:hover .amesh-photo-banner__media {
-  transform: scale(1.03);
-}
-
 .amesh-photo-banner__caption {
   position: absolute;
   top: 50%;
