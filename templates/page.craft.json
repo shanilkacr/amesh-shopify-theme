@@ -28,6 +28,7 @@
     "knitting": {
       "type": "amesh-split-content",
       "settings": {
+        "overlay_opacity": 14,
         "image_filename": "amesh-page-craft-knitting.jpeg",
         "image_position": "right",
         "heading": "Hand Knitting & Crochet",
@@ -41,6 +42,7 @@
     "weaving-text": {
       "type": "amesh-split-content",
       "settings": {
+        "overlay_opacity": 14,
         "image_filename": "amesh-page-craft-weaving.webp",
         "image_position": "left",
         "heading": "Handloom Weaving",
@@ -54,6 +56,7 @@
     "weaving-video": {
       "type": "amesh-full-video",
       "settings": {
+        "overlay_opacity": 15,
         "video_filename": "amesh-page-craft-video-2.webm"
       }
     },

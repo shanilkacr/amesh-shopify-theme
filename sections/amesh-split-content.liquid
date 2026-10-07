@@ -5,7 +5,7 @@
   class="amesh-split amesh-split--image-{{ section.settings.image_position }}{% if section.settings.text_padding_percent > 0 %} amesh-split--pad-pct{% endif %}{% if section.settings.image_height_mode == 'natural' %} amesh-split--natural-media{% endif %}"
 >
   {%- if section.settings.image_height_mode == 'natural' -%}
-    <div class="amesh-split__media amesh-split__media--natural">
+    <div class="amesh-split__media amesh-split__media--natural" style="--amesh-overlay: {{ section.settings.overlay_opacity | default: 0 | divided_by: 100.0 }};">
       <img
         class="amesh-split__image amesh-split__image--natural"
         src="{{ section.settings.image_filename | asset_url }}"
@@ -14,7 +14,7 @@
       >
     </div>
   {%- else -%}
-    <div class="amesh-split__media">
+    <div class="amesh-split__media" style="--amesh-overlay: {{ section.settings.overlay_opacity | default: 0 | divided_by: 100.0 }};">
       <div
         class="amesh-split__image"
         style="background-image: url({{ section.settings.image_filename | asset_url }});"
@@ -109,6 +109,12 @@
       "step": 5,
       "unit": "vh",
       "default": 0
+    },
+    {
+      "type": "number",
+      "id": "overlay_opacity",
+      "label": "Dark overlay (%)",
+      "info": "Black overlay over the image that fades out on hover"
     },
     {
       "type": "select",
