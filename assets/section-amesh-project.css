@@ -43,7 +43,7 @@
 }
 
 .amesh-project__copy p {
-  margin: 0;
+  margin: 0 0 14px;
 }
 
 .amesh-project__gallery {
@@ -160,4 +160,25 @@
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.amesh-press-detail {
+  padding-top: var(--amesh-press-top, 0px);
+}
+
+.amesh-press-detail__single {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.amesh-press-detail__single img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.amesh-press-detail__gallery {
+  margin-top: 0;
 }
