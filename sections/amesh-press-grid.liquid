@@ -11,7 +11,7 @@
             class="amesh-press-grid__tile"
             style="--amesh-press-height: {{ block.settings.tile_height }}px; background-image: url({{ block.settings.image_filename | asset_url }});"
             {{ block.shopify_attributes }}
-          ><span class="amesh-press-grid__veil" aria-hidden="true"></span></{% if link != blank %}a{% else %}div{% endif %}>
+          ><span class="amesh-press-grid__veil" aria-hidden="true"></span>{% if block.settings.logo_filename != blank %}<img class="amesh-press-grid__logo" src="{{ block.settings.logo_filename | asset_url }}" alt="" loading="lazy">{% endif %}</{% if link != blank %}a{% else %}div{% endif %}>
         {%- endif -%}
       {%- endfor -%}
     </div>
@@ -41,6 +41,7 @@
       "name": "Press tile",
       "settings": [
         { "type": "text", "id": "image_filename", "label": "Image asset filename" },
+        { "type": "text", "id": "logo_filename", "label": "Magazine logo asset filename", "info": "Centred over the photo" },
         { "type": "url", "id": "link", "label": "Link" },
         {
           "type": "select",

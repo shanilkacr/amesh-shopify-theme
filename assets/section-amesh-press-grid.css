@@ -51,3 +51,14 @@
     height: calc(var(--amesh-press-height, 270px) * 0.6);
   }
 }
+
+.amesh-press-grid__logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 125px;
+  height: 107px;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+  pointer-events: none;
+}
