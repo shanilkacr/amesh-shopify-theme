@@ -1,4 +1,5 @@
 .amesh-full-video {
+  position: relative;
   width: 100%;
   line-height: 0;
   height: 50vh;
@@ -12,8 +13,28 @@
   display: block;
 }
 
+@media screen and (max-width: 749px) {
+  .amesh-full-video {
+    height: 40vh;
+  }
+}
+
 @media screen and (min-width: 1025px) {
   .amesh-full-video {
     height: 100vh;
   }
+}
+
+.amesh-full-video::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #000000;
+  opacity: var(--amesh-overlay, 0);
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.amesh-full-video:hover::after {
+  opacity: 0;
 }

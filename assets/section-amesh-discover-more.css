@@ -28,7 +28,12 @@
 
 @media screen and (max-width: 749px) {
   .amesh-discover-more {
-    min-height: 0;
-    padding: 4rem 2rem 2rem;
+    min-height: 80px;
+    padding: 40px 20px 0;
+  }
+
+  .amesh-discover-more__heading {
+    font-size: 20px;
+    line-height: 20px;
   }
 }

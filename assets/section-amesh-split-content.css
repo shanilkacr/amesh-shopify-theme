@@ -169,3 +169,41 @@
     padding: 2.5rem 2rem;
   }
 }
+
+.amesh-split__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #000000;
+  opacity: var(--amesh-overlay, 0);
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.amesh-split__media:hover::after {
+  opacity: 0;
+}
+
+/* Phones, from the live site: image 40vh tall, then the text with 40px above and below */
+@media screen and (max-width: 749px) {
+  .amesh-split--natural-media .amesh-split__media--natural {
+    height: 40vh;
+    min-height: 0;
+  }
+
+  .amesh-split--natural-media .amesh-split__content,
+  .amesh-split--natural-media.amesh-split--image-right .amesh-split__content {
+    padding: 40px 20px;
+    text-align: left;
+  }
+
+  .amesh-split--natural-media .amesh-split__heading:not(.amesh-split__heading--logo) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  .amesh-split--natural-media .amesh-split__text p:last-child {
+    margin-bottom: 14px;
+  }
+}
