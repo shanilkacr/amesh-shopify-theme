@@ -15,7 +15,7 @@
 
 @media screen and (max-width: 749px) {
   .amesh-full-video {
-    height: 40vh;
+    height: var(--amesh-m-height, 40vh);
   }
 }
 

@@ -146,4 +146,9 @@
   .amesh-photo-banner--four-column {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .amesh-photo-banner__overlay-heading {
+    font-size: 48px;
+    line-height: 48px;
+  }
 }

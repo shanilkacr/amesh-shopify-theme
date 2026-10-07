@@ -1,6 +1,6 @@
 {{ 'section-amesh-full-video.css' | asset_url | stylesheet_tag }}
 
-<div class="amesh-full-video" style="--amesh-overlay: {{ section.settings.overlay_opacity | default: 0 | divided_by: 100.0 }};">
+<div class="amesh-full-video" style="--amesh-overlay: {{ section.settings.overlay_opacity | default: 0 | divided_by: 100.0 }};{% if section.settings.mobile_height != blank %} --amesh-m-height: {{ section.settings.mobile_height }};{% endif %}">
   <video
     class="amesh-full-video__video"
     autoplay
@@ -23,6 +23,7 @@
       "label": "Video asset filename",
       "info": "Filename of a .webm video already uploaded to the theme's assets folder"
     },
+    { "type": "text", "id": "mobile_height", "label": "Phone height", "info": "CSS height, e.g. 60vh. Empty = 40vh" },
     {
       "type": "number",
       "id": "overlay_opacity",
