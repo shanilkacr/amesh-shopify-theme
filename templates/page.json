@@ -65,7 +65,7 @@
         "p-lvmh-prix-2022": {
           "type": "project",
           "settings": {
-            "handle": "lvmh-prix-2022",
+            "handle": "zzz-lvmh",
             "heading": "LVMH PRIX 2022",
             "text": "<p>AMESH became the first Sri Lankan Semi-Finalist to be shortlisted for the prestigious LVMH prize in Paris among 19 other global designers for its 9th edition.</p>",
             "images": "amesh-project-lvmh-01.webp\namesh-project-lvmh-02.webp\namesh-project-lvmh-03.webp",
@@ -108,7 +108,7 @@
         "n-dazed-mena": {
           "type": "press",
           "settings": {
-            "handle": "dazed-mena",
+            "handle": "mbfw-berlin-2019",
             "images": "amesh-press-dazed-mena-01.webp",
             "top_offset": 100,
             "image_width_percent": 51,
@@ -138,7 +138,7 @@
         "n-paper": {
           "type": "press",
           "settings": {
-            "handle": "paper",
+            "handle": "lvmh-prix-2022",
             "images": "amesh-press-paper-01.webp\namesh-press-paper-02.webp\namesh-press-paper-03.webp\namesh-press-paper-04.webp\namesh-press-paper-05.webp",
             "mode": "gallery",
             "top_offset": 60,
