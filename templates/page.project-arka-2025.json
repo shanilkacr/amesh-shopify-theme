@@ -1,0 +1,155 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "project": {
+      "type": "amesh-project",
+      "blocks": {
+        "i01": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-arka-01.webp"
+          }
+        },
+        "i02": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-arka-02.webp"
+          }
+        },
+        "i03": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-arka-03.webp"
+          }
+        },
+        "i04": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-arka-04.webp"
+          }
+        },
+        "i05": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-arka-05.webp"
+          }
+        },
+        "i06": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-arka-06.webp"
+          }
+        },
+        "i07": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-arka-07.webp"
+          }
+        },
+        "i08": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-arka-08.webp"
+          }
+        },
+        "i09": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-arka-09.webp"
+          }
+        },
+        "i10": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-arka-10.webp"
+          }
+        },
+        "i11": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-arka-11.webp"
+          }
+        },
+        "i12": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-arka-12.webp"
+          }
+        },
+        "i13": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-arka-13.webp"
+          }
+        },
+        "i14": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-arka-14.webp"
+          }
+        },
+        "i15": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-arka-15.webp"
+          }
+        },
+        "i16": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-arka-16.webp"
+          }
+        },
+        "i17": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-arka-17.webp"
+          }
+        },
+        "i18": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-arka-18.webp"
+          }
+        }
+      },
+      "block_order": [
+        "i01",
+        "i02",
+        "i03",
+        "i04",
+        "i05",
+        "i06",
+        "i07",
+        "i08",
+        "i09",
+        "i10",
+        "i11",
+        "i12",
+        "i13",
+        "i14",
+        "i15",
+        "i16",
+        "i17",
+        "i18"
+      ],
+      "settings": {
+        "heading": "ARKA 2025",
+        "text": "<p>ARKA fashion week, Dhaka Bangladesh 2025</p>",
+        "poster_filename": "amesh-project-arka-hero.jpeg",
+        "poster_position": "0% 43%"
+      }
+    }
+  },
+  "order": [
+    "project"
+  ]
+}
