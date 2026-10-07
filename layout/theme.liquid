@@ -327,6 +327,7 @@
       }
     </script>
     {%- comment -%} Page transition: white screen with the AMESH logo between pages {%- endcomment -%}
+    <link rel="preload" as="image" href="{{ 'amesh-logo.webp' | asset_url }}">
     <script>try{if(sessionStorage.getItem('amesh-pt')){document.documentElement.classList.add('amesh-pt-on');}}catch(e){}</script>
     <style>
       .amesh-pt{position:fixed;top:0;right:0;bottom:0;left:0;z-index:2147483000;display:flex;align-items:center;justify-content:center;background:#fff;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .4s ease,visibility 0s linear .4s}
@@ -336,11 +337,10 @@
       @media (max-width:749px){.amesh-pt img{width:120px}}
     </style>
     <script src="{{ 'amesh-page-transition.js' | asset_url }}" defer></script>
-    <script>(function(){try{if(!sessionStorage.getItem('amesh-pt'))return;var L=[],t0=performance.now();function tick(){var el=document.querySelector('.amesh-pt');var img=el&&el.querySelector('img');var c=el&&getComputedStyle(el);var h=document.querySelector('.section-header');L.push([Math.round(performance.now()),el?(+c.opacity).toFixed(2):'noel',img?(img.complete&&img.naturalWidth?'L':'x')+(+getComputedStyle(img).opacity).toFixed(2):'-',document.readyState[0],h?Math.round(h.getBoundingClientRect().top):'-',Math.round(scrollY),document.documentElement.className.indexOf('amesh-pt-on')>-1?1:0]);sessionStorage.setItem('ptlog2',JSON.stringify(L));if(performance.now()<3500)requestAnimationFrame(tick)}requestAnimationFrame(tick)}catch(e){}})();</script>
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
-    <div class="amesh-pt" aria-hidden="true"><img src="{{ 'amesh-logo.webp' | asset_url }}" alt="" width="155" height="47"></div>
+    <div class="amesh-pt" aria-hidden="true"><img src="{{ 'amesh-logo.webp' | asset_url }}" alt="" width="155" height="47" decoding="sync"></div>
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
