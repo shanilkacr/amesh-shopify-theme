@@ -20,7 +20,7 @@
     };
     if (document.readyState === 'complete') reveal();
     else window.addEventListener('load', reveal);
-    setTimeout(clear, 8000); // never leave the screen stuck
+    setTimeout(clear, 3000); // heavy pages: do not keep the white screen up waiting for every image
   }
 
   // Back/forward cache restores the old page with the overlay still up.
