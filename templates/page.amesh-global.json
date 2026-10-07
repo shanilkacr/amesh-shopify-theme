@@ -15,6 +15,7 @@
         "b1": {
           "type": "banner",
           "settings": {
+            "link": "shopify://pages/lvmh-prix-2022",
             "image_filename": "amesh-page-global-lvmh.webp",
             "heading": "LVMH PRIX 2022",
             "video_filename": "amesh-page-global-video-lvmh.webm",
@@ -24,6 +25,7 @@
         "b2": {
           "type": "banner",
           "settings": {
+            "link": "shopify://pages/mbfw-berlin-2019",
             "image_filename": "amesh-page-global-berlin.png",
             "heading": "MBFW Berlin 2019",
             "video_filename": "amesh-page-global-video-berlin.webm",
@@ -33,6 +35,7 @@
         "b3": {
           "type": "banner",
           "settings": {
+            "link": "shopify://pages/ifs-london-2019",
             "image_filename": "amesh-page-global-ifs-london.png",
             "heading": "IFS London 2019",
             "image_position_y": 0,
@@ -42,6 +45,7 @@
         "b4": {
           "type": "banner",
           "settings": {
+            "link": "shopify://pages/circular-design-challenge-india-2023",
             "image_filename": "amesh-page-global-circular-design.jpg",
             "heading": "Circular Design Challenge India 2023",
             "video_filename": "amesh-page-global-video-cdc.webm",
@@ -51,6 +55,7 @@
         "b5": {
           "type": "banner",
           "settings": {
+            "link": "shopify://pages/mbfw-tbilsi-2020",
             "image_filename": "amesh-page-global-tbilisi.jpg",
             "heading": "MBFW Tbilsi 2020",
             "video_filename": "amesh-page-global-video-tbilisi.webm",
@@ -60,6 +65,7 @@
         "b6": {
           "type": "banner",
           "settings": {
+            "link": "shopify://pages/homecoming-barefoot-gallery-2024",
             "image_filename": "amesh-page-global-homecoming.jpeg",
             "heading": "“Homecoming” Barefoot Gallery 2024",
             "image_position_y": 0,
@@ -69,6 +75,7 @@
         "b7": {
           "type": "banner",
           "settings": {
+            "link": "shopify://pages/arka-2025",
             "image_filename": "amesh-page-global-arka.jpeg",
             "heading": "ARKA 2025",
             "image_position_y": 100,
