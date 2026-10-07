@@ -15,8 +15,10 @@
   {%- if section.settings.mobile_height != blank -%}
   @media screen and (max-width: 749px) {
     .amesh-photo-banner-{{ section.id }} .amesh-photo-banner__item {
-      height: {{ section.settings.mobile_height }};
-      aspect-ratio: auto;
+      height: {{ section.settings.mobile_height }} !important;
+      aspect-ratio: auto !important;
+      width: 100%;
+      min-width: 0;
     }
   }
   {%- endif -%}
