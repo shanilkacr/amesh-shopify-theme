@@ -187,7 +187,7 @@
 /* Phones, from the live site: image 40vh tall, then the text with 40px above and below */
 @media screen and (max-width: 749px) {
   .amesh-split--natural-media .amesh-split__media--natural {
-    height: 40vh;
+    height: var(--amesh-m-img, 40vh);
     min-height: 0;
   }
 
