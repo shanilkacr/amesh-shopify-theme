@@ -1,0 +1,45 @@
+{%- comment -%}
+  Project page body: hero (video and/or image), heading, text and a justified gallery.
+  Params: video, video_start, video_end, poster, poster_position, heading, text, images (array of asset filenames)
+{%- endcomment -%}
+{{ 'section-amesh-project.css' | asset_url | stylesheet_tag }}
+
+<div class="amesh-project" data-amesh-project>
+  <div
+    class="amesh-project__hero"
+    style="{% if poster != blank %}background-image: url({{ poster | asset_url }});{% endif %} background-position: {{ poster_position | default: 'center center' }};"
+  >
+    {%- if video != blank -%}
+      <video
+        class="amesh-project__video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        {% if video_start > 0 %}data-start="{{ video_start }}"{% endif %}
+        {% if video_end > 0 %}data-end="{{ video_end }}"{% endif %}
+      >
+        <source src="{{ video | asset_url }}" type="video/webm">
+      </video>
+    {%- endif -%}
+  </div>
+
+  <div class="amesh-project__text">
+    <h1 class="amesh-project__heading">{{ heading }}</h1>
+    <div class="amesh-project__copy{% if flush_text %} amesh-project__copy--flush{% endif %}">{{ text }}</div>
+  </div>
+
+  <div class="amesh-project__gallery" data-gallery>
+    {%- for image in images -%}
+      {%- assign file = image | strip -%}
+      {%- if file != blank -%}
+        <a class="amesh-project__item" href="{{ file | asset_url }}">
+          <img src="{{ file | asset_url }}" alt="" decoding="async">
+        </a>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+<script src="{{ 'section-amesh-project.js' | asset_url }}" defer></script>

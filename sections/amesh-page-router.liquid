@@ -1,0 +1,99 @@
+{%- comment -%}
+  Renders project / press detail pages by page handle, so the pages can use the default page template.
+  Each block holds the content for one handle; keep snippets/amesh-routed-handles.liquid in sync.
+{%- endcomment -%}
+{%- for block in section.blocks -%}
+  {%- if block.settings.handle == page.handle -%}
+    <div {{ block.shopify_attributes }}>
+      {%- assign images = block.settings.images | newline_to_br | strip_newlines | split: '<br />' -%}
+      {%- if block.type == 'project' -%}
+        {%- render 'amesh-project-body',
+          video: block.settings.video_filename,
+          video_start: block.settings.video_start,
+          video_end: block.settings.video_end,
+          poster: block.settings.poster_filename,
+          poster_position: block.settings.poster_position,
+          heading: block.settings.heading,
+          text: block.settings.text,
+          flush_text: block.settings.flush_text,
+          images: images
+        -%}
+      {%- elsif block.type == 'campaign' -%}
+        {%- render 'amesh-campaign-body',
+          video: block.settings.video_filename,
+          poster: block.settings.poster_filename,
+          poster_position: block.settings.poster_position,
+          heading: block.settings.heading,
+          text: block.settings.text,
+          credits: block.settings.credits,
+          images: images
+        -%}
+      {%- else -%}
+        {%- render 'amesh-press-body',
+          mode: block.settings.mode,
+          top_offset: block.settings.top_offset,
+          image_width_percent: block.settings.image_width_percent,
+          image_width_px: block.settings.image_width_px,
+          image_height_px: block.settings.image_height_px,
+          row_height: block.settings.row_height,
+          images: images
+        -%}
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+{%- endfor -%}
+
+{% schema %}
+{
+  "name": "AMESH page router",
+  "blocks": [
+    {
+      "type": "project",
+      "name": "Project page",
+      "settings": [
+        { "type": "text", "id": "handle", "label": "Page handle" },
+        { "type": "text", "id": "heading", "label": "Heading" },
+        { "type": "richtext", "id": "text", "label": "Text" },
+        { "type": "checkbox", "id": "flush_text", "label": "No paragraph bottom margin", "default": false },
+        { "type": "text", "id": "video_filename", "label": "Hero video asset filename" },
+        { "type": "number", "id": "video_start", "label": "Video loop start (seconds)" },
+        { "type": "number", "id": "video_end", "label": "Video loop end (seconds)" },
+        { "type": "text", "id": "poster_filename", "label": "Hero image asset filename" },
+        { "type": "text", "id": "poster_position", "label": "Hero image position" },
+        { "type": "textarea", "id": "images", "label": "Gallery images (one asset filename per line)" }
+      ]
+    },
+    {
+      "type": "campaign",
+      "name": "Campaign page",
+      "settings": [
+        { "type": "text", "id": "handle", "label": "Page handle" },
+        { "type": "text", "id": "heading", "label": "Title" },
+        { "type": "textarea", "id": "text", "label": "Text (HTML)" },
+        { "type": "textarea", "id": "credits", "label": "Credits (HTML)" },
+        { "type": "text", "id": "video_filename", "label": "Hero video asset filename" },
+        { "type": "text", "id": "poster_filename", "label": "Hero image asset filename" },
+        { "type": "text", "id": "poster_position", "label": "Hero image position" },
+        { "type": "textarea", "id": "images", "label": "Gallery images (one asset filename per line)" }
+      ]
+    },
+    {
+      "type": "press",
+      "name": "Press page",
+      "settings": [
+        { "type": "text", "id": "handle", "label": "Page handle" },
+        { "type": "select", "id": "mode", "label": "Layout", "options": [ { "value": "single", "label": "Single image" }, { "value": "gallery", "label": "Gallery" } ], "default": "single" },
+        { "type": "number", "id": "top_offset", "label": "Top offset (px)" },
+        { "type": "number", "id": "image_width_percent", "label": "Image width (% of 1140px)" },
+        { "type": "number", "id": "image_width_px", "label": "Image width (px)" },
+        { "type": "number", "id": "image_height_px", "label": "Image height (px)" },
+        { "type": "number", "id": "row_height", "label": "Gallery row height (px)" },
+        { "type": "textarea", "id": "images", "label": "Images (one asset filename per line)" }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "AMESH page router" }
+  ]
+}
+{% endschema %}
