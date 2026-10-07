@@ -35,9 +35,10 @@
           "settings": {
             "handle": "homecoming",
             "heading": "“Homecoming” Barefoot Gallery 2024",
-            "text": "<p>Barefoot Gallery is pleased to present Homecoming, designer Amesh Wijesekera’s debut solo exhibition which explores his early relationships with textiles and technology, through his archival material of knitwear, photographs, and textile processing techniques. Homecoming showcases Amesh’s evolution as an artist through a vast array of sculptural canvases and photographic tapestries. Each piece is a fusion of artisanal craftsmanship and a personal journey, encapsulating the essence of his past collections while pushing the boundaries of textile artistry. The exhibit celebrates the intricate dialogue between textile craftsmanship and the traditional practices known to the island. As the title suggests, Amesh has returned to his roots to explore the next step in his artistic endeavour. The artist drew early inspiration from the renowned photographer Lionel Wendt and studied the male gaze through his photographs concerning unconventional beauty and gender-based social constructs, creating captivating gender-nonconforming art. His creative process features studio waste material used for his past work, knit experiments, apparel industry surplus, crochet, and fabric process techniques such as acid-washing, dying, and sublimation printing. This exhibition serves as a renaissance of Amesh’s creative journey, offering viewers a glimpse into the intricate layers of his artistic progression and the boundless possibilities of textiles and print as a medium of expression.</p>",
+            "text": "<p>Barefoot Gallery is pleased to present Homecoming, designer Amesh Wijesekera’s debut solo exhibition which explores his early relationships with textiles and technology, through his archival material of knitwear, photographs, and textile processing techniques. Homecoming showcases Amesh’s evolution as an artist through a vast array of sculptural canvases and photographic tapestries. Each piece is a fusion of artisanal craftsmanship and a personal journey, encapsulating the essence of his past collections while pushing the boundaries of textile artistry. The exhibit celebrates the intricate dialogue between textile craftsmanship and the traditional practices known to the island. As the title suggests, Amesh has returned to his roots to explore the next step in his artistic endeavour. The artist drew early inspiration from the renowned photographer Lionel Wendt and studied the male gaze through his photographs concerning unconventional beauty and gender-based social constructs, creating captivating gender-nonconforming art. His creative process features studio waste material used for his past work, knit experiments, apparel industry surplus, crochet, and fabric process techniques such as acid-washing, dying, and sublimation printing.   This exhibition serves as a renaissance of Amesh’s creative journey, offering viewers a glimpse into the intricate layers of his artistic progression and the boundless possibilities of textiles and print as a medium of expression.  A series of public panel discussions will take place over the course of the exhibition. The exhibition is curated by Vidhi Todi, with the Barefoot Gallery Colombo.</p>",
             "images": "amesh-project-homecoming-01.jpg\namesh-project-homecoming-02.jpeg\namesh-project-homecoming-03.webp\namesh-project-homecoming-04.webp\namesh-project-homecoming-05.jpg\namesh-project-homecoming-06.webp\namesh-project-homecoming-07.webp\namesh-project-homecoming-08.webp\namesh-project-homecoming-09.webp\namesh-project-homecoming-10.webp\namesh-project-homecoming-11.webp",
-            "poster_filename": "amesh-project-homecoming-hero.jpeg"
+            "poster_filename": "amesh-project-homecoming-hero.jpeg",
+            "flush_text": true
           }
         },
         "p-ifs-london-2019": {
@@ -315,6 +316,119 @@
             "image_width_percent": 50,
             "mode": "single"
           }
+        },
+        "c-the-lotus-pond": {
+          "type": "campaign",
+          "settings": {
+            "handle": "the-lotus-pond",
+            "heading": "The lotus pond 2023",
+            "credits": "<p class=\"p1\">Campaign photography &#8211; Cassie Machado</p>\n<p class=\"p1\">Look book photography &#8211; Bouddi studio</p>\n<p class=\"p1\">Styling &amp; Creative direction : Amesh Wijesekera</p>\n<p class=\"p1\">Talent : Udara, Wasishta, Ravindu, Kavindu, Tuwan, Tharshanathan, Enoch, Asjad</p>",
+            "images": "amesh-campaign-the-lotus-pond-01.webp\namesh-campaign-the-lotus-pond-02.webp\namesh-campaign-the-lotus-pond-03.webp\namesh-campaign-the-lotus-pond-04.webp\namesh-campaign-the-lotus-pond-05.webp\namesh-campaign-the-lotus-pond-06.webp\namesh-campaign-the-lotus-pond-07.webp\namesh-campaign-the-lotus-pond-08.webp\namesh-campaign-the-lotus-pond-09.webp\namesh-campaign-the-lotus-pond-10.webp\namesh-campaign-the-lotus-pond-11.webp\namesh-campaign-the-lotus-pond-12.webp\namesh-campaign-the-lotus-pond-13.webp\namesh-campaign-the-lotus-pond-14.webp\namesh-campaign-the-lotus-pond-15.webp\namesh-campaign-the-lotus-pond-16.webp\namesh-campaign-the-lotus-pond-17.webp\namesh-campaign-the-lotus-pond-18.webp\namesh-campaign-the-lotus-pond-19.webp\namesh-campaign-the-lotus-pond-20.webp\namesh-campaign-the-lotus-pond-21.webp\namesh-campaign-the-lotus-pond-22.webp\namesh-campaign-the-lotus-pond-23.webp",
+            "text": "<p>The Lotus Pond celebrates the relationship between nature and sexuality. Historically, colonialism shaped conceptions of beauty, gender and masculinity in Sri Lanka. Reconnecting to the intrinsic presence of the environment in everyday life, AMESH explores the possibility of a new platform exploring unbounded expression. The lotus pond is at the centre of communities across Sri Lanka and shelters nostalgic landscapes that embody the freedom, sensuality and simplicity of youth. This abundance of nature intersects with AMESH’s work exploring South Asian masculinity, identity and beauty norms.</p>\n<p>The Lotus Pond explores the overlap between community, craft, heritage and memory through re-contextualising archival brand textiles and the continued application of artisanal techniques. This capsule collection of individually handcrafted pieces contain signature textiles and techniques including artisanal hand knitting, crochet and handloom. These are combined and re- worked with upcycled fabrics experimenting with printing, paneling and appliqué embroideries. A focus on natural materials including cotton twills, linen and woollen yarns collected from factory waste.<br />\nThe collection invites you to explore a colour palette of cinnamon earth, burning orange, ruby, monsoon blues, veralu green and luminescent lilies.</p>",
+            "video_filename": "amesh-campaign-the-lotus-pond-video.webm"
+          }
+        },
+        "c-paddy-field-play": {
+          "type": "campaign",
+          "settings": {
+            "handle": "paddy-field-play",
+            "heading": "Paddy field play 2022",
+            "credits": "<p class=\"p1\">Photography -Tavish Gunasena</p>\n<p class=\"p1\">Styling/Creative direction &#8211; Amesh Wijesekera</p>\n<p class=\"p1\">Beauty &#8211; Krisheni Nanayakkara</p>\n<p class=\"p1\">Talent &#8211; Kavindu, Sonal, Isuru, Nothila, Devin, Dinuka</p>",
+            "images": "amesh-campaign-paddy-field-play-01.webp\namesh-campaign-paddy-field-play-02.webp\namesh-campaign-paddy-field-play-03.webp\namesh-campaign-paddy-field-play-04.webp\namesh-campaign-paddy-field-play-05.webp\namesh-campaign-paddy-field-play-06.webp\namesh-campaign-paddy-field-play-07.webp\namesh-campaign-paddy-field-play-08.webp\namesh-campaign-paddy-field-play-09.webp\namesh-campaign-paddy-field-play-10.webp\namesh-campaign-paddy-field-play-11.webp\namesh-campaign-paddy-field-play-12.webp\namesh-campaign-paddy-field-play-13.webp\namesh-campaign-paddy-field-play-14.webp\namesh-campaign-paddy-field-play-15.webp\namesh-campaign-paddy-field-play-16.webp\namesh-campaign-paddy-field-play-17.webp\namesh-campaign-paddy-field-play-18.webp\namesh-campaign-paddy-field-play-19.webp\namesh-campaign-paddy-field-play-20.webp",
+            "text": "<p>A moment of joy, innocence, escapism, optimism. As Sri Lanka faces its most severe political and economical crisis, what is resounding clear is the boundless creativity of the people. Expressing emotions of love, frustrations, and uncertainty, the youth are coming together, fostering a sense of community rebuilding and healing, laying a step towards creating a more inclusive, tolerant space. A new ‘Sri Lankness’ is emerging—defying tradition with identity and self-expression.</p>\n<p>A trans-seasonal collection created in one of the most challenging times, the pieces include many signature artisanal craft techniques of the brand, including hand weaving, hand knitting, and crochet. Bridging together tradition and culture, enabling a future towards a threatened industry. With the limited resources available, the collection has interwoven many factory off cuts and dead stock textiles to create one-of-a-kind statement pieces, reimagining new ways of designing, sourcing, and manufacturing.</p>\n<p>“Paddy Field Play” embodies colours of hope, healing, renewal, and revival—a movement of resilience and optimism celebrating this resplendent island, home.</p>",
+            "video_filename": "amesh-campaign-paddy-field-play-video.webm"
+          }
+        },
+        "c-a-sunrise-pilgrimage": {
+          "type": "campaign",
+          "settings": {
+            "handle": "a-sunrise-pilgrimage",
+            "heading": "A Sunrise Pilgrimage – Berlin x Colombo  2025",
+            "credits": "<p class=\"p1\">Photography and Art direction &#8211; Gregor Seifert</p>\n<p class=\"p1\">Fashion &#8211; AMESH</p>\n<p class=\"p1\">Jewellery and Styling by &#8211; Tara Pascale Germani</p>\n<p class=\"p1\">Beauty &#8211; Sharine Gunasekera</p>\n<p class=\"p1\">Talent &#8211; Ziha and Tharshanthan</p>",
+            "images": "amesh-campaign-a-sunrise-pilgrimage-01.webp\namesh-campaign-a-sunrise-pilgrimage-02.webp\namesh-campaign-a-sunrise-pilgrimage-03.webp\namesh-campaign-a-sunrise-pilgrimage-04.webp\namesh-campaign-a-sunrise-pilgrimage-05.webp\namesh-campaign-a-sunrise-pilgrimage-06.webp\namesh-campaign-a-sunrise-pilgrimage-07.webp\namesh-campaign-a-sunrise-pilgrimage-08.webp\namesh-campaign-a-sunrise-pilgrimage-09.webp\namesh-campaign-a-sunrise-pilgrimage-10.webp\namesh-campaign-a-sunrise-pilgrimage-11.webp\namesh-campaign-a-sunrise-pilgrimage-12.webp\namesh-campaign-a-sunrise-pilgrimage-13.webp\namesh-campaign-a-sunrise-pilgrimage-14.webp\namesh-campaign-a-sunrise-pilgrimage-15.webp\namesh-campaign-a-sunrise-pilgrimage-16.webp\namesh-campaign-a-sunrise-pilgrimage-17.webp\namesh-campaign-a-sunrise-pilgrimage-18.webp\namesh-campaign-a-sunrise-pilgrimage-19.webp\namesh-campaign-a-sunrise-pilgrimage-20.webp\namesh-campaign-a-sunrise-pilgrimage-21.webp\namesh-campaign-a-sunrise-pilgrimage-22.webp\namesh-campaign-a-sunrise-pilgrimage-23.webp\namesh-campaign-a-sunrise-pilgrimage-24.webp\namesh-campaign-a-sunrise-pilgrimage-25.webp",
+            "text": "<p>This series is a celebration and braiding together of serendipitous chance encounters from Sri Lanka to Berlin as a nostalgic reminder that everything here is divinely connected.As two friends Ziha (Colombo) &amp; Tharshanthan (Batticaloa) lean into their Venusian nature drape across furniture, road bikes and each-other feeling the comfort of being at home in AMESH’s eclectic hand crafted artisanal garments adorned in the temple inspired creations by Satvrn Jewellery. The spontaneous yet considered way Gregor Seifert transports you to an organic setting allows the images to breathe with a new sense of raw intimacy and effortless realism. This series is a celebration and braiding together of serendipitous chance encounters from Sri Lanka to Berlin capturing subtle and gentle moments in the designer’s home and surroundings in Mt Lavinia, Sri Lanka.</p>"
+          }
+        },
+        "c-under-the-mango-tree": {
+          "type": "campaign",
+          "settings": {
+            "handle": "under-the-mango-tree",
+            "heading": "Under the mango tree 2021",
+            "credits": "<p class=\"p1\">Photography: Tavish Gunasena</p>\n<p class=\"p1\">Styling &amp; creative direction :<span class=\"Apple-converted-space\">  </span>Amesh Wijesekera</p>\n<p class=\"p1\">Talent: Kevin, Tharshanthan, Shemara, Randima.</p>",
+            "images": "amesh-campaign-under-the-mango-tree-01.webp\namesh-campaign-under-the-mango-tree-02.webp\namesh-campaign-under-the-mango-tree-03.webp\namesh-campaign-under-the-mango-tree-04.webp\namesh-campaign-under-the-mango-tree-05.webp\namesh-campaign-under-the-mango-tree-06.webp\namesh-campaign-under-the-mango-tree-07.webp\namesh-campaign-under-the-mango-tree-08.webp\namesh-campaign-under-the-mango-tree-09.webp\namesh-campaign-under-the-mango-tree-10.webp\namesh-campaign-under-the-mango-tree-11.webp\namesh-campaign-under-the-mango-tree-12.webp\namesh-campaign-under-the-mango-tree-13.webp\namesh-campaign-under-the-mango-tree-14.webp\namesh-campaign-under-the-mango-tree-15.webp\namesh-campaign-under-the-mango-tree-16.webp\namesh-campaign-under-the-mango-tree-17.webp\namesh-campaign-under-the-mango-tree-18.webp\namesh-campaign-under-the-mango-tree-19.webp\namesh-campaign-under-the-mango-tree-20.webp\namesh-campaign-under-the-mango-tree-21.webp\namesh-campaign-under-the-mango-tree-22.webp\namesh-campaign-under-the-mango-tree-23.webp\namesh-campaign-under-the-mango-tree-24.webp\namesh-campaign-under-the-mango-tree-25.webp\namesh-campaign-under-the-mango-tree-26.webp\namesh-campaign-under-the-mango-tree-27.jpeg",
+            "text": "<p>AMESH is a celebration of colour, culture, community, and craftsmanship. The brand continually explores innovative approaches to sourcing, making, and crafting, with “resourcefulness” at its core. Traditional artisan techniques are elevated with refined details, vibrant hues, and a homage to homemaking, embracing a time of self-love, compassion, and reflection. Through rediscovery of ourselves, our surroundings, and our communities, AMESH breathes new life into forgotten textiles.</p><p>Unloved wardrobe textiles are revitalised with sharp tailoring, while heirloom saris are reimagined as treasured statement pieces. Deadstock industrial waste is transformed through hand printing and contemporary details, and overstock woollen and cotton yarns are hand-knitted into dreamy paradise knitwear. AMESH blends something old, borrowed, and new, creating an eclectic sense of escapism and joy.</p>",
+            "poster_filename": "amesh-campaign-under-the-mango-tree-hero.webp",
+            "poster_position": "center center"
+          }
+        },
+        "c-beyond-borders": {
+          "type": "campaign",
+          "settings": {
+            "handle": "beyond-borders",
+            "heading": "Beyond borders 2023",
+            "credits": "<p class=\"p1\">Photography &#8211; Sarang Gupta</p>\n<p class=\"p1\">Styling &#8211; Anchal Notani</p>\n<p class=\"p2\">Beauty &#8211; Deepti Soste</p>\n<p class=\"p1\">Talent &#8211; Brijesh, Furquan</p>",
+            "images": "amesh-campaign-beyond-borders-01.webp\namesh-campaign-beyond-borders-02.webp\namesh-campaign-beyond-borders-03.webp\namesh-campaign-beyond-borders-04.webp\namesh-campaign-beyond-borders-05.webp\namesh-campaign-beyond-borders-06.webp\namesh-campaign-beyond-borders-07.webp\namesh-campaign-beyond-borders-08.webp\namesh-campaign-beyond-borders-09.webp\namesh-campaign-beyond-borders-10.webp\namesh-campaign-beyond-borders-11.webp\namesh-campaign-beyond-borders-12.webp\namesh-campaign-beyond-borders-13.webp\namesh-campaign-beyond-borders-14.webp\namesh-campaign-beyond-borders-15.webp\namesh-campaign-beyond-borders-16.webp\namesh-campaign-beyond-borders-17.webp\namesh-campaign-beyond-borders-18.webp\namesh-campaign-beyond-borders-19.jpeg",
+            "text": "<p class=\"p1\">Re- imagining the South Asian narrative, our heritage and identity Amesh celebrates his first visit to India. Overwhelmed in Curiosity and excitement through the smells and sounds of the land there is a sense of familiarity, comfort and home.</p>\n<p class=\"p1\">Working with Sarang has been years in planning. Shot at dusk against a bustling backdrop of the ever expanding metropolis Mumbai. Amidst the chaos, the old town of Bandra echos a sanctuary for all its communities. Exploring gender expression and the male form signature silhouettes are mixed &#8211; matched to re-discover a new purpose.</p>\n<p class=\"p1\">Artisanal knitwear, delicate crochet and rich handwoven textiles in jewel tones hand made in Sri Lanka travel across oceans through Colombo, London, Berlin and now India. Finding its own place &amp; space in a global village of shared ideas, feelings and friendships. A journey of hope, discovery and new beginnings.</p>",
+            "poster_filename": "amesh-campaign-beyond-borders-hero.webp",
+            "poster_position": "16% 34%"
+          }
+        },
+        "c-flower-boys": {
+          "type": "campaign",
+          "settings": {
+            "handle": "flower-boys",
+            "heading": "Flower boys 2020",
+            "credits": "<p class=\"p1\">Photography &#8211; Gayathri Sribalasuhaprimam &amp; Amesh Wijesekera</p>\n<p class=\"p1\">Styling and creative direction</p>\n<p class=\"p1\">Talent &#8211; Kevin &amp; Abishek</p>\n<p class=\"p1\">Jewellery &#8211; Sour Metal</p>\n<p>&nbsp;</p>",
+            "images": "amesh-campaign-flower-boys-01.webp\namesh-campaign-flower-boys-02.webp\namesh-campaign-flower-boys-03.webp\namesh-campaign-flower-boys-04.webp\namesh-campaign-flower-boys-05.webp\namesh-campaign-flower-boys-06.webp\namesh-campaign-flower-boys-07.webp\namesh-campaign-flower-boys-08.webp\namesh-campaign-flower-boys-09.webp\namesh-campaign-flower-boys-10.webp\namesh-campaign-flower-boys-11.webp\namesh-campaign-flower-boys-12.webp\namesh-campaign-flower-boys-13.webp\namesh-campaign-flower-boys-14.webp\namesh-campaign-flower-boys-15.webp\namesh-campaign-flower-boys-16.webp\namesh-campaign-flower-boys-17.webp\namesh-campaign-flower-boys-18.webp\namesh-campaign-flower-boys-19.webp\namesh-campaign-flower-boys-20.webp",
+            "text": "<p>“Our inner child is soft and nurturing; we are adventurous and inquisitive, and social norms never make sense.”</p>\n<p>Defying the rules of someone else’s game, AMESH SS20 celebrates the resilience of individuality. While adulthood often strips away the vibrant petals of childhood, leaving us to conform, this collection holds fast to those petals—sometimes damaged but ever enduring—embracing romance, intimacy, and vulnerability.</p>\n<p>Everything once cherished—prints, patterns, and stories—comes alive through handwoven textiles, artisanal handcrafted knitwear, and hand printing, created in collaboration with Sri Lanka’s local craftspeople. Reclaimed deadstock textiles, once discarded as factory waste, are re-treated for a vibrant second life.&nbsp;</p><p>AMESH reimagines beauty, gender identity, and emotional expression, seeing life as a playful ode to creativity and freedom.</p>",
+            "poster_filename": "amesh-campaign-flower-boys-hero.webp",
+            "poster_position": "center center"
+          }
+        },
+        "c-journey-of-hope": {
+          "type": "campaign",
+          "settings": {
+            "handle": "journey-of-hope",
+            "heading": "Journey of hope 2023",
+            "credits": "<p class=\"p1\">Photography -Shetty Karthik</p>\n<p class=\"p1\">Styling &#8211; Amesh Wijesekera</p>\n<p class=\"p1\">Talent &#8211; Pratik, Kaviraj, Ankith, Nasiruddeen</p>\n<p class=\"p1\">Words by &#8211; Alban E. Smajli</p>",
+            "images": "amesh-campaign-journey-of-hope-01.jpg\namesh-campaign-journey-of-hope-02.webp\namesh-campaign-journey-of-hope-03.webp\namesh-campaign-journey-of-hope-04.webp\namesh-campaign-journey-of-hope-05.jpg\namesh-campaign-journey-of-hope-06.webp\namesh-campaign-journey-of-hope-07.webp\namesh-campaign-journey-of-hope-08.webp\namesh-campaign-journey-of-hope-09.webp\namesh-campaign-journey-of-hope-10.jpg\namesh-campaign-journey-of-hope-11.webp\namesh-campaign-journey-of-hope-12.webp\namesh-campaign-journey-of-hope-13.webp\namesh-campaign-journey-of-hope-14.webp\namesh-campaign-journey-of-hope-15.webp\namesh-campaign-journey-of-hope-16.jpg\namesh-campaign-journey-of-hope-17.jpg\namesh-campaign-journey-of-hope-18.webp\namesh-campaign-journey-of-hope-19.webp\namesh-campaign-journey-of-hope-20.webp\namesh-campaign-journey-of-hope-21.webp\namesh-campaign-journey-of-hope-22.jpg",
+            "text": "<p class=\"p1\">&#8220;A Mosaic of Dreams and Resilience in Mumbai&#8221;</p><p class=\"p2\">Amesh Wijesekera and Shetty Karthik, a trailblazing designer-photographer duo, present ‘Journey of Hope’—a visceral photo narrative that explores the bold escapades of young South Indian boys carving out new destinies in Mumbai’s pulsating heart during the late 19th and early 20th centuries. Capturing a raw confluence of art and historical epochs, this series sheds light on the fierce spirit of those who dared to dream beyond boundaries.</p><p class=\"p2\">Set against the vibrant backdrop of Mumbai’s historic Bandra district, this series captures the poignant transition from traditional innocence to cosmopolitan agility. As the sun dips below the horizon, each frame bathed in the golden hues of dusk tells a story of change, challenge, and ultimate triumph.</p><p class=\"p2\">On his first journey through India, Amesh channels a fresh perspective into a raw exploration of identity and belonging. Mumbai’s air is thick with the aroma of spices and the cacophony of bustling streets, creating a sensory collage that blurs the lines between foreign and familiar. Amidst this overwhelming mix, Amesh crafts a narrative of homecoming, finding connections in the chaos.</p><p class=\"p2\">Traditional South Indian silhouettes, once tethered to the looms of rural artisans, transform into modern masterpieces under Amesh’s deft hand. Artisanal knitwear, crochet, and handwoven textiles from Sri Lanka punctuate the global fashion discourse. Each piece, infused with their heritage, tells a story of cultural fusion and expanding horizons.</p>",
+            "poster_filename": "amesh-campaign-journey-of-hope-hero.jpeg",
+            "poster_position": "center center"
+          }
+        },
+        "c-bengaluru": {
+          "type": "campaign",
+          "settings": {
+            "handle": "bengaluru",
+            "heading": "Bengaluru 2025",
+            "credits": "<p class=\"p1\">Photography &#8211; Chithiram Pesuthadee</p>\n<p class=\"p1\">Styling &#8211; Ezil</p>\n<p class=\"p1\">Talent &#8211; Sunny, Pravallika</p>",
+            "images": "amesh-campaign-bengaluru-01.webp\namesh-campaign-bengaluru-02.webp\namesh-campaign-bengaluru-03.webp\namesh-campaign-bengaluru-04.webp\namesh-campaign-bengaluru-05.webp\namesh-campaign-bengaluru-06.webp\namesh-campaign-bengaluru-07.webp\namesh-campaign-bengaluru-08.webp\namesh-campaign-bengaluru-09.webp\namesh-campaign-bengaluru-10.webp\namesh-campaign-bengaluru-11.webp\namesh-campaign-bengaluru-12.webp\namesh-campaign-bengaluru-13.webp\namesh-campaign-bengaluru-14.webp\namesh-campaign-bengaluru-15.webp\namesh-campaign-bengaluru-16.webp",
+            "poster_filename": "amesh-campaign-bengaluru-hero.webp",
+            "poster_position": "16% 30%"
+          }
+        },
+        "c-shonali": {
+          "type": "campaign",
+          "settings": {
+            "handle": "shonali",
+            "heading": "Shanoli London 2022",
+            "credits": "<p class=\"p1\">Photography &#8211; Ankur Maniar</p>\n<p class=\"p1\">Beauty &#8211; Amrita Mehta</p>\n<p class=\"p1\">Talent &#8211; Shonali Singh</p>",
+            "images": "amesh-campaign-shonali-01.jpeg\namesh-campaign-shonali-02.jpeg\namesh-campaign-shonali-03.jpeg\namesh-campaign-shonali-04.jpeg\namesh-campaign-shonali-05.jpeg\namesh-campaign-shonali-06.jpeg\namesh-campaign-shonali-07.jpeg\namesh-campaign-shonali-08.jpeg\namesh-campaign-shonali-09.jpeg\namesh-campaign-shonali-10.jpeg\namesh-campaign-shonali-11.jpeg\namesh-campaign-shonali-12.jpeg",
+            "poster_filename": "amesh-campaign-shonali-hero.webp",
+            "poster_position": "16% 24%"
+          }
+        },
+        "c-tamil-nadu": {
+          "type": "campaign",
+          "settings": {
+            "handle": "tamil-nadu",
+            "heading": "Tamil Nadu 2025",
+            "credits": "<p class=\"p1\">Photography &#8211; Raajadharshini</p>\n<p class=\"p1\">Styling &#8211; Anchal Notani</p>\n<p class=\"p2\">Beauty &#8211; Ashwin Prakash</p>\n<p class=\"p1\">Talent &#8211; Vivek</p>",
+            "images": "amesh-campaign-tamil-nadu-01.webp\namesh-campaign-tamil-nadu-02.webp\namesh-campaign-tamil-nadu-03.webp\namesh-campaign-tamil-nadu-04.webp\namesh-campaign-tamil-nadu-05.webp\namesh-campaign-tamil-nadu-06.webp\namesh-campaign-tamil-nadu-07.webp\namesh-campaign-tamil-nadu-08.webp",
+            "poster_filename": "amesh-campaign-tamil-nadu-hero.webp",
+            "poster_position": "0px 40%"
+          }
         }
       },
       "block_order": [
@@ -346,7 +460,17 @@
         "n-cap-2",
         "n-berliner-2",
         "n-gay-times-2",
-        "n-wgsn-2"
+        "n-wgsn-2",
+        "c-the-lotus-pond",
+        "c-paddy-field-play",
+        "c-a-sunrise-pilgrimage",
+        "c-under-the-mango-tree",
+        "c-beyond-borders",
+        "c-flower-boys",
+        "c-journey-of-hope",
+        "c-bengaluru",
+        "c-shonali",
+        "c-tamil-nadu"
       ],
       "settings": {}
     }
