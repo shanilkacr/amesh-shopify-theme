@@ -17,6 +17,16 @@
           text: block.settings.text,
           images: images
         -%}
+      {%- elsif block.type == 'campaign' -%}
+        {%- render 'amesh-campaign-body',
+          video: block.settings.video_filename,
+          poster: block.settings.poster_filename,
+          poster_position: block.settings.poster_position,
+          heading: block.settings.heading,
+          text: block.settings.text,
+          credits: block.settings.credits,
+          images: images
+        -%}
       {%- else -%}
         {%- render 'amesh-press-body',
           mode: block.settings.mode,
@@ -46,6 +56,20 @@
         { "type": "text", "id": "video_filename", "label": "Hero video asset filename" },
         { "type": "number", "id": "video_start", "label": "Video loop start (seconds)" },
         { "type": "number", "id": "video_end", "label": "Video loop end (seconds)" },
+        { "type": "text", "id": "poster_filename", "label": "Hero image asset filename" },
+        { "type": "text", "id": "poster_position", "label": "Hero image position" },
+        { "type": "textarea", "id": "images", "label": "Gallery images (one asset filename per line)" }
+      ]
+    },
+    {
+      "type": "campaign",
+      "name": "Campaign page",
+      "settings": [
+        { "type": "text", "id": "handle", "label": "Page handle" },
+        { "type": "text", "id": "heading", "label": "Title" },
+        { "type": "textarea", "id": "text", "label": "Text (HTML)" },
+        { "type": "textarea", "id": "credits", "label": "Credits (HTML)" },
+        { "type": "text", "id": "video_filename", "label": "Hero video asset filename" },
         { "type": "text", "id": "poster_filename", "label": "Hero image asset filename" },
         { "type": "text", "id": "poster_position", "label": "Hero image position" },
         { "type": "textarea", "id": "images", "label": "Gallery images (one asset filename per line)" }
