@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -6,9 +15,344 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "router": {
+      "type": "amesh-page-router",
+      "blocks": {
+        "p-arka-2025": {
+          "type": "project",
+          "settings": {
+            "handle": "arka-2025",
+            "heading": "ARKA 2025",
+            "text": "<p>ARKA fashion week, Dhaka Bangladesh 2025</p>",
+            "images": "amesh-project-arka-01.webp\namesh-project-arka-02.webp\namesh-project-arka-03.webp\namesh-project-arka-04.webp\namesh-project-arka-05.webp\namesh-project-arka-06.webp\namesh-project-arka-07.webp\namesh-project-arka-08.webp\namesh-project-arka-09.webp\namesh-project-arka-10.webp\namesh-project-arka-11.webp\namesh-project-arka-12.webp\namesh-project-arka-13.webp\namesh-project-arka-14.webp\namesh-project-arka-15.webp\namesh-project-arka-16.webp\namesh-project-arka-17.webp\namesh-project-arka-18.webp",
+            "poster_filename": "amesh-project-arka-hero.jpeg",
+            "poster_position": "0% 43%"
+          }
+        },
+        "p-homecoming": {
+          "type": "project",
+          "settings": {
+            "handle": "homecoming",
+            "heading": "“Homecoming” Barefoot Gallery 2024",
+            "text": "<p>Barefoot Gallery is pleased to present Homecoming, designer Amesh Wijesekera’s debut solo exhibition which explores his early relationships with textiles and technology, through his archival material of knitwear, photographs, and textile processing techniques. Homecoming showcases Amesh’s evolution as an artist through a vast array of sculptural canvases and photographic tapestries. Each piece is a fusion of artisanal craftsmanship and a personal journey, encapsulating the essence of his past collections while pushing the boundaries of textile artistry. The exhibit celebrates the intricate dialogue between textile craftsmanship and the traditional practices known to the island. As the title suggests, Amesh has returned to his roots to explore the next step in his artistic endeavour. The artist drew early inspiration from the renowned photographer Lionel Wendt and studied the male gaze through his photographs concerning unconventional beauty and gender-based social constructs, creating captivating gender-nonconforming art. His creative process features studio waste material used for his past work, knit experiments, apparel industry surplus, crochet, and fabric process techniques such as acid-washing, dying, and sublimation printing. This exhibition serves as a renaissance of Amesh’s creative journey, offering viewers a glimpse into the intricate layers of his artistic progression and the boundless possibilities of textiles and print as a medium of expression.</p>",
+            "images": "amesh-project-homecoming-01.jpg\namesh-project-homecoming-02.jpeg\namesh-project-homecoming-03.webp\namesh-project-homecoming-04.webp\namesh-project-homecoming-05.jpg\namesh-project-homecoming-06.webp\namesh-project-homecoming-07.webp\namesh-project-homecoming-08.webp\namesh-project-homecoming-09.webp\namesh-project-homecoming-10.webp\namesh-project-homecoming-11.webp",
+            "poster_filename": "amesh-project-homecoming-hero.jpeg"
+          }
+        },
+        "p-ifs-london-2019": {
+          "type": "project",
+          "settings": {
+            "handle": "ifs-london-2019",
+            "heading": "IFS London 2019",
+            "text": "<p>AMESH was shortlisted as one of 16 emerging designers from across the globe to showcase during London Fashion Week February 2019 with partnership from The British Council, British Fashion Council (BFC) and London College of Fashion, UAL and Somerset House. The installation explored themes of sustainability, identity and craft heritage in an immersive environment.</p>",
+            "images": "amesh-project-ifs-01.webp\namesh-project-ifs-02.webp\namesh-project-ifs-03.webp\namesh-project-ifs-04.webp\namesh-project-ifs-05.webp\namesh-project-ifs-06.webp\namesh-project-ifs-07.webp\namesh-project-ifs-08.webp\namesh-project-ifs-09.webp\namesh-project-ifs-10.webp\namesh-project-ifs-11.webp",
+            "poster_filename": "amesh-project-ifs-hero.webp"
+          }
+        },
+        "p-lakme-x-cdc-runway": {
+          "type": "project",
+          "settings": {
+            "handle": "lakme-x-cdc-runway",
+            "heading": "Circular Design Challenge India 2023",
+            "text": "<p>Amesh Wijesekera became the first UK winner and finalist for India’s largest sustainability award Circular Design Challenge in partnership with British Council, United Nations in India and Lakmé Fashion Week x FDCI, presented by R|Elan™.</p>",
+            "images": "amesh-project-cdc-01.webp\namesh-project-cdc-02.jpg\namesh-project-cdc-03.jpg\namesh-project-cdc-04.jpg\namesh-project-cdc-05.webp\namesh-project-cdc-06.jpg\namesh-project-cdc-07.jpg\namesh-project-cdc-08.webp\namesh-project-cdc-09.jpg\namesh-project-cdc-10.jpg\namesh-project-cdc-11.webp\namesh-project-cdc-12.webp\namesh-project-cdc-13.jpg\namesh-project-cdc-14.jpg\namesh-project-cdc-15.jpg",
+            "video_filename": "amesh-project-cdc-video.webm",
+            "video_start": 1,
+            "poster_filename": "amesh-project-cdc-hero.jpg"
+          }
+        },
+        "p-lvmh-prix-2022": {
+          "type": "project",
+          "settings": {
+            "handle": "lvmh-prix-2022",
+            "heading": "LVMH PRIX 2022",
+            "text": "<p>AMESH became the first Sri Lankan Semi-Finalist to be shortlisted for the prestigious LVMH prize in Paris among 19 other global designers for its 9th edition.</p>",
+            "images": "amesh-project-lvmh-01.webp\namesh-project-lvmh-02.webp\namesh-project-lvmh-03.webp",
+            "video_filename": "amesh-project-lvmh-video.webm",
+            "poster_filename": "amesh-project-lvmh-hero.png"
+          }
+        },
+        "p-mbfw-berlin-2019": {
+          "type": "project",
+          "settings": {
+            "handle": "mbfw-berlin-2019",
+            "heading": "MBFW Berlin 2019",
+            "text": "<p>Amesh Wijesekera had his solo runway debut at Mercedes Benz Fashion week Berlin as the winner of the “International design exchange programme” with support from the German Embassy in Colombo.</p>",
+            "images": "amesh-project-berlin-01.webp\namesh-project-berlin-02.webp\namesh-project-berlin-03.webp\namesh-project-berlin-04.webp\namesh-project-berlin-05.webp\namesh-project-berlin-06.webp\namesh-project-berlin-07.webp\namesh-project-berlin-08.webp\namesh-project-berlin-09.webp\namesh-project-berlin-10.webp\namesh-project-berlin-11.webp\namesh-project-berlin-12.webp\namesh-project-berlin-13.webp\namesh-project-berlin-14.webp\namesh-project-berlin-15.webp\namesh-project-berlin-16.webp\namesh-project-berlin-17.webp\namesh-project-berlin-18.webp\namesh-project-berlin-19.webp\namesh-project-berlin-20.webp\namesh-project-berlin-21.webp\namesh-project-berlin-22.webp\namesh-project-berlin-23.webp\namesh-project-berlin-24.webp\namesh-project-berlin-25.webp\namesh-project-berlin-26.webp",
+            "video_filename": "amesh-project-berlin-video.webm",
+            "video_start": 1,
+            "video_end": 9
+          }
+        },
+        "p-mbfw-tbilsi-2020": {
+          "type": "project",
+          "settings": {
+            "handle": "mbfw-tbilsi-2020",
+            "heading": "MBFW Tbilsi 2020",
+            "text": "<p>AMESH was invited to present his collection at Mercedes Benz Fashion week, Tbilisi held at the Georgian Museam of Fine Arts 2020</p>",
+            "images": "amesh-project-tbilisi-01.webp\namesh-project-tbilisi-02.webp\namesh-project-tbilisi-03.webp\namesh-project-tbilisi-04.webp\namesh-project-tbilisi-05.webp\namesh-project-tbilisi-06.webp\namesh-project-tbilisi-07.webp\namesh-project-tbilisi-08.webp\namesh-project-tbilisi-09.webp\namesh-project-tbilisi-10.webp\namesh-project-tbilisi-11.webp\namesh-project-tbilisi-12.webp\namesh-project-tbilisi-13.webp\namesh-project-tbilisi-14.webp\namesh-project-tbilisi-15.webp\namesh-project-tbilisi-16.webp\namesh-project-tbilisi-17.webp\namesh-project-tbilisi-18.webp\namesh-project-tbilisi-19.webp\namesh-project-tbilisi-20.webp\namesh-project-tbilisi-21.webp\namesh-project-tbilisi-22.webp\namesh-project-tbilisi-23.webp\namesh-project-tbilisi-24.webp",
+            "video_filename": "amesh-project-tbilisi-video.webm"
+          }
+        },
+        "n-vogue-italia-2": {
+          "type": "press",
+          "settings": {
+            "handle": "vogue-italia-2",
+            "images": "amesh-press-vogue-italia-2-01.jpg",
+            "top_offset": 40,
+            "image_width_percent": 50,
+            "mode": "single"
+          }
+        },
+        "n-dazed-mena": {
+          "type": "press",
+          "settings": {
+            "handle": "dazed-mena",
+            "images": "amesh-press-dazed-mena-01.webp",
+            "top_offset": 100,
+            "image_width_percent": 51,
+            "mode": "single"
+          }
+        },
+        "n-brick-magazine-kojey-radical": {
+          "type": "press",
+          "settings": {
+            "handle": "brick-magazine-kojey-radical",
+            "images": "amesh-press-brick-magazine-kojey-radical-01.webp\namesh-press-brick-magazine-kojey-radical-02.webp",
+            "mode": "gallery",
+            "top_offset": 60,
+            "row_height": 800
+          }
+        },
+        "n-fucking-young-mag": {
+          "type": "press",
+          "settings": {
+            "handle": "fucking-young-mag",
+            "images": "amesh-press-fucking-young-mag-01.webp\namesh-press-fucking-young-mag-02.webp",
+            "mode": "gallery",
+            "top_offset": 60,
+            "row_height": 1000
+          }
+        },
+        "n-paper": {
+          "type": "press",
+          "settings": {
+            "handle": "paper",
+            "images": "amesh-press-paper-01.webp\namesh-press-paper-02.webp\namesh-press-paper-03.webp\namesh-press-paper-04.webp\namesh-press-paper-05.webp",
+            "mode": "gallery",
+            "top_offset": 60,
+            "row_height": 800
+          }
+        },
+        "n-vogue-india": {
+          "type": "press",
+          "settings": {
+            "handle": "vogue-india",
+            "images": "amesh-press-vogue-india-01.webp\namesh-press-vogue-india-02.webp\namesh-press-vogue-india-03.webp\namesh-press-vogue-india-04.webp\namesh-press-vogue-india-05.webp",
+            "mode": "gallery",
+            "top_offset": 60,
+            "row_height": 800
+          }
+        },
+        "n-document-journal": {
+          "type": "press",
+          "settings": {
+            "handle": "document-journal",
+            "images": "amesh-press-document-journal-01.webp\namesh-press-document-journal-02.webp",
+            "mode": "gallery",
+            "top_offset": 60,
+            "row_height": 800
+          }
+        },
+        "n-faz-quarterly-2": {
+          "type": "press",
+          "settings": {
+            "handle": "faz-quarterly-2",
+            "images": "amesh-press-faz-quarterly-2-01.png",
+            "top_offset": 0,
+            "image_height_px": 700,
+            "mode": "single"
+          }
+        },
+        "n-vogue-india-3": {
+          "type": "press",
+          "settings": {
+            "handle": "vogue-india-3",
+            "images": "amesh-press-vogue-india-3-01.webp",
+            "top_offset": 40,
+            "image_height_px": 700,
+            "mode": "single"
+          }
+        },
+        "n-l-official": {
+          "type": "press",
+          "settings": {
+            "handle": "l-official",
+            "images": "amesh-press-l-official-01.webp\namesh-press-l-official-02.jpeg",
+            "mode": "gallery",
+            "top_offset": 60,
+            "row_height": 1000
+          }
+        },
+        "n-condenast-traveller": {
+          "type": "press",
+          "settings": {
+            "handle": "condenast-traveller",
+            "images": "amesh-press-condenast-traveller-01.webp",
+            "top_offset": 0,
+            "image_width_percent": 50,
+            "mode": "single"
+          }
+        },
+        "n-vogue-6": {
+          "type": "press",
+          "settings": {
+            "handle": "vogue-6",
+            "images": "amesh-press-vogue-6-01.webp",
+            "top_offset": 40,
+            "image_width_percent": 50,
+            "mode": "single"
+          }
+        },
+        "n-id-italia-by-francesco-zinno": {
+          "type": "press",
+          "settings": {
+            "handle": "id-italia-by-francesco-zinno",
+            "images": "amesh-press-id-italia-by-francesco-zinno-01.webp\namesh-press-id-italia-by-francesco-zinno-02.webp\namesh-press-id-italia-by-francesco-zinno-03.webp\namesh-press-id-italia-by-francesco-zinno-04.webp\namesh-press-id-italia-by-francesco-zinno-05.webp",
+            "mode": "gallery",
+            "top_offset": 60,
+            "row_height": 800
+          }
+        },
+        "n-teeth": {
+          "type": "press",
+          "settings": {
+            "handle": "teeth",
+            "images": "amesh-press-teeth-01.webp\namesh-press-teeth-02.webp",
+            "mode": "gallery",
+            "top_offset": 60,
+            "row_height": 1000
+          }
+        },
+        "n-nataal-2": {
+          "type": "press",
+          "settings": {
+            "handle": "nataal-2",
+            "images": "amesh-press-nataal-2-01.jpg",
+            "top_offset": 0,
+            "image_width_percent": 50,
+            "mode": "single"
+          }
+        },
+        "n-another-magazine": {
+          "type": "press",
+          "settings": {
+            "handle": "another-magazine",
+            "images": "amesh-press-another-magazine-01.webp\namesh-press-another-magazine-02.jpeg\namesh-press-another-magazine-03.webp\namesh-press-another-magazine-04.webp\namesh-press-another-magazine-05.webp\namesh-press-another-magazine-06.webp\namesh-press-another-magazine-07.webp\namesh-press-another-magazine-08.webp\namesh-press-another-magazine-09.webp\namesh-press-another-magazine-10.webp",
+            "mode": "gallery",
+            "top_offset": 60,
+            "row_height": 1000
+          }
+        },
+        "n-indie-magazine-ulgly-world-wide": {
+          "type": "press",
+          "settings": {
+            "handle": "indie-magazine-ulgly-world-wide",
+            "images": "amesh-press-indie-magazine-ulgly-world-wide-01.webp\namesh-press-indie-magazine-ulgly-world-wide-02.webp\namesh-press-indie-magazine-ulgly-world-wide-03.webp\namesh-press-indie-magazine-ulgly-world-wide-04.webp",
+            "mode": "gallery",
+            "top_offset": 60,
+            "row_height": 800
+          }
+        },
+        "n-ben-hurst-poscript": {
+          "type": "press",
+          "settings": {
+            "handle": "ben-hurst-poscript",
+            "images": "amesh-press-ben-hurst-poscript-01.webp\namesh-press-ben-hurst-poscript-02.webp",
+            "mode": "gallery",
+            "top_offset": 60,
+            "row_height": 1000
+          }
+        },
+        "n-cap-2": {
+          "type": "press",
+          "settings": {
+            "handle": "cap-2",
+            "images": "amesh-press-cap-2-01.webp",
+            "top_offset": 60,
+            "image_width_percent": 50,
+            "mode": "single"
+          }
+        },
+        "n-berliner-2": {
+          "type": "press",
+          "settings": {
+            "handle": "berliner-2",
+            "images": "amesh-press-berliner-2-01.webp",
+            "top_offset": 0,
+            "image_width_percent": 50,
+            "mode": "single"
+          }
+        },
+        "n-gay-times-2": {
+          "type": "press",
+          "settings": {
+            "handle": "gay-times-2",
+            "images": "amesh-press-gay-times-2-01.webp",
+            "top_offset": 40,
+            "image_width_px": 711,
+            "image_height_px": 600,
+            "mode": "single"
+          }
+        },
+        "n-wgsn-2": {
+          "type": "press",
+          "settings": {
+            "handle": "wgsn-2",
+            "images": "amesh-press-wgsn-2-01.jpg",
+            "top_offset": 40,
+            "image_width_percent": 50,
+            "mode": "single"
+          }
+        }
+      },
+      "block_order": [
+        "p-arka-2025",
+        "p-homecoming",
+        "p-ifs-london-2019",
+        "p-lakme-x-cdc-runway",
+        "p-lvmh-prix-2022",
+        "p-mbfw-berlin-2019",
+        "p-mbfw-tbilsi-2020",
+        "n-vogue-italia-2",
+        "n-dazed-mena",
+        "n-brick-magazine-kojey-radical",
+        "n-fucking-young-mag",
+        "n-paper",
+        "n-vogue-india",
+        "n-document-journal",
+        "n-faz-quarterly-2",
+        "n-vogue-india-3",
+        "n-l-official",
+        "n-condenast-traveller",
+        "n-vogue-6",
+        "n-id-italia-by-francesco-zinno",
+        "n-teeth",
+        "n-nataal-2",
+        "n-another-magazine",
+        "n-indie-magazine-ulgly-world-wide",
+        "n-ben-hurst-poscript",
+        "n-cap-2",
+        "n-berliner-2",
+        "n-gay-times-2",
+        "n-wgsn-2"
+      ],
+      "settings": {}
     }
   },
   "order": [
-    "main"
+    "main",
+    "router"
   ]
 }

@@ -15,8 +15,8 @@
     var items = Array.prototype.slice.call(gallery.children);
     var width = gallery.clientWidth;
     var small = window.innerWidth <= 1024;
-    var ideal = small ? 150 : 500;
-    var gap = small ? 10 : 0;
+    var ideal = small ? 150 : parseFloat(gallery.getAttribute('data-ideal')) || 500;
+    var gap = small ? 10 : parseFloat(gallery.getAttribute('data-gap')) || 0;
     var ratios = items.map(function (a) {
       var img = a.querySelector('img');
       return img.naturalWidth && img.naturalHeight ? img.naturalWidth / img.naturalHeight : 1;
