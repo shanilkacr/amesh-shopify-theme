@@ -235,3 +235,8 @@
     padding-right: 20px;
   }
 }
+
+/* Dawn hides every empty div; an image-only hero has no children */
+.amesh-project .amesh-project__hero {
+  display: block;
+}
