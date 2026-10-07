@@ -23,6 +23,7 @@
           "type": "banner",
           "settings": {
             "image_filename": "amesh-our-story.webp",
+            "overlay_opacity": 14,
             "heading": "Our Story",
             "link": "/pages/our-story"
           }
@@ -31,6 +32,7 @@
           "type": "banner",
           "settings": {
             "image_filename": "amesh-craft.webp",
+            "overlay_opacity": 14,
             "heading": "Craft",
             "link": "/pages/craft"
           }
@@ -79,6 +81,7 @@
           "type": "banner",
           "settings": {
             "image_filename": "amesh-archive.webp",
+            "overlay_opacity": 15,
             "heading": "Archive",
             "link": "/pages/archive"
           }
@@ -99,6 +102,7 @@
           "type": "banner",
           "settings": {
             "image_filename": "amesh-circularity.webp",
+            "overlay_opacity": 5,
             "heading": "Circularity",
             "link": "/pages/circularity"
           }
@@ -119,6 +123,7 @@
           "type": "banner",
           "settings": {
             "image_filename": "amesh-press.webp",
+            "overlay_opacity": 14,
             "heading": "Press",
             "link": "/pages/press"
           }
@@ -127,6 +132,7 @@
           "type": "banner",
           "settings": {
             "image_filename": "amesh-global.webp",
+            "overlay_opacity": 14,
             "heading": "AMESH Global",
             "link": "/pages/amesh-global"
           }
