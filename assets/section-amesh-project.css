@@ -198,6 +198,7 @@
 
 .amesh-campaign__heading--left {
   text-align: left;
+  line-height: 16px;
 }
 
 .amesh-campaign__copy {
@@ -233,4 +234,9 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+
+/* Dawn hides every empty div; an image-only hero has no children */
+.amesh-project .amesh-project__hero {
+  display: block;
 }
