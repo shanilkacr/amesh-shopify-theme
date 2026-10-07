@@ -15,8 +15,11 @@
     var items = Array.prototype.slice.call(gallery.children);
     var width = gallery.clientWidth;
     var small = window.innerWidth <= 1024;
-    var ideal = small ? 150 : parseFloat(gallery.getAttribute('data-ideal')) || 500;
-    var gap = small ? 10 : parseFloat(gallery.getAttribute('data-gap')) || 0;
+    var phone = window.innerWidth <= 767;
+    var ideal = parseFloat(gallery.getAttribute('data-ideal')) || 500;
+    if (phone) ideal = parseFloat(gallery.getAttribute('data-ideal-mobile')) || 150;
+    else if (small) ideal = parseFloat(gallery.getAttribute('data-ideal-tablet')) || 150;
+    var gap = 0;
     var ratios = items.map(function (a) {
       var img = a.querySelector('img');
       return img.naturalWidth && img.naturalHeight ? img.naturalWidth / img.naturalHeight : 1;

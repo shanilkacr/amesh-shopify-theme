@@ -11,6 +11,15 @@
       height: {{ section.settings.height }};
     }
   }
+
+  {%- if section.settings.mobile_height != blank -%}
+  @media screen and (max-width: 749px) {
+    .amesh-photo-banner-{{ section.id }} .amesh-photo-banner__item {
+      height: {{ section.settings.mobile_height }};
+      aspect-ratio: auto;
+    }
+  }
+  {%- endif -%}
 {%- endstyle -%}
 
 <div class="amesh-photo-banner-wrap amesh-photo-banner-{{ section.id }} section-{{ section.id }}-padding">
@@ -74,6 +83,12 @@
         { "value": "full-width", "label": "Full width" }
       ],
       "default": "two-column"
+    },
+    {
+      "type": "text",
+      "id": "mobile_height",
+      "label": "Phone height",
+      "info": "CSS height on phones, e.g. 40vh. Leave empty for a square tile"
     },
     {
       "type": "select",

@@ -244,3 +244,41 @@
 .amesh-project__copy--flush p {
   margin: 0;
 }
+
+/* Phones, from the live site (375px): text blocks get 20px side padding and a 24px title,
+   the gallery sits straight under the text with no top gap */
+@media screen and (max-width: 767px) {
+  .amesh-campaign__text {
+    margin-top: 0;
+    padding: 60px 20px 10px;
+  }
+
+  .amesh-campaign__heading {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .amesh-campaign__heading--left {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .amesh-project .amesh-project__gallery,
+  .amesh-campaign .amesh-project__gallery {
+    margin-top: 0;
+  }
+
+  .amesh-campaign__credits {
+    margin: 0 auto;
+    padding: 10px 20px;
+  }
+
+  .amesh-press-detail__single {
+    padding: 10px;
+  }
+
+  .amesh-press-detail__single img {
+    width: 100% !important;
+    height: auto !important;
+  }
+}

@@ -4364,3 +4364,22 @@ body * {
     gap: 22px;
   }
 }
+
+@media screen and (max-width: 989px) {
+  .js .menu-drawer__menu li {
+    margin-bottom: 0 !important;
+  }
+
+  .menu-drawer__utility-links {
+    display: none !important;
+  }
+
+  .menu-drawer__menu-item--active,
+  .menu-drawer__menu-item--active:hover {
+    background: none;
+  }
+
+  .menu-drawer__menu-item > .svg-wrapper {
+    display: none;
+  }
+}

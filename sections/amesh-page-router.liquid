@@ -36,6 +36,7 @@
           image_width_px: block.settings.image_width_px,
           image_height_px: block.settings.image_height_px,
           row_height: block.settings.row_height,
+          row_height_mobile: block.settings.row_height_mobile,
           images: images
         -%}
       {%- endif -%}
@@ -88,6 +89,7 @@
         { "type": "number", "id": "image_width_px", "label": "Image width (px)" },
         { "type": "number", "id": "image_height_px", "label": "Image height (px)" },
         { "type": "number", "id": "row_height", "label": "Gallery row height (px)" },
+        { "type": "number", "id": "row_height_mobile", "label": "Gallery row height on phones (px)", "info": "Empty = 300" },
         { "type": "textarea", "id": "images", "label": "Images (one asset filename per line)" }
       ]
     }
