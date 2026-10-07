@@ -27,18 +27,26 @@
     function heightFor(count, ratioSum) {
       return (width - gap * (count - 1)) / ratioSum;
     }
+    // Same packing as the live gallery: fill a row at the ideal height until it overflows,
+    // then drop the last image when more than half of it falls outside the row.
     ratios.forEach(function (r, i) {
-      if (row.length) {
-        var without = heightFor(row.length, sum);
-        var withIt = heightFor(row.length + 1, sum + r);
-        if (Math.abs(withIt - ideal) > Math.abs(without - ideal)) {
+      row.push(i);
+      sum += r;
+      var rowWidth = sum * ideal + gap * (row.length - 1);
+      if (rowWidth >= width) {
+        var excess = rowWidth - width;
+        if (row.length > 1 && excess > (r * ideal) / 2) {
+          row.pop();
+          sum -= r;
+          rows.push({ idx: row, sum: sum });
+          row = [i];
+          sum = r;
+        } else {
           rows.push({ idx: row, sum: sum });
           row = [];
           sum = 0;
         }
       }
-      row.push(i);
-      sum += r;
     });
     if (row.length) rows.push({ idx: row, sum: sum });
 
