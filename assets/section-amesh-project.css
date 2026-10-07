@@ -1,0 +1,163 @@
+.amesh-project__hero {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.amesh-project__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.amesh-project__text {
+  max-width: 1120px;
+  margin: 60px auto 0;
+  padding: 10px 0;
+  text-align: center;
+  color: #1d1d1d;
+}
+
+.amesh-project__heading {
+  margin: 0;
+  font-family: var(--font-body-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: normal;
+  text-transform: none;
+  text-align: center;
+}
+
+.amesh-project__copy {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.amesh-project__copy p {
+  margin: 0;
+}
+
+.amesh-project__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  width: 100%;
+}
+
+.amesh-project__gallery:not(.is-laid-out) {
+  visibility: hidden;
+}
+
+.amesh-project__item {
+  position: relative;
+  display: block;
+  flex: none;
+  overflow: hidden;
+  width: 25%;
+  aspect-ratio: 2 / 3;
+}
+
+.amesh-project__item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.amesh-project__item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  pointer-events: none;
+}
+
+.amesh-project__item:hover::after,
+.amesh-project__item:focus-visible::after {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .amesh-project__hero {
+    min-height: 50vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .amesh-project__text {
+    padding: 10px 20px;
+  }
+}
+
+.amesh-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.amesh-lightbox.is-open {
+  display: flex;
+}
+
+.amesh-lightbox__img {
+  max-width: 90vw;
+  max-height: 85vh;
+  display: block;
+}
+
+.amesh-lightbox__count {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  color: #ffffff;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.amesh-lightbox__btn {
+  position: absolute;
+  background: none;
+  border: 0;
+  color: #ffffff;
+  font-size: 28px;
+  line-height: 1;
+  padding: 14px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.amesh-lightbox__btn:hover {
+  opacity: 1;
+}
+
+.amesh-lightbox__close {
+  top: 4px;
+  right: 8px;
+}
+
+.amesh-lightbox__prev {
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.amesh-lightbox__next {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
