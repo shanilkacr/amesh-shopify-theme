@@ -4073,6 +4073,11 @@ cart-drawer .drawer__close .icon {
   text-decoration: none;
 }
 
+details[open] > summary.header__menu-item,
+details[open]:hover > summary.header__menu-item {
+  text-decoration: none !important;
+}
+
 .header__inline-menu summary.header__menu-item {
   padding: 0 18px;
 }
