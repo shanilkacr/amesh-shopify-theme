@@ -1,6 +1,6 @@
 {{ 'section-amesh-full-video.css' | asset_url | stylesheet_tag }}
 
-<div class="amesh-full-video">
+<div class="amesh-full-video" style="--amesh-overlay: {{ section.settings.overlay_opacity | default: 0 | divided_by: 100.0 }};">
   <video
     class="amesh-full-video__video"
     autoplay
@@ -22,6 +22,12 @@
       "id": "video_filename",
       "label": "Video asset filename",
       "info": "Filename of a .webm video already uploaded to the theme's assets folder"
+    },
+    {
+      "type": "number",
+      "id": "overlay_opacity",
+      "label": "Dark overlay (%)",
+      "info": "Black overlay over the video that fades out on hover"
     }
   ],
   "presets": [
