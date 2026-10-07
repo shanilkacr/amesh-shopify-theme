@@ -4200,3 +4200,150 @@ body * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+/* ---- Phone / tablet header and menu panel, from the live site (375px wide) ---- */
+.amesh-drawer-top {
+  display: none;
+}
+
+@media screen and (max-width: 989px) {
+  .header.page-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 90px;
+    padding: 0 20px 0 16px !important;
+    max-width: none;
+  }
+
+  .header > .header__icons,
+  .header > .header__search,
+  .header .header__icon--cart,
+  .header > details-modal {
+    display: none !important;
+  }
+
+  .header header-drawer {
+    order: 3;
+    margin: 0;
+    justify-self: auto;
+  }
+
+  .header__heading,
+  .header__heading-link {
+    order: 1;
+    justify-self: auto;
+    margin: 0;
+  }
+
+  .header__heading-logo-wrapper {
+    width: 91px !important;
+    max-width: none;
+  }
+
+  .header__heading-logo {
+    width: 91px !important;
+    height: auto;
+  }
+
+  .header__icon--menu {
+    width: 33px;
+    height: 33px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .header__icon--menu .icon,
+  .header__icon--menu .amesh-burger {
+    width: 33px;
+    height: 33px;
+  }
+
+  /* panel slides in from the right, 300px wide, over a dark veil */
+  .js .menu-drawer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    width: 300px;
+    max-width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    transform: translateX(100%);
+    border: 0;
+    background: #ffffff;
+    filter: none;
+    z-index: 100001;
+  }
+
+  .js .menu-drawer-container .menu-drawer__submenu {
+    background: #ffffff;
+  }
+
+  .js menu-drawer > details > summary::before,
+  .js header-drawer > details > summary::before,
+  header-drawer > details[open] > summary::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 100000;
+  }
+
+  .amesh-drawer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px 20px 0 20px;
+    height: 46px;
+    box-sizing: content-box;
+  }
+
+  .amesh-drawer-top__logo img {
+    display: block;
+    width: 77px;
+    height: 23px;
+  }
+
+  .amesh-drawer-close {
+    padding: 0;
+    border: 0;
+    background: none;
+    color: #1d1d1d;
+    cursor: pointer;
+    line-height: 0;
+  }
+
+  .amesh-drawer-close svg {
+    width: 27px;
+    height: 27px;
+  }
+
+  .menu-drawer__navigation {
+    padding: 20px 0 0;
+  }
+
+  .menu-drawer__menu-item {
+    padding: 12px 10px 12px 20px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: normal;
+    color: #1d1d1d;
+  }
+
+  .js .menu-drawer__menu li {
+    margin-bottom: 0;
+  }
+
+  .menu-drawer__search-cart-row {
+    padding: 0 10px 0 20px;
+    margin-top: 0;
+    gap: 22px;
+  }
+}

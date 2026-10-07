@@ -16,12 +16,18 @@
       aria-label="{{ 'sections.header.menu' | t }}"
     >
       <span>
-        {{- 'icon-hamburger.svg' | inline_asset_content -}}
+        <svg class="icon icon-hamburger amesh-burger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33" fill="none" aria-hidden="true"><path d="M1 9h31M1 16.5h31M1 24h31" stroke="currentColor" stroke-width="1.8"/></svg>
         {{- 'icon-close.svg' | inline_asset_content -}}
       </span>
     </summary>
     <div id="menu-drawer" class="gradient menu-drawer motion-reduce color-{{ section.settings.menu_color_scheme }}">
       <div class="menu-drawer__inner-container">
+        <div class="amesh-drawer-top">
+          <a href="{{ routes.root_url }}" class="amesh-drawer-top__logo"><img src="{{ 'amesh-logo.webp' | asset_url }}" alt="AMESH" width="77" height="23"></a>
+          <button type="button" class="amesh-drawer-close" aria-label="Close menu" onclick="this.closest('details').querySelector('summary').click()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27" fill="none" aria-hidden="true"><rect x="1" y="1" width="25" height="25" stroke="currentColor" stroke-width="1.6"/><path d="M7 7l13 13M20 7L7 20" stroke="currentColor" stroke-width="1.6"/></svg>
+          </button>
+        </div>
         <div class="menu-drawer__navigation-container">
           <nav class="menu-drawer__navigation">
             <ul class="menu-drawer__menu has-submenu list-menu" role="list">
