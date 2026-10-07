@@ -89,7 +89,8 @@
           "settings": {
             "image_filename": "amesh-press-09.jpg",
             "column": "4",
-            "tile_height": "540"
+            "tile_height": "540",
+            "link": "shopify://pages/vogue-italia-2"
           }
         },
         "t10": {
@@ -151,7 +152,8 @@
           "settings": {
             "image_filename": "amesh-press-16.jpg",
             "column": "1",
-            "tile_height": "270"
+            "tile_height": "270",
+            "link": "shopify://pages/dazed-mena"
           }
         },
         "t17": {
@@ -159,7 +161,8 @@
           "settings": {
             "image_filename": "amesh-press-17.jpg",
             "column": "2",
-            "tile_height": "450"
+            "tile_height": "450",
+            "link": "shopify://pages/brick-magazine-kojey-radical"
           }
         },
         "t18": {
@@ -167,7 +170,8 @@
           "settings": {
             "image_filename": "amesh-press-18.jpg",
             "column": "3",
-            "tile_height": "270"
+            "tile_height": "270",
+            "link": "shopify://pages/fucking-young-mag"
           }
         },
         "t19": {
@@ -175,7 +179,8 @@
           "settings": {
             "image_filename": "amesh-press-19.jpg",
             "column": "4",
-            "tile_height": "450"
+            "tile_height": "450",
+            "link": "shopify://pages/paper"
           }
         },
         "t20": {
@@ -183,7 +188,8 @@
           "settings": {
             "image_filename": "amesh-press-20.jpg",
             "column": "5",
-            "tile_height": "270"
+            "tile_height": "270",
+            "link": "shopify://pages/vogue-india"
           }
         },
         "t21": {
@@ -191,7 +197,8 @@
           "settings": {
             "image_filename": "amesh-press-21.jpg",
             "column": "1",
-            "tile_height": "540"
+            "tile_height": "540",
+            "link": "shopify://pages/document-journal"
           }
         },
         "t22": {
@@ -199,7 +206,8 @@
           "settings": {
             "image_filename": "amesh-press-22.jpg",
             "column": "2",
-            "tile_height": "270"
+            "tile_height": "270",
+            "link": "shopify://pages/faz-quarterly-2"
           }
         },
         "t23": {
@@ -207,7 +215,8 @@
           "settings": {
             "image_filename": "amesh-press-23.jpg",
             "column": "3",
-            "tile_height": "450"
+            "tile_height": "450",
+            "link": "shopify://pages/vogue-india-3"
           }
         },
         "t24": {
@@ -215,7 +224,8 @@
           "settings": {
             "image_filename": "amesh-press-24.jpg",
             "column": "4",
-            "tile_height": "270"
+            "tile_height": "270",
+            "link": "shopify://pages/l-official"
           }
         },
         "t25": {
@@ -223,7 +233,8 @@
           "settings": {
             "image_filename": "amesh-press-25.jpg",
             "column": "5",
-            "tile_height": "450"
+            "tile_height": "450",
+            "link": "shopify://pages/condenast-traveller"
           }
         },
         "t26": {
@@ -231,7 +242,8 @@
           "settings": {
             "image_filename": "amesh-press-26.jpg",
             "column": "1",
-            "tile_height": "270"
+            "tile_height": "270",
+            "link": "shopify://pages/vogue-6"
           }
         },
         "t27": {
@@ -239,7 +251,8 @@
           "settings": {
             "image_filename": "amesh-press-27.jpg",
             "column": "2",
-            "tile_height": "540"
+            "tile_height": "540",
+            "link": "shopify://pages/id-italia-by-francesco-zinno"
           }
         },
         "t28": {
@@ -247,7 +260,8 @@
           "settings": {
             "image_filename": "amesh-press-28.jpg",
             "column": "3",
-            "tile_height": "270"
+            "tile_height": "270",
+            "link": "shopify://pages/teeth"
           }
         },
         "t29": {
@@ -255,7 +269,8 @@
           "settings": {
             "image_filename": "amesh-press-29.jpg",
             "column": "4",
-            "tile_height": "450"
+            "tile_height": "450",
+            "link": "shopify://pages/nataal-2"
           }
         },
         "t30": {
@@ -290,7 +305,8 @@
           "settings": {
             "image_filename": "amesh-press-33.jpg",
             "column": "3",
-            "tile_height": "540"
+            "tile_height": "540",
+            "link": "shopify://pages/another-magazine"
           }
         },
         "t34": {
@@ -298,7 +314,8 @@
           "settings": {
             "image_filename": "amesh-press-34.jpg",
             "column": "4",
-            "tile_height": "270"
+            "tile_height": "270",
+            "link": "shopify://pages/indie-magazine-ulgly-world-wide"
           }
         },
         "t35": {
@@ -315,7 +332,8 @@
           "settings": {
             "image_filename": "amesh-press-36.jpg",
             "column": "1",
-            "tile_height": "270"
+            "tile_height": "270",
+            "link": "shopify://pages/ben-hurst-poscript"
           }
         },
         "t37": {
@@ -323,7 +341,8 @@
           "settings": {
             "image_filename": "amesh-press-37.jpg",
             "column": "2",
-            "tile_height": "450"
+            "tile_height": "450",
+            "link": "shopify://pages/cap-2"
           }
         },
         "t38": {
@@ -331,7 +350,8 @@
           "settings": {
             "image_filename": "amesh-press-38.jpg",
             "column": "3",
-            "tile_height": "270"
+            "tile_height": "270",
+            "link": "shopify://pages/berliner-2"
           }
         },
         "t39": {
@@ -339,7 +359,8 @@
           "settings": {
             "image_filename": "amesh-press-39.jpg",
             "column": "4",
-            "tile_height": "540"
+            "tile_height": "540",
+            "link": "shopify://pages/gay-times-2"
           }
         },
         "t40": {
@@ -347,7 +368,8 @@
           "settings": {
             "image_filename": "amesh-press-40.jpg",
             "column": "5",
-            "tile_height": "270"
+            "tile_height": "270",
+            "link": "shopify://pages/wgsn-2"
           }
         }
       },
