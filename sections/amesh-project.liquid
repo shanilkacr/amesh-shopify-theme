@@ -23,7 +23,7 @@
 
   <div class="amesh-project__text">
     <h1 class="amesh-project__heading">{{ section.settings.heading }}</h1>
-    <div class="amesh-project__copy">{{ section.settings.text }}</div>
+    <div class="amesh-project__copy{% if section.settings.flush_text %} amesh-project__copy--flush{% endif %}">{{ section.settings.text }}</div>
   </div>
 
   <div class="amesh-project__gallery" data-gallery>
@@ -51,7 +51,8 @@
     { "type": "text", "id": "poster_filename", "label": "Hero image asset filename" },
     { "type": "text", "id": "poster_position", "label": "Hero image position", "default": "center center" },
     { "type": "text", "id": "heading", "label": "Heading" },
-    { "type": "richtext", "id": "text", "label": "Text" }
+    { "type": "richtext", "id": "text", "label": "Text" },
+    { "type": "checkbox", "id": "flush_text", "label": "No paragraph bottom margin", "default": false }
   ],
   "blocks": [
     {

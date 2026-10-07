@@ -27,7 +27,7 @@
 
   <div class="amesh-project__text">
     <h1 class="amesh-project__heading">{{ heading }}</h1>
-    <div class="amesh-project__copy">{{ text }}</div>
+    <div class="amesh-project__copy{% if flush_text %} amesh-project__copy--flush{% endif %}">{{ text }}</div>
   </div>
 
   <div class="amesh-project__gallery" data-gallery>

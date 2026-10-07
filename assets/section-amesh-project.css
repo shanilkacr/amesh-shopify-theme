@@ -240,3 +240,7 @@
 .amesh-project .amesh-project__hero {
   display: block;
 }
+
+.amesh-project__copy--flush p {
+  margin: 0;
+}
