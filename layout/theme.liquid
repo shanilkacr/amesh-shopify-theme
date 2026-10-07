@@ -326,9 +326,20 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
+    {%- comment -%} Page transition: white screen with the AMESH logo between pages {%- endcomment -%}
+    <script>try{if(sessionStorage.getItem('amesh-pt')){document.documentElement.classList.add('amesh-pt-on');}}catch(e){}</script>
+    <style>
+      .amesh-pt{position:fixed;top:0;right:0;bottom:0;left:0;z-index:2147483000;display:flex;align-items:center;justify-content:center;background:#fff;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .4s ease,visibility 0s linear .4s}
+      .amesh-pt img{display:block;width:155px;height:auto;opacity:0;transition:opacity .3s ease}
+      .amesh-pt.is-active,html.amesh-pt-on .amesh-pt{opacity:1;visibility:visible;pointer-events:all;transition:opacity .4s ease,visibility 0s}
+      .amesh-pt.is-active img,html.amesh-pt-on .amesh-pt img{opacity:1;transition:opacity .3s ease .15s}
+      @media (max-width:749px){.amesh-pt img{width:120px}}
+    </style>
+    <script src="{{ 'amesh-page-transition.js' | asset_url }}" defer></script>
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+    <div class="amesh-pt" aria-hidden="true"><img src="{{ 'amesh-logo.webp' | asset_url }}" alt="" width="155" height="47"></div>
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
