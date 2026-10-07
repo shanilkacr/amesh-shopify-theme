@@ -336,6 +336,7 @@
       @media (max-width:749px){.amesh-pt img{width:120px}}
     </style>
     <script src="{{ 'amesh-page-transition.js' | asset_url }}" defer></script>
+    <script>(function(){try{if(!sessionStorage.getItem('amesh-pt'))return;var L=[],t0=performance.now();function tick(){var el=document.querySelector('.amesh-pt');var img=el&&el.querySelector('img');var c=el&&getComputedStyle(el);var h=document.querySelector('.section-header');L.push([Math.round(performance.now()),el?(+c.opacity).toFixed(2):'noel',img?(img.complete&&img.naturalWidth?'L':'x')+(+getComputedStyle(img).opacity).toFixed(2):'-',document.readyState[0],h?Math.round(h.getBoundingClientRect().top):'-',Math.round(scrollY),document.documentElement.className.indexOf('amesh-pt-on')>-1?1:0]);sessionStorage.setItem('ptlog2',JSON.stringify(L));if(performance.now()<3500)requestAnimationFrame(tick)}requestAnimationFrame(tick)}catch(e){}})();</script>
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
