@@ -18,7 +18,8 @@
             "image_filename": "amesh-page-archive-1.webp",
             "heading": "The lotus pond",
             "hover_image_filename": "amesh-page-archive-hover-1.webp",
-            "overlay_opacity": 14
+            "overlay_opacity": 14,
+            "link": "shopify://pages/the-lotus-pond-2023"
           }
         },
         "b2": {
@@ -27,7 +28,8 @@
             "image_filename": "amesh-page-archive-2.webp",
             "heading": "Paddy field play",
             "hover_image_filename": "amesh-page-archive-hover-2.webp",
-            "overlay_opacity": 14
+            "overlay_opacity": 14,
+            "link": "shopify://pages/paddy-field-play-2022"
           }
         },
         "b3": {
@@ -36,7 +38,8 @@
             "image_filename": "amesh-page-archive-3.webp",
             "heading": "A sunrise pilgrimage",
             "hover_image_filename": "amesh-page-archive-hover-3.webp",
-            "overlay_opacity": 14
+            "overlay_opacity": 14,
+            "link": "shopify://pages/a-sunrise-pilgrimage-berlin-x-colombo-2025"
           }
         },
         "b4": {
@@ -45,7 +48,8 @@
             "image_filename": "amesh-page-archive-4.webp",
             "heading": "Under the mango tree",
             "hover_image_filename": "amesh-page-archive-hover-4.webp",
-            "overlay_opacity": 14
+            "overlay_opacity": 14,
+            "link": "shopify://pages/under-the-mango-tree-2021"
           }
         },
         "b5": {
@@ -54,7 +58,8 @@
             "image_filename": "amesh-page-archive-5.webp",
             "heading": "Beyond borders",
             "hover_image_filename": "amesh-page-archive-hover-5.webp",
-            "overlay_opacity": 14
+            "overlay_opacity": 14,
+            "link": "shopify://pages/beyond-borders-2023"
           }
         },
         "b6": {
@@ -63,7 +68,8 @@
             "image_filename": "amesh-page-archive-6.webp",
             "heading": "Flower boys",
             "hover_image_filename": "amesh-page-archive-hover-6.webp",
-            "overlay_opacity": 14
+            "overlay_opacity": 14,
+            "link": "shopify://pages/flower-boys-2020"
           }
         },
         "b7": {
@@ -72,7 +78,8 @@
             "image_filename": "amesh-page-archive-7.jpeg",
             "heading": "Journey of hope",
             "hover_image_filename": "amesh-page-archive-hover-7.webp",
-            "overlay_opacity": 14
+            "overlay_opacity": 14,
+            "link": "shopify://pages/journey-of-hope-2023"
           }
         },
         "b8": {
@@ -81,7 +88,8 @@
             "image_filename": "amesh-page-archive-8.webp",
             "heading": "Bengaluru",
             "hover_image_filename": "amesh-page-archive-hover-8.jpeg",
-            "overlay_opacity": 14
+            "overlay_opacity": 14,
+            "link": "shopify://pages/bengaluru"
           }
         },
         "b9": {
@@ -90,7 +98,8 @@
             "image_filename": "amesh-page-archive-9.webp",
             "heading": "Shanoli",
             "hover_image_filename": "amesh-page-archive-hover-9.jpeg",
-            "overlay_opacity": 14
+            "overlay_opacity": 14,
+            "link": "shopify://pages/shanoli-london-2022"
           }
         },
         "b10": {
@@ -99,7 +108,8 @@
             "image_filename": "amesh-page-archive-10.webp",
             "heading": "Tamil Nadu",
             "hover_image_filename": "amesh-page-archive-hover-10.webp",
-            "overlay_opacity": 14
+            "overlay_opacity": 14,
+            "link": "shopify://pages/tamil-nadu-2025"
           }
         }
       },
