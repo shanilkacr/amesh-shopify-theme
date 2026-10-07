@@ -125,15 +125,22 @@
   }
   {%- endif -%}
 
-  {%- if request.page_type == 'page' and template.suffix == 'our-story' or template.suffix == 'craft' or template.suffix == 'circularity' or template.suffix == 'amesh-global' or template.suffix == 'contact' -%}
+  {%- capture amesh_routed -%},{% render 'amesh-routed-handles' %},{%- endcapture -%}
+  {%- assign amesh_handle_key = ',' | append: page.handle | append: ',' -%}
+  {%- assign amesh_is_routed = false -%}
+  {%- if request.page_type == 'page' and amesh_routed contains amesh_handle_key -%}{%- assign amesh_is_routed = true -%}{%- endif -%}
+  {%- if amesh_is_routed or request.page_type == 'page' and template.suffix == 'our-story' or template.suffix == 'craft' or template.suffix == 'circularity' or template.suffix == 'amesh-global' or template.suffix == 'contact' or template.suffix contains 'project-' -%}
   @media screen and (min-width: 1025px) {
     .section-header {
       position: fixed !important;
-      top: 0;
       left: 0;
       width: 100%;
       z-index: 10;
       margin-bottom: 0 !important;
+    }
+
+    .section-header:not(.shopify-section-header-hidden) {
+      top: 0;
     }
   }
   {%- endif -%}
