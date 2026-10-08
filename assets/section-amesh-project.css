@@ -282,3 +282,15 @@
     height: auto !important;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .amesh-project:not(.amesh-campaign) .amesh-project__text {
+    margin-top: 0;
+    padding: 60px 20px 40px;
+  }
+
+  .amesh-project:not(.amesh-campaign) .amesh-project__heading {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}

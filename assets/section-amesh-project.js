@@ -55,10 +55,13 @@
 
     rows.forEach(function (rw, rowIndex) {
       var h = heightFor(rw.idx.length, rw.sum);
+      // a short last row keeps the ideal height instead of being stretched across the page
+      var lastShort = rowIndex === rows.length - 1 && rw.sum * ideal < width * 0.5;
+      if (lastShort) h = ideal;
       var used = 0;
       rw.idx.forEach(function (i, n) {
         var el = items[i];
-        var w = n === rw.idx.length - 1 ? width - used - gap * n : Math.floor(ratios[i] * h);
+        var w = n === rw.idx.length - 1 && !lastShort ? width - used - gap * n : Math.floor(ratios[i] * h);
         el.style.width = w + 'px';
         el.style.height = h + 'px';
         el.style.aspectRatio = 'auto';
