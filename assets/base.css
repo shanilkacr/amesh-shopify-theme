@@ -4922,3 +4922,8 @@ body * {
   flex: 0 0 100% !important;
   width: 100% !important;
 }
+
+.product__info-wrapper .product__info-container {
+  display: flex !important;
+  flex-wrap: wrap;
+}
