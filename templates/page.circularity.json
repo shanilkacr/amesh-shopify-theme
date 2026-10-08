@@ -29,7 +29,8 @@
         "padding_top": 0,
         "padding_bottom": 0,
         "image_position_y": 62,
-        "mobile_height": "50vh"
+        "mobile_height": "50vh",
+        "tablet_height": "50vh"
       }
     },
     "tackling": {
@@ -44,7 +45,11 @@
         "text_padding_percent": 16,
         "heading_size_px": 24,
         "desktop_row_height": 80,
-        "heading_line_height_px": 36
+        "heading_line_height_px": 36,
+        "mobile_text_first": true,
+        "mobile_image_height": "50vh",
+        "tablet_pad_side": 29,
+        "tablet_heading_size": 24
       }
     },
     "responsible": {
@@ -59,7 +64,11 @@
         "text_padding_percent": 13,
         "heading_size_px": 24,
         "desktop_row_height": 70,
-        "heading_line_height_px": 36
+        "heading_line_height_px": 36,
+        "mobile_text_first": true,
+        "mobile_image_height": "50vh",
+        "tablet_pad_side": 29,
+        "tablet_heading_size": 24
       }
     },
     "gallery": {
