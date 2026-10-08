@@ -41,7 +41,7 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true,
+            "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
           }
         },
@@ -76,6 +76,10 @@
             "icon": "none",
             "content": "<p>As each piece is handmade, slight variations in colour, texture and embellishment are part of its one-of-a-kind character.</p>"
           }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
         }
       },
       "block_order": [
@@ -84,6 +88,7 @@
         "shipping_note",
         "price",
         "variant_picker",
+        "quantity_selector",
         "buy_buttons",
         "details_tab",
         "size_fit_tab",
