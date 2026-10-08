@@ -15,8 +15,11 @@
     var items = Array.prototype.slice.call(gallery.children);
     var width = gallery.clientWidth;
     var small = window.innerWidth <= 1024;
-    var ideal = small ? 150 : parseFloat(gallery.getAttribute('data-ideal')) || 500;
-    var gap = small ? 10 : parseFloat(gallery.getAttribute('data-gap')) || 0;
+    var phone = window.innerWidth <= 767;
+    var ideal = parseFloat(gallery.getAttribute('data-ideal')) || 500;
+    if (phone) ideal = parseFloat(gallery.getAttribute('data-ideal-mobile')) || 150;
+    else if (small) ideal = parseFloat(gallery.getAttribute('data-ideal-tablet')) || 150;
+    var gap = 0;
     var ratios = items.map(function (a) {
       var img = a.querySelector('img');
       return img.naturalWidth && img.naturalHeight ? img.naturalWidth / img.naturalHeight : 1;
@@ -52,10 +55,13 @@
 
     rows.forEach(function (rw, rowIndex) {
       var h = heightFor(rw.idx.length, rw.sum);
+      // a short last row keeps the ideal height instead of being stretched across the page
+      var lastShort = rowIndex === rows.length - 1 && rw.sum * ideal < width * 0.5;
+      if (lastShort) h = ideal;
       var used = 0;
       rw.idx.forEach(function (i, n) {
         var el = items[i];
-        var w = n === rw.idx.length - 1 ? width - used - gap * n : Math.floor(ratios[i] * h);
+        var w = n === rw.idx.length - 1 && !lastShort ? width - used - gap * n : Math.floor(ratios[i] * h);
         el.style.width = w + 'px';
         el.style.height = h + 'px';
         el.style.aspectRatio = 'auto';

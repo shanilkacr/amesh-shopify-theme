@@ -38,12 +38,16 @@
           }
         }
       },
-      "block_order": ["our_story", "craft"],
+      "block_order": [
+        "our_story",
+        "craft"
+      ],
       "settings": {
         "layout": "two-column",
         "height": "100vh",
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "mobile_height": "40vh"
       }
     },
     "featured_collection": {
@@ -87,12 +91,15 @@
           }
         }
       },
-      "block_order": ["archive"],
+      "block_order": [
+        "archive"
+      ],
       "settings": {
         "layout": "full-width",
         "height": "100vh",
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "mobile_height": "40vh"
       }
     },
     "circularity_banner": {
@@ -108,12 +115,15 @@
           }
         }
       },
-      "block_order": ["circularity"],
+      "block_order": [
+        "circularity"
+      ],
       "settings": {
         "layout": "full-width",
         "height": "80vh",
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "mobile_height": "50vh"
       }
     },
     "press_global": {
@@ -138,12 +148,16 @@
           }
         }
       },
-      "block_order": ["press", "amesh_global"],
+      "block_order": [
+        "press",
+        "amesh_global"
+      ],
       "settings": {
         "layout": "two-column",
         "height": "100vh",
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "mobile_height": "40vh"
       }
     }
   },

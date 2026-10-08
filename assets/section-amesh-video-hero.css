@@ -33,10 +33,11 @@
 
 @media screen and (max-width: 749px) {
   .amesh-video-hero {
-    height: 60vh;
+    height: 40vh;
   }
 
   .amesh-video-hero__heading {
-    font-size: 32px;
+    font-size: 48px;
+    line-height: 48px;
   }
 }

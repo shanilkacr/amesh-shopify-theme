@@ -123,7 +123,8 @@
             "images": "amesh-press-brick-magazine-kojey-radical-01.webp\namesh-press-brick-magazine-kojey-radical-02.webp",
             "mode": "gallery",
             "top_offset": 60,
-            "row_height": 800
+            "row_height": 800,
+            "row_height_mobile": 150
           }
         },
         "n-fucking-young-mag": {

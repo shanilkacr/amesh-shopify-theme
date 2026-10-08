@@ -124,6 +124,24 @@
   {%- assign amesh_handle_key = ',' | append: page.handle | append: ',' -%}
   {%- assign amesh_is_routed = false -%}
   {%- if request.page_type == 'page' and amesh_routed contains amesh_handle_key -%}{%- assign amesh_is_routed = true -%}{%- endif -%}
+  {%- assign amesh_overlay_phone = false -%}
+  {%- if amesh_is_routed or template.suffix == 'our-story' or template.suffix == 'contact' or template.suffix contains 'project-' -%}{%- assign amesh_overlay_phone = true -%}{%- endif -%}
+  {%- if amesh_overlay_phone -%}
+  @media screen and (max-width: 1024px) {
+    .section-header {
+      position: fixed !important;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      margin-bottom: 0 !important;
+    }
+
+    .section-header:not(.shopify-section-header-hidden) {
+      top: 0;
+    }
+  }
+  {%- endif -%}
+
   {%- if amesh_is_routed or request.page_type == 'page' and template.suffix == 'our-story' or template.suffix == 'craft' or template.suffix == 'circularity' or template.suffix == 'amesh-global' or template.suffix == 'contact' or template.suffix contains 'project-' -%}
   @media screen and (min-width: 1025px) {
     .section-header {

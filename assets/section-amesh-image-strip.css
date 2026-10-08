@@ -41,6 +41,10 @@
 }
 
 @media screen and (max-width: 749px) {
+  .amesh-image-strip {
+    padding-top: 40px;
+  }
+
   .amesh-image-strip__item {
     flex-basis: 50cqw;
     width: 50cqw;

@@ -15,7 +15,7 @@
       >
     </div>
   {%- else -%}
-    <div class="amesh-project__gallery amesh-press-detail__gallery" data-gallery data-ideal="{{ row_height | default: 800 }}" data-gap="0">
+    <div class="amesh-project__gallery amesh-press-detail__gallery" data-gallery data-ideal="{{ row_height | default: 800 }}" data-ideal-tablet="500" data-ideal-mobile="{{ row_height_mobile | default: 300 }}" data-gap="0">
       {%- for image in images -%}
         {%- assign file = image | strip -%}
         {%- if file != blank -%}

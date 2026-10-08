@@ -13,6 +13,12 @@
   display: block;
 }
 
+@media screen and (max-width: 749px) {
+  .amesh-full-video {
+    height: var(--amesh-m-height, 40vh);
+  }
+}
+
 @media screen and (min-width: 1025px) {
   .amesh-full-video {
     height: 100vh;
