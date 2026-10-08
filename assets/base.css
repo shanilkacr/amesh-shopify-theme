@@ -5222,10 +5222,10 @@ body * {
   }
 }
 
-/* desktop/tablet product cards, from the live site: fixed 540px image box, white info panel overlapping its bottom by 71px */
+/* desktop/tablet product cards, from the live site: image box 60vh tall, white info panel overlapping its bottom by 71px */
 @media screen and (min-width: 768px) {
   .card__inner.ratio::before {
-    padding-bottom: 540px !important;
+    padding-bottom: 60vh !important;
   }
 
   .card__information {
