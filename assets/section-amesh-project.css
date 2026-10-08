@@ -177,6 +177,8 @@
   display: block;
   max-width: 100%;
   margin: 0 auto;
+  width: var(--amesh-w, auto);
+  height: var(--amesh-h, auto);
 }
 
 .amesh-press-detail__gallery {
@@ -314,5 +316,16 @@
 
   .amesh-press-detail__single {
     padding: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .amesh-press-detail {
+    padding-top: var(--amesh-press-top-t, var(--amesh-press-top, 0px));
+  }
+
+  .amesh-press-detail__single img {
+    width: var(--amesh-w-t, var(--amesh-w, auto));
+    height: var(--amesh-h-t, var(--amesh-h, auto));
   }
 }

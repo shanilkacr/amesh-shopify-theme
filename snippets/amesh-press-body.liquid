@@ -1,21 +1,21 @@
 {%- comment -%}
   Press detail body: a single clipping image, or a justified gallery.
-  Params: mode (single|gallery), top_offset, image_width_percent, image_width_px, image_height_px, row_height, images (array)
+  Params: mode (single|gallery), top_offset, top_offset_tablet, image_width_px_tablet, image_height_px_tablet, row_height_tablet, image_width_percent, image_width_px, image_height_px, row_height, images (array)
 {%- endcomment -%}
 {{ 'section-amesh-project.css' | asset_url | stylesheet_tag }}
 
-<div class="amesh-press-detail" data-amesh-project style="--amesh-press-top: {{ top_offset | default: 0 }}px;">
+<div class="amesh-press-detail" data-amesh-project style="--amesh-press-top: {{ top_offset | default: 0 }}px;{% if top_offset_tablet != blank %} --amesh-press-top-t: {{ top_offset_tablet }}px;{% endif %}">
   {%- if mode == 'single' -%}
     <div class="amesh-press-detail__single">
       {%- assign image = images | first | strip -%}
       <img
         src="{{ image | asset_url }}"
         alt=""
-        style="{% if image_width_px > 0 %}width: {{ image_width_px }}px;{% elsif image_width_percent > 0 %}width: {{ image_width_percent }}%;{% else %}width: auto;{% endif %}{% if image_height_px > 0 %} height: {{ image_height_px }}px;{% else %} height: auto;{% endif %}"
+        style="{% if image_width_px > 0 %}--amesh-w: {{ image_width_px }}px;{% elsif image_width_percent > 0 %}--amesh-w: {{ image_width_percent }}%;{% endif %}{% if image_height_px > 0 %} --amesh-h: {{ image_height_px }}px;{% endif %}{% if image_width_px_tablet > 0 %} --amesh-w-t: {{ image_width_px_tablet }}px;{% endif %}{% if image_height_px_tablet > 0 %} --amesh-h-t: {{ image_height_px_tablet }}px;{% endif %}"
       >
     </div>
   {%- else -%}
-    <div class="amesh-project__gallery amesh-press-detail__gallery" data-gallery data-ideal="{{ row_height | default: 800 }}" data-ideal-tablet="500" data-ideal-mobile="{{ row_height_mobile | default: 300 }}" data-gap="0">
+    <div class="amesh-project__gallery amesh-press-detail__gallery" data-gallery data-ideal="{{ row_height | default: 800 }}" data-ideal-tablet="{{ row_height_tablet | default: 500 }}" data-ideal-mobile="{{ row_height_mobile | default: 300 }}" data-gap="0">
       {%- for image in images -%}
         {%- assign file = image | strip -%}
         {%- if file != blank -%}

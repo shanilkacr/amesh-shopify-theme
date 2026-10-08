@@ -124,7 +124,8 @@
             "mode": "gallery",
             "top_offset": 60,
             "row_height": 800,
-            "row_height_mobile": 150
+            "row_height_mobile": 150,
+            "row_height_tablet": 150
           }
         },
         "n-fucking-young-mag": {
@@ -214,7 +215,8 @@
             "images": "amesh-press-vogue-6-01.webp",
             "top_offset": 40,
             "image_width_percent": 50,
-            "mode": "single"
+            "mode": "single",
+            "top_offset_tablet": 80
           }
         },
         "n-id-italia-by-francesco-zinno": {
@@ -305,7 +307,9 @@
             "top_offset": 40,
             "image_width_px": 711,
             "image_height_px": 600,
-            "mode": "single"
+            "mode": "single",
+            "image_width_px_tablet": 591,
+            "image_height_px_tablet": 500
           }
         },
         "n-wgsn-2": {
@@ -315,7 +319,8 @@
             "images": "amesh-press-wgsn-2-01.jpg",
             "top_offset": 40,
             "image_width_percent": 50,
-            "mode": "single"
+            "mode": "single",
+            "top_offset_tablet": 20
           }
         },
         "c-the-lotus-pond": {

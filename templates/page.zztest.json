@@ -1,0 +1,273 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "router": {
+      "type": "amesh-page-router",
+      "blocks": {
+        "n-vogue-italia-2": {
+          "type": "press",
+          "settings": {
+            "handle": "contact",
+            "images": "amesh-press-vogue-italia-2-01.jpg",
+            "top_offset": 40,
+            "image_width_percent": 50,
+            "mode": "single"
+          }
+        },
+        "n-dazed-mena": {
+          "type": "press",
+          "settings": {
+            "handle": "contact",
+            "images": "amesh-press-dazed-mena-01.webp",
+            "top_offset": 100,
+            "image_width_percent": 51,
+            "mode": "single"
+          }
+        },
+        "n-brick-magazine-kojey-radical": {
+          "type": "press",
+          "settings": {
+            "handle": "contact",
+            "images": "amesh-press-brick-magazine-kojey-radical-01.webp\namesh-press-brick-magazine-kojey-radical-02.webp",
+            "mode": "gallery",
+            "top_offset": 60,
+            "row_height": 800,
+            "row_height_mobile": 150,
+            "row_height_tablet": 150
+          }
+        },
+        "n-fucking-young-mag": {
+          "type": "press",
+          "settings": {
+            "handle": "contact",
+            "images": "amesh-press-fucking-young-mag-01.webp\namesh-press-fucking-young-mag-02.webp",
+            "mode": "gallery",
+            "top_offset": 60,
+            "row_height": 1000
+          }
+        },
+        "n-paper": {
+          "type": "press",
+          "settings": {
+            "handle": "contact",
+            "images": "amesh-press-paper-01.webp\namesh-press-paper-02.webp\namesh-press-paper-03.webp\namesh-press-paper-04.webp\namesh-press-paper-05.webp",
+            "mode": "gallery",
+            "top_offset": 60,
+            "row_height": 800
+          }
+        },
+        "n-vogue-india": {
+          "type": "press",
+          "settings": {
+            "handle": "contact",
+            "images": "amesh-press-vogue-india-01.webp\namesh-press-vogue-india-02.webp\namesh-press-vogue-india-03.webp\namesh-press-vogue-india-04.webp\namesh-press-vogue-india-05.webp",
+            "mode": "gallery",
+            "top_offset": 60,
+            "row_height": 800
+          }
+        },
+        "n-document-journal": {
+          "type": "press",
+          "settings": {
+            "handle": "contact",
+            "images": "amesh-press-document-journal-01.webp\namesh-press-document-journal-02.webp",
+            "mode": "gallery",
+            "top_offset": 60,
+            "row_height": 800
+          }
+        },
+        "n-faz-quarterly-2": {
+          "type": "press",
+          "settings": {
+            "handle": "contact",
+            "images": "amesh-press-faz-quarterly-2-01.png",
+            "top_offset": 0,
+            "image_height_px": 700,
+            "mode": "single"
+          }
+        },
+        "n-vogue-india-3": {
+          "type": "press",
+          "settings": {
+            "handle": "contact",
+            "images": "amesh-press-vogue-india-3-01.webp",
+            "top_offset": 40,
+            "image_height_px": 700,
+            "mode": "single"
+          }
+        },
+        "n-l-official": {
+          "type": "press",
+          "settings": {
+            "handle": "contact",
+            "images": "amesh-press-l-official-01.webp\namesh-press-l-official-02.jpeg",
+            "mode": "gallery",
+            "top_offset": 60,
+            "row_height": 1000
+          }
+        },
+        "n-condenast-traveller": {
+          "type": "press",
+          "settings": {
+            "handle": "contact",
+            "images": "amesh-press-condenast-traveller-01.webp",
+            "top_offset": 0,
+            "image_width_percent": 50,
+            "mode": "single"
+          }
+        },
+        "n-vogue-6": {
+          "type": "press",
+          "settings": {
+            "handle": "contact",
+            "images": "amesh-press-vogue-6-01.webp",
+            "top_offset": 40,
+            "image_width_percent": 50,
+            "mode": "single",
+            "top_offset_tablet": 80
+          }
+        },
+        "n-id-italia-by-francesco-zinno": {
+          "type": "press",
+          "settings": {
+            "handle": "contact",
+            "images": "amesh-press-id-italia-by-francesco-zinno-01.webp\namesh-press-id-italia-by-francesco-zinno-02.webp\namesh-press-id-italia-by-francesco-zinno-03.webp\namesh-press-id-italia-by-francesco-zinno-04.webp\namesh-press-id-italia-by-francesco-zinno-05.webp",
+            "mode": "gallery",
+            "top_offset": 60,
+            "row_height": 800
+          }
+        },
+        "n-teeth": {
+          "type": "press",
+          "settings": {
+            "handle": "contact",
+            "images": "amesh-press-teeth-01.webp\namesh-press-teeth-02.webp",
+            "mode": "gallery",
+            "top_offset": 60,
+            "row_height": 1000
+          }
+        },
+        "n-nataal-2": {
+          "type": "press",
+          "settings": {
+            "handle": "contact",
+            "images": "amesh-press-nataal-2-01.jpg",
+            "top_offset": 0,
+            "image_width_percent": 50,
+            "mode": "single"
+          }
+        },
+        "n-another-magazine": {
+          "type": "press",
+          "settings": {
+            "handle": "contact",
+            "images": "amesh-press-another-magazine-01.webp\namesh-press-another-magazine-02.jpeg\namesh-press-another-magazine-03.webp\namesh-press-another-magazine-04.webp\namesh-press-another-magazine-05.webp\namesh-press-another-magazine-06.webp\namesh-press-another-magazine-07.webp\namesh-press-another-magazine-08.webp\namesh-press-another-magazine-09.webp\namesh-press-another-magazine-10.webp",
+            "mode": "gallery",
+            "top_offset": 60,
+            "row_height": 1000
+          }
+        },
+        "n-indie-magazine-ulgly-world-wide": {
+          "type": "press",
+          "settings": {
+            "handle": "contact",
+            "images": "amesh-press-indie-magazine-ulgly-world-wide-01.webp\namesh-press-indie-magazine-ulgly-world-wide-02.webp\namesh-press-indie-magazine-ulgly-world-wide-03.webp\namesh-press-indie-magazine-ulgly-world-wide-04.webp",
+            "mode": "gallery",
+            "top_offset": 60,
+            "row_height": 800
+          }
+        },
+        "n-ben-hurst-poscript": {
+          "type": "press",
+          "settings": {
+            "handle": "contact",
+            "images": "amesh-press-ben-hurst-poscript-01.webp\namesh-press-ben-hurst-poscript-02.webp",
+            "mode": "gallery",
+            "top_offset": 60,
+            "row_height": 1000
+          }
+        },
+        "n-cap-2": {
+          "type": "press",
+          "settings": {
+            "handle": "contact",
+            "images": "amesh-press-cap-2-01.webp",
+            "top_offset": 60,
+            "image_width_percent": 50,
+            "mode": "single"
+          }
+        },
+        "n-berliner-2": {
+          "type": "press",
+          "settings": {
+            "handle": "contact",
+            "images": "amesh-press-berliner-2-01.webp",
+            "top_offset": 0,
+            "image_width_percent": 50,
+            "mode": "single"
+          }
+        },
+        "n-gay-times-2": {
+          "type": "press",
+          "settings": {
+            "handle": "contact",
+            "images": "amesh-press-gay-times-2-01.webp",
+            "top_offset": 40,
+            "image_width_px": 711,
+            "image_height_px": 600,
+            "mode": "single",
+            "image_width_px_tablet": 591,
+            "image_height_px_tablet": 500
+          }
+        },
+        "n-wgsn-2": {
+          "type": "press",
+          "settings": {
+            "handle": "contact",
+            "images": "amesh-press-wgsn-2-01.jpg",
+            "top_offset": 40,
+            "image_width_percent": 50,
+            "mode": "single",
+            "top_offset_tablet": 20
+          }
+        }
+      },
+      "block_order": [
+        "n-vogue-italia-2",
+        "n-dazed-mena",
+        "n-brick-magazine-kojey-radical",
+        "n-fucking-young-mag",
+        "n-paper",
+        "n-vogue-india",
+        "n-document-journal",
+        "n-faz-quarterly-2",
+        "n-vogue-india-3",
+        "n-l-official",
+        "n-condenast-traveller",
+        "n-vogue-6",
+        "n-id-italia-by-francesco-zinno",
+        "n-teeth",
+        "n-nataal-2",
+        "n-another-magazine",
+        "n-indie-magazine-ulgly-world-wide",
+        "n-ben-hurst-poscript",
+        "n-cap-2",
+        "n-berliner-2",
+        "n-gay-times-2",
+        "n-wgsn-2"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "router"
+  ]
+}
