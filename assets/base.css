@@ -5129,6 +5129,13 @@ body * {
     text-align: center;
   }
 
+  cart-items .cart-item__quantity,
+  cart-items .cart-item__quantity quantity-popover,
+  cart-items .cart-item__quantity-wrapper,
+  cart-items .cart-item__quantity .quantity-popover-container {
+    position: static !important;
+  }
+
   cart-items .cart-item__quantity cart-remove-button {
     position: absolute;
     top: 6px;
@@ -5147,7 +5154,7 @@ body * {
     display: none;
   }
 
-  cart-items .cart-item__quantity cart-remove-button .button::before {
+  cart-items .cart-item__quantity cart-remove-button a::before {
     content: "\00d7";
     font-size: 21.6px;
     font-weight: 700;
