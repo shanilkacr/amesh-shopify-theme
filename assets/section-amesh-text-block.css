@@ -51,4 +51,8 @@
     min-height: 0;
     padding: 60px 73px;
   }
+
+  .amesh-text-block p:last-child {
+    margin-bottom: 14px;
+  }
 }
