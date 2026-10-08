@@ -4466,3 +4466,14 @@ body * {
     width: 13.4vw !important;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .header__heading-link {
+    margin: 0 !important;
+  }
+
+  .header__icon--menu {
+    position: relative;
+    top: -3px;
+  }
+}
