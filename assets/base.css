@@ -4383,3 +4383,55 @@ body * {
     display: none;
   }
 }
+
+/* Phone menu: Shop opens a small floating list under the item, over the other links, like the live site */
+@media screen and (max-width: 989px) {
+  .menu-drawer__navigation > .menu-drawer__menu > li {
+    position: relative;
+  }
+
+  .js .menu-drawer__submenu {
+    position: absolute;
+    top: calc(100% + 10px);
+    bottom: auto;
+    left: 10px;
+    width: 130px;
+    height: auto;
+    transform: none;
+    visibility: hidden;
+    overflow: visible;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+    z-index: 5;
+  }
+
+  .js details[open] > .menu-drawer__submenu,
+  .js details[open].menu-opening > .menu-drawer__submenu {
+    visibility: visible;
+    transform: none;
+  }
+
+  .js .menu-drawer__navigation .submenu-open {
+    visibility: visible !important;
+  }
+
+  .menu-drawer__submenu .menu-drawer__close-button {
+    display: none;
+  }
+
+  .menu-drawer__submenu .menu-drawer__inner-submenu {
+    height: auto;
+    overflow: visible;
+  }
+
+  .menu-drawer__submenu .menu-drawer__menu {
+    padding: 0;
+  }
+
+  .menu-drawer .menu-drawer__submenu .menu-drawer__menu-item {
+    padding: 0 11px !important;
+    line-height: 40px;
+    font-size: 14px !important;
+    white-space: nowrap;
+  }
+}
