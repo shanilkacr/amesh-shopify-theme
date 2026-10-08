@@ -38,7 +38,7 @@
       var rowWidth = sum * ideal + gap * (row.length - 1);
       if (rowWidth >= width) {
         var excess = rowWidth - width;
-        if (row.length > 1 && excess > (r * ideal) / 2) {
+        if (row.length > 1 && excess > r * ideal * 0.53) {
           row.pop();
           sum -= r;
           rows.push({ idx: row, sum: sum });
