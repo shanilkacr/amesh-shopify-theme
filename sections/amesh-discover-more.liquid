@@ -1,10 +1,46 @@
 {{ 'section-amesh-discover-more.css' | asset_url | stylesheet_tag }}
 
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+
+<div class="amesh-discover-more-wrap">
 <section class="amesh-discover-more"{% if section.settings.min_height_px > 0 or section.settings.heading_line_height_px > 0 %} style="{% if section.settings.min_height_px > 0 %}--amesh-discover-height: {{ section.settings.min_height_px }}px;{% endif %}{% if section.settings.heading_line_height_px > 0 %} --amesh-discover-lh: {{ section.settings.heading_line_height_px }}px;{% endif %}"{% endif %}>
   <h2 class="amesh-discover-more__heading">
     <a class="amesh-discover-more__link" href="{{ section.settings.link | default: routes.all_products_collection_url }}">{{ section.settings.heading }}</a>
   </h2>
 </section>
+
+{%- assign picks = section.settings.product_1 | default: blank -%}
+{%- if section.settings.product_1 != blank or section.settings.product_2 != blank or section.settings.product_3 != blank or section.settings.product_4 != blank -%}
+  <div class="amesh-discover-more__products featured-collection color-scheme-1 gradient">
+    <slider-component class="slider-mobile-gutter slider-component-full-width page-width">
+      <ul class="grid product-grid contains-card contains-card--product grid--4-col-desktop grid--2-col-tablet-down" role="list">
+        {%- for i in (1..4) -%}
+          {%- assign key = 'product_' | append: i -%}
+          {%- assign product = section.settings[key] -%}
+          {%- if product != blank -%}
+            <li class="grid__item">
+              {% render 'card-product',
+                card_product: product,
+                media_aspect_ratio: 'portrait',
+                image_shape: 'default',
+                lazy_load: true,
+                show_secondary_image: false,
+                show_vendor: false,
+                show_rating: false,
+                skip_styles: false,
+                section_id: section.id,
+                quick_add: 'none',
+                product_view_context: 'collection'
+              %}
+            </li>
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    </slider-component>
+  </div>
+{%- endif -%}
+</div>
 
 {% schema %}
 {
@@ -13,6 +49,10 @@
     { "type": "text", "id": "heading", "label": "Heading", "default": "Discover more" },
     { "type": "number", "id": "min_height_px", "label": "Desktop row height (px)", "info": "Leave empty for the default 134px" },
     { "type": "number", "id": "heading_line_height_px", "label": "Heading line height (px)", "info": "Leave empty for the default 24px" },
+    { "type": "product", "id": "product_1", "label": "Product 1", "info": "Shown on phones only, like the live site" },
+    { "type": "product", "id": "product_2", "label": "Product 2" },
+    { "type": "product", "id": "product_3", "label": "Product 3" },
+    { "type": "product", "id": "product_4", "label": "Product 4" },
     { "type": "url", "id": "link", "label": "Link", "info": "Leave empty to link to the all-products page" }
   ],
   "presets": [{ "name": "AMESH discover more" }]

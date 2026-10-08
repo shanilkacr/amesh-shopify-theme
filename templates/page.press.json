@@ -464,7 +464,11 @@
       "settings": {
         "heading": "Discover more",
         "min_height_px": 150,
-        "heading_line_height_px": 36
+        "heading_line_height_px": 36,
+        "product_1": "silver-fringe-knit-top-cotton-blue-crop-top",
+        "product_2": "handloom-jacket-orange-knit-cardigan-blue-knit-top",
+        "product_3": "handwoven-vest-floral-shirt-lace-shorts",
+        "product_4": "handwoven-knit-ruby-jacket"
       }
     }
   },
