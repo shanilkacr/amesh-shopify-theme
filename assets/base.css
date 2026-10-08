@@ -4827,3 +4827,24 @@ body * {
     width: 280px;
   }
 }
+
+.product__info-container > div:has(> product-form),
+.product__info-container > div:has(> .product-form) {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+.product__info-container .price {
+  margin-bottom: 29px;
+}
+
+.product__info-container .product__accordion summary {
+  padding: 20px 10px !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.31) !important;
+}
+
+.product__info-container .product__accordion .accordion__title {
+  font-size: 16px !important;
+  font-weight: 300 !important;
+  line-height: 25.6px !important;
+}
