@@ -97,7 +97,8 @@
         "height": "100vh",
         "padding_top": 0,
         "padding_bottom": 0,
-        "mobile_height": "50vh"
+        "mobile_height": "50vh",
+        "tablet_height": "60vh"
       }
     },
     "discover-more": {

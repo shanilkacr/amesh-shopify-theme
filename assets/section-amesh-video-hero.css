@@ -41,3 +41,9 @@
     line-height: 48px;
   }
 }
+
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+  .amesh-video-hero {
+    height: 50vh;
+  }
+}

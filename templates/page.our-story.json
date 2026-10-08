@@ -21,14 +21,16 @@
         "content_vertical_align": "start",
         "mobile_top_padding": 80,
         "mobile_pad_top": 30,
-        "mobile_pad_bottom": 31
+        "mobile_pad_bottom": 31,
+        "tablet_row_height": "50vh"
       }
     },
     "craft_video": {
       "type": "amesh-full-video",
       "settings": {
         "video_filename": "amesh-our-story-craft-video.webm",
-        "mobile_height": "60vh"
+        "mobile_height": "60vh",
+        "tablet_height": "60vh"
       }
     },
     "history": {
@@ -44,7 +46,8 @@
         "mobile_text_first": true,
         "mobile_pad_top": 30,
         "mobile_pad_bottom": 20,
-        "mobile_pad_side": 30
+        "mobile_pad_side": 30,
+        "tablet_row_height": "540px"
       }
     },
     "explore_more": {
@@ -97,7 +100,8 @@
         "image_fit": "cover",
         "padding_top": 0,
         "padding_bottom": 0,
-        "mobile_height": "186px"
+        "mobile_height": "186px",
+        "tablet_height": "25vh"
       }
     }
   },

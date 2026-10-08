@@ -47,7 +47,8 @@
         "height": "100vh",
         "padding_top": 0,
         "padding_bottom": 0,
-        "mobile_height": "40vh"
+        "mobile_height": "40vh",
+        "tablet_height": "50vh"
       }
     },
     "featured_collection": {
@@ -99,7 +100,8 @@
         "height": "100vh",
         "padding_top": 0,
         "padding_bottom": 0,
-        "mobile_height": "40vh"
+        "mobile_height": "40vh",
+        "tablet_height": "50vh"
       }
     },
     "circularity_banner": {
@@ -123,7 +125,8 @@
         "height": "80vh",
         "padding_top": 0,
         "padding_bottom": 0,
-        "mobile_height": "50vh"
+        "mobile_height": "50vh",
+        "tablet_height": "80vh"
       }
     },
     "press_global": {
@@ -157,7 +160,8 @@
         "height": "100vh",
         "padding_top": 0,
         "padding_bottom": 0,
-        "mobile_height": "40vh"
+        "mobile_height": "40vh",
+        "tablet_height": "50vh"
       }
     }
   },
