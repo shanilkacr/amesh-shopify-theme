@@ -65,3 +65,25 @@
     padding-right: 10px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .amesh-discover-more__products slider-component {
+    padding: 0;
+  }
+
+  .amesh-discover-more__products .product-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 0;
+    margin: 0 !important;
+    padding: 0 10px !important;
+  }
+
+  .amesh-discover-more__products .product-grid > .grid__item {
+    width: auto !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
