@@ -4477,3 +4477,107 @@ body * {
     top: -3px;
   }
 }
+
+
+/* Empty cart page, from the live site: "Cart" title, pale notice with a blue top edge, grey "Return to shop" button */
+.cart__warnings.amesh-cart-empty {
+  position: relative;
+  left: 50%;
+  width: min(1124px, 100vw);
+  max-width: none;
+  margin: 0;
+  padding: 0 !important;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+.amesh-cart-empty__title {
+  margin: 30px 0 0;
+  font-family: var(--font-body-family);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: normal;
+  color: #1d1d1d;
+}
+
+.amesh-cart-empty__widget {
+  margin: 0 0 367px;
+  padding: 160px 20px 34px;
+  text-align: left;
+}
+
+.amesh-cart-empty__info {
+  position: relative;
+  margin: 0;
+  padding: 16px 32px 16px 56px;
+  background: #f6f5f8;
+  border-top: 3px solid #1e85be;
+  color: #515151;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25.6px;
+}
+
+.amesh-cart-empty__info::before {
+  content: "";
+  position: absolute;
+  left: 24px;
+  top: 19px;
+  width: 16px;
+  height: 14px;
+  box-sizing: border-box;
+  border: 1.5px solid #1e85be;
+  border-top-width: 4px;
+}
+
+.amesh-cart-empty__button {
+  display: inline-block;
+  margin-top: 32px;
+  padding: 9.9px 16px;
+  border-radius: 3px;
+  background: #e9e6ed;
+  color: #515151;
+  font-family: var(--font-body-family);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 749px) {
+  .cart__warnings.amesh-cart-empty {
+    padding: 0 5px !important;
+    width: 100%;
+  }
+
+  .amesh-cart-empty__title {
+    margin-top: 20px;
+  }
+
+  .amesh-cart-empty__widget {
+    margin: 0 0 239px;
+    padding: 70px 20px 34px;
+  }
+}
+
+/* Phone cart panel, from the live site: 14px message, bolder close icon a little further in */
+@media screen and (max-width: 749px) {
+  cart-drawer .cart__empty-text {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  cart-drawer .drawer__inner .drawer__close,
+  cart-drawer .cart-drawer__warnings .drawer__close {
+    top: 24px !important;
+    right: 22px !important;
+  }
+
+  cart-drawer .drawer__close svg path {
+    stroke: currentColor;
+    stroke-width: 1.3px;
+  }
+}

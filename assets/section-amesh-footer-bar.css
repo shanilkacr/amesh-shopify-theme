@@ -189,10 +189,10 @@
     column-gap: 0;
   }
 
-  .amesh-footer-bar__copyright {
+  .amesh-footer-bar .amesh-footer-bar__copyright {
     display: block;
     font-size: 14px;
-    line-height: 29px;
+    line-height: 29px !important;
     text-align: center;
   }
 

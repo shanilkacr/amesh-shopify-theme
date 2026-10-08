@@ -9,6 +9,19 @@
   {% render 'header-drawer', show_language_selector: true %}
 {% enddoc %}
 
+<script>
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest && event.target.closest('#cart-icon-bubble-drawer');
+    if (!link) return;
+    var drawer = document.querySelector('cart-drawer');
+    if (!drawer || typeof drawer.open !== 'function') return;
+    event.preventDefault();
+    var menu = link.closest('details');
+    if (menu && menu.open) menu.querySelector('summary').click();
+    drawer.open(link);
+  });
+</script>
+
 <header-drawer data-breakpoint="{% if section.settings.menu_type_desktop == 'drawer' %}desktop{% else %}tablet{% endif %}">
   <details id="Details-menu-drawer-container" class="menu-drawer-container">
     <summary
