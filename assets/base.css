@@ -4967,3 +4967,29 @@ body * {
 .product__info-container .product__description p {
   line-height: 22.4px !important;
 }
+
+/* Product cards on phones, from the live site: image 130% tall, title across the full width, "Sold Out" on its own line,
+   category left and price right underneath */
+@media screen and (max-width: 767px) {
+  .card__inner.ratio {
+    --ratio-percent: 130% !important;
+  }
+
+  .card__information {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      'title title'
+      'sold sold'
+      'type price';
+    row-gap: 10px;
+    padding: 11px 12px 15px !important;
+  }
+
+  .card__information .amesh-card__soldout {
+    justify-self: start;
+    font-size: 14.72px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #aa0000;
+  }
+}
