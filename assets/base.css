@@ -4927,3 +4927,38 @@ body * {
   display: flex !important;
   flex-wrap: wrap;
 }
+
+.product__info-container .product__description {
+  margin: 0 0 35px !important;
+  font-size: 14px;
+  line-height: 22.4px;
+  color: #1d1d1d;
+}
+
+.product__info-container .product__description p {
+  margin: 0;
+}
+
+.product__info-container .product__text {
+  margin-bottom: 22.6px !important;
+}
+
+.product-form__buttons .product-form__submit[disabled] {
+  line-height: 23.55px;
+}
+
+.product__info-container:has(.product-form__submit[disabled]) > .product__accordion {
+  margin-top: 64px !important;
+}
+
+.product__info-container:has(.product-form__submit[disabled]) > .product__accordion + .product__accordion {
+  margin-top: 0 !important;
+}
+
+.product__info-container .price {
+  margin-bottom: 29px;
+}
+
+.product__info-container:has(.product-form__submit[disabled]) .price {
+  margin-bottom: 35px;
+}
