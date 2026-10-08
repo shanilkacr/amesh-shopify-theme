@@ -4755,7 +4755,7 @@ body * {
 }
 
 .product__info-container .product__accordion {
-  margin-top: 60px !important;
+  margin-top: 50px !important;
 }
 
 .product__info-container .product__accordion + .product__accordion {
@@ -4880,10 +4880,14 @@ body * {
     padding-right: 0;
   }
 
+  product-info {
+    padding-top: 0 !important;
+  }
+
   product-info .product__info-wrapper {
     flex: 0 0 30%;
     width: 30%;
     max-width: 30%;
-    padding: 80px 0 0 0;
+    padding: 70px 0 0 0 !important;
   }
 }
