@@ -4481,10 +4481,14 @@ body * {
 
 /* Empty cart page, from the live site: "Cart" title, pale notice with a blue top edge, grey "Return to shop" button */
 .cart__warnings.amesh-cart-empty {
-  max-width: 1140px;
-  margin: 0 auto;
+  position: relative;
+  left: 50%;
+  width: min(1124px, 100%);
+  max-width: none;
+  margin: 0;
   padding: 0 !important;
   text-align: center;
+  transform: translateX(-50%);
 }
 
 .amesh-cart-empty__title {
@@ -4544,15 +4548,16 @@ body * {
 
 @media screen and (max-width: 749px) {
   .cart__warnings.amesh-cart-empty {
-    padding: 0 10px !important;
+    padding: 0 5px !important;
+    width: 100%;
   }
 
   .amesh-cart-empty__title {
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
   .amesh-cart-empty__widget {
-    margin: 0 0 264px;
-    padding: 70px 10px 34px;
+    margin: 0 0 241px;
+    padding: 70px 20px 34px;
   }
 }
