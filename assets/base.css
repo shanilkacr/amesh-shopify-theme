@@ -3736,7 +3736,7 @@ h1, h2, h3, h4, h5, h6,
 
 /* header matched to the live bar at any desktop width (fitted from measurements at 1440 and 1920):
    logo left = 10.8% - 23px, logo width = 3.54vw + 47.5px, menu centre = 52.25%, Search text left = 86%, cart right edge = 6.25% from the right */
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1025px) {
   .header.page-width {
     position: relative;
     max-width: none;
@@ -4207,7 +4207,7 @@ body * {
   display: none;
 }
 
-@media screen and (max-width: 989px) {
+@media screen and (max-width: 1024px) {
   .header.page-width {
     display: flex;
     align-items: center;
@@ -4365,7 +4365,7 @@ body * {
   }
 }
 
-@media screen and (max-width: 989px) {
+@media screen and (max-width: 1024px) {
   .js .menu-drawer__menu li {
     margin-bottom: 0 !important;
   }
@@ -4385,7 +4385,7 @@ body * {
 }
 
 /* Phone menu: Shop opens a small floating list under the item, over the other links, like the live site */
-@media screen and (max-width: 989px) {
+@media screen and (max-width: 1024px) {
   .menu-drawer__navigation > .menu-drawer__menu > li {
     position: relative !important;
   }
@@ -4435,11 +4435,34 @@ body * {
   }
 }
 
-@media screen and (max-width: 989px) {
+@media screen and (max-width: 1024px) {
   .menu-drawer .menu-drawer__menu-item--active,
   .menu-drawer .menu-drawer__menu-item--active:hover,
   .menu-drawer .menu-drawer__menu-item:hover,
   .menu-drawer .menu-drawer__menu-item:focus {
     background: none !important;
+  }
+}
+
+
+/* Tablet (768-1024px), from the live site: hamburger instead of the full menu; logo and side margins scale with the width */
+@media screen and (min-width: 990px) and (max-width: 1024px) {
+  header-drawer {
+    display: block !important;
+  }
+
+  .header__inline-menu {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .header.page-width {
+    padding: 0 5vw 0 6vw !important;
+  }
+
+  .header__heading-logo-wrapper,
+  .header__heading-logo {
+    width: 13.4vw !important;
   }
 }
