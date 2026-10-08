@@ -5251,3 +5251,20 @@ body * {
     max-width: 25% !important;
   }
 }
+
+/* hide the sub-pixel white seam between neighbouring cards (472.5px columns round unevenly) by overlapping each photo 1px */
+@media screen and (min-width: 1025px) {
+  .product-grid > .grid__item .card__inner {
+    width: calc(100% + 1px);
+    position: relative;
+    z-index: 0;
+  }
+
+  .product-grid > .grid__item:nth-child(4n) .card__inner {
+    width: 100%;
+  }
+
+  .product-grid > .grid__item .card__information {
+    z-index: 1;
+  }
+}
