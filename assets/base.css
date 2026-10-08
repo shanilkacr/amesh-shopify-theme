@@ -4561,3 +4561,23 @@ body * {
     padding: 70px 20px 34px;
   }
 }
+
+/* Phone cart panel, from the live site: 14px message, bolder close icon a little further in */
+@media screen and (max-width: 749px) {
+  cart-drawer .cart__empty-text {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  cart-drawer .drawer__inner .drawer__close,
+  cart-drawer .cart-drawer__warnings .drawer__close {
+    top: 24px !important;
+    right: 22px !important;
+  }
+
+  cart-drawer .drawer__close svg path {
+    stroke: currentColor;
+    stroke-width: 1.3px;
+  }
+}
