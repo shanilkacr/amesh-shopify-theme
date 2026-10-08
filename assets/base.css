@@ -4962,3 +4962,8 @@ body * {
 .product__info-container:has(.product-form__submit[disabled]) .price {
   margin-bottom: 35px;
 }
+
+.product__info-container .product__description,
+.product__info-container .product__description p {
+  line-height: 22.4px !important;
+}

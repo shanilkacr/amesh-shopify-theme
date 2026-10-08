@@ -28,6 +28,7 @@
     "knitting": {
       "type": "amesh-split-content",
       "settings": {
+        "overlay_opacity": 14,
         "image_filename": "amesh-page-craft-knitting.jpeg",
         "image_position": "right",
         "heading": "Hand Knitting & Crochet",
@@ -41,6 +42,7 @@
     "weaving-text": {
       "type": "amesh-split-content",
       "settings": {
+        "overlay_opacity": 14,
         "image_filename": "amesh-page-craft-weaving.webp",
         "image_position": "left",
         "heading": "Handloom Weaving",
@@ -54,13 +56,18 @@
     "weaving-video": {
       "type": "amesh-full-video",
       "settings": {
+        "overlay_opacity": 15,
         "video_filename": "amesh-page-craft-video-2.webm"
       }
     },
     "discover-more": {
       "type": "amesh-discover-more",
       "settings": {
-        "heading": "Discover more"
+        "heading": "Discover more",
+        "product_1": "silver-fringe-knit-top-cotton-blue-crop-top",
+        "product_2": "handloom-jacket-orange-knit-cardigan-blue-knit-top",
+        "product_3": "handwoven-vest-floral-shirt-lace-shorts",
+        "product_4": "handwoven-knit-ruby-jacket"
       }
     }
   },

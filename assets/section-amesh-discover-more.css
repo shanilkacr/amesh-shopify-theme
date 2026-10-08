@@ -49,3 +49,19 @@
     line-height: 20px;
   }
 }
+
+/* the live product row under "Discover more" only shows on phones */
+.amesh-discover-more__products {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .amesh-discover-more__products {
+    display: block;
+  }
+
+  .amesh-discover-more__products slider-component {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

@@ -18,7 +18,8 @@
             "image_filename": "amesh-press-01.jpg",
             "column": "1",
             "tile_height": "450",
-            "link": "https://www.vogue.in/fashion/content/sri-lankan-designer-amesh-wijesekera-pays-tribute-to-his-island-country-through-the-power-of-emotional-design"
+            "link": "https://www.vogue.in/fashion/content/sri-lankan-designer-amesh-wijesekera-pays-tribute-to-his-island-country-through-the-power-of-emotional-design",
+            "logo_filename": "amesh-press-logo-01.png"
           }
         },
         "t02": {
@@ -27,7 +28,8 @@
             "image_filename": "amesh-press-02.jpg",
             "column": "2",
             "tile_height": "270",
-            "link": "https://metalmagazine.eu/en/post/amesh"
+            "link": "https://metalmagazine.eu/en/post/amesh",
+            "logo_filename": "amesh-press-logo-02.png"
           }
         },
         "t03": {
@@ -36,7 +38,8 @@
             "image_filename": "amesh-press-03.jpg",
             "column": "3",
             "tile_height": "540",
-            "link": "https://www.sleek-mag.com/article/amesh-wijesekera/"
+            "link": "https://www.sleek-mag.com/article/amesh-wijesekera/",
+            "logo_filename": "amesh-press-logo-03.png"
           }
         },
         "t04": {
@@ -45,7 +48,8 @@
             "image_filename": "amesh-press-04.jpg",
             "column": "4",
             "tile_height": "270",
-            "link": "https://www.vogue.com/article/amesh-wijesekera-reference-festival"
+            "link": "https://www.vogue.com/article/amesh-wijesekera-reference-festival",
+            "logo_filename": "amesh-press-logo-04.png"
           }
         },
         "t05": {
@@ -54,7 +58,8 @@
             "image_filename": "amesh-press-05.jpg",
             "column": "5",
             "tile_height": "450",
-            "link": "https://www.kaltblut-magazine.com/a-sunrise-pilgrimage-berlin-x-colombo/"
+            "link": "https://www.kaltblut-magazine.com/a-sunrise-pilgrimage-berlin-x-colombo/",
+            "logo_filename": "amesh-press-logo-05.png"
           }
         },
         "t06": {
@@ -63,7 +68,8 @@
             "image_filename": "amesh-press-06.jpg",
             "column": "1",
             "tile_height": "270",
-            "link": "https://www.vogue.in/content/amesh-wijesekeras-new-textile-art-exhibition-in-his-hometown-colombo-explores-his-childhood"
+            "link": "https://www.vogue.in/content/amesh-wijesekeras-new-textile-art-exhibition-in-his-hometown-colombo-explores-his-childhood",
+            "logo_filename": "amesh-press-logo-01.png"
           }
         },
         "t07": {
@@ -72,7 +78,8 @@
             "image_filename": "amesh-press-07.jpg",
             "column": "2",
             "tile_height": "450",
-            "link": "https://edition.cnn.com/style/article/amesh-wijesekera-style-sept/index.html"
+            "link": "https://edition.cnn.com/style/article/amesh-wijesekera-style-sept/index.html",
+            "logo_filename": "amesh-press-logo-06.png"
           }
         },
         "t08": {
@@ -81,7 +88,8 @@
             "image_filename": "amesh-press-08.jpg",
             "column": "3",
             "tile_height": "270",
-            "link": "https://www.architecturaldigest.in/story/6-sustainable-fashion-labels/"
+            "link": "https://www.architecturaldigest.in/story/6-sustainable-fashion-labels/",
+            "logo_filename": "amesh-press-logo-07.png"
           }
         },
         "t09": {
@@ -90,7 +98,8 @@
             "image_filename": "amesh-press-09.jpg",
             "column": "4",
             "tile_height": "540",
-            "link": "shopify://pages/vogue-italia-2"
+            "link": "shopify://pages/vogue-italia-2",
+            "logo_filename": "amesh-press-logo-08.png"
           }
         },
         "t10": {
@@ -99,7 +108,8 @@
             "image_filename": "amesh-press-10.jpg",
             "column": "5",
             "tile_height": "270",
-            "link": "https://wwd.com/fashion-news/fashion-scoops/amesh-wijesekera-wins-circular-design-challenges-uk-prize-1235783690/"
+            "link": "https://wwd.com/fashion-news/fashion-scoops/amesh-wijesekera-wins-circular-design-challenges-uk-prize-1235783690/",
+            "logo_filename": "amesh-press-logo-09.png"
           }
         },
         "t11": {
@@ -108,7 +118,8 @@
             "image_filename": "amesh-press-11.jpg",
             "column": "1",
             "tile_height": "450",
-            "link": "https://www.businessoffashion.com/news/entrepreneurship/amesh-named-as-inaugural-winner-of-reference-incubator-programme/"
+            "link": "https://www.businessoffashion.com/news/entrepreneurship/amesh-named-as-inaugural-winner-of-reference-incubator-programme/",
+            "logo_filename": "amesh-press-logo-10.svg"
           }
         },
         "t12": {
@@ -117,7 +128,8 @@
             "image_filename": "amesh-press-12.jpg",
             "column": "2",
             "tile_height": "270",
-            "link": "https://www.wonderlandmagazine.com/2023/09/29/amesh-wijesekera-cdc-award/"
+            "link": "https://www.wonderlandmagazine.com/2023/09/29/amesh-wijesekera-cdc-award/",
+            "logo_filename": "amesh-press-logo-11.png"
           }
         },
         "t13": {
@@ -126,7 +138,8 @@
             "image_filename": "amesh-press-13.jpg",
             "column": "3",
             "tile_height": "450",
-            "link": "https://www.elledecor.com/it/best-of/a38610068/amesh-wijesekera-fashion-interview/"
+            "link": "https://www.elledecor.com/it/best-of/a38610068/amesh-wijesekera-fashion-interview/",
+            "logo_filename": "amesh-press-logo-12.svg"
           }
         },
         "t14": {
@@ -135,7 +148,8 @@
             "image_filename": "amesh-press-14.jpg",
             "column": "4",
             "tile_height": "270",
-            "link": "https://www.grazia.co.in/fashion/sweater-weather-knitwear-marvels-11832.html"
+            "link": "https://www.grazia.co.in/fashion/sweater-weather-knitwear-marvels-11832.html",
+            "logo_filename": "amesh-press-logo-13.png"
           }
         },
         "t15": {
@@ -144,7 +158,8 @@
             "image_filename": "amesh-press-15.jpg",
             "column": "5",
             "tile_height": "540",
-            "link": "https://www.lvmhprize.com/designer/amesh/"
+            "link": "https://www.lvmhprize.com/designer/amesh/",
+            "logo_filename": "amesh-press-logo-14.png"
           }
         },
         "t16": {
@@ -153,7 +168,8 @@
             "image_filename": "amesh-press-16.jpg",
             "column": "1",
             "tile_height": "270",
-            "link": "shopify://pages/dazed-mena"
+            "link": "shopify://pages/dazed-mena",
+            "logo_filename": "amesh-press-logo-15.webp"
           }
         },
         "t17": {
@@ -162,7 +178,8 @@
             "image_filename": "amesh-press-17.jpg",
             "column": "2",
             "tile_height": "450",
-            "link": "shopify://pages/brick-magazine-kojey-radical"
+            "link": "shopify://pages/brick-magazine-kojey-radical",
+            "logo_filename": "amesh-press-logo-16.png"
           }
         },
         "t18": {
@@ -171,7 +188,8 @@
             "image_filename": "amesh-press-18.jpg",
             "column": "3",
             "tile_height": "270",
-            "link": "shopify://pages/fucking-young-mag"
+            "link": "shopify://pages/fucking-young-mag",
+            "logo_filename": "amesh-press-logo-17.webp"
           }
         },
         "t19": {
@@ -180,7 +198,8 @@
             "image_filename": "amesh-press-19.jpg",
             "column": "4",
             "tile_height": "450",
-            "link": "shopify://pages/paper"
+            "link": "shopify://pages/paper",
+            "logo_filename": "amesh-press-logo-18.png"
           }
         },
         "t20": {
@@ -189,7 +208,8 @@
             "image_filename": "amesh-press-20.jpg",
             "column": "5",
             "tile_height": "270",
-            "link": "shopify://pages/vogue-india"
+            "link": "shopify://pages/vogue-india",
+            "logo_filename": "amesh-press-logo-01.png"
           }
         },
         "t21": {
@@ -198,7 +218,8 @@
             "image_filename": "amesh-press-21.jpg",
             "column": "1",
             "tile_height": "540",
-            "link": "shopify://pages/document-journal"
+            "link": "shopify://pages/document-journal",
+            "logo_filename": "amesh-press-logo-19.png"
           }
         },
         "t22": {
@@ -207,7 +228,8 @@
             "image_filename": "amesh-press-22.jpg",
             "column": "2",
             "tile_height": "270",
-            "link": "shopify://pages/faz-quarterly-2"
+            "link": "shopify://pages/faz-quarterly-2",
+            "logo_filename": "amesh-press-logo-20.png"
           }
         },
         "t23": {
@@ -216,7 +238,8 @@
             "image_filename": "amesh-press-23.jpg",
             "column": "3",
             "tile_height": "450",
-            "link": "shopify://pages/vogue-india-3"
+            "link": "shopify://pages/vogue-india-3",
+            "logo_filename": "amesh-press-logo-21.png"
           }
         },
         "t24": {
@@ -225,7 +248,8 @@
             "image_filename": "amesh-press-24.jpg",
             "column": "4",
             "tile_height": "270",
-            "link": "shopify://pages/l-official"
+            "link": "shopify://pages/l-official",
+            "logo_filename": "amesh-press-logo-22.png"
           }
         },
         "t25": {
@@ -234,7 +258,8 @@
             "image_filename": "amesh-press-25.jpg",
             "column": "5",
             "tile_height": "450",
-            "link": "shopify://pages/condenast-traveller"
+            "link": "shopify://pages/condenast-traveller",
+            "logo_filename": "amesh-press-logo-23.webp"
           }
         },
         "t26": {
@@ -243,7 +268,8 @@
             "image_filename": "amesh-press-26.jpg",
             "column": "1",
             "tile_height": "270",
-            "link": "shopify://pages/vogue-6"
+            "link": "shopify://pages/vogue-6",
+            "logo_filename": "amesh-press-logo-24.webp"
           }
         },
         "t27": {
@@ -252,7 +278,8 @@
             "image_filename": "amesh-press-27.jpg",
             "column": "2",
             "tile_height": "540",
-            "link": "shopify://pages/id-italia-by-francesco-zinno"
+            "link": "shopify://pages/id-italia-by-francesco-zinno",
+            "logo_filename": "amesh-press-logo-25.png"
           }
         },
         "t28": {
@@ -261,7 +288,8 @@
             "image_filename": "amesh-press-28.jpg",
             "column": "3",
             "tile_height": "270",
-            "link": "shopify://pages/teeth"
+            "link": "shopify://pages/teeth",
+            "logo_filename": "amesh-press-logo-26.png"
           }
         },
         "t29": {
@@ -270,7 +298,8 @@
             "image_filename": "amesh-press-29.jpg",
             "column": "4",
             "tile_height": "450",
-            "link": "shopify://pages/nataal-2"
+            "link": "shopify://pages/nataal-2",
+            "logo_filename": "amesh-press-logo-27.png"
           }
         },
         "t30": {
@@ -279,7 +308,8 @@
             "image_filename": "amesh-press-30.jpg",
             "column": "5",
             "tile_height": "270",
-            "link": "https://homegrown.co.in/homegrown-creators/fashion/amesh-wijesekeras-beyond-borders-collection-celebrates-south-asian-heritage-belonging"
+            "link": "https://homegrown.co.in/homegrown-creators/fashion/amesh-wijesekeras-beyond-borders-collection-celebrates-south-asian-heritage-belonging",
+            "logo_filename": "amesh-press-logo-28.png"
           }
         },
         "t31": {
@@ -288,7 +318,8 @@
             "image_filename": "amesh-press-31.jpg",
             "column": "1",
             "tile_height": "450",
-            "link": "https://www.femalemag.com.sg/gallery/fashion/amesh-wijesekera-fashion-designer-label-sri-lanka/"
+            "link": "https://www.femalemag.com.sg/gallery/fashion/amesh-wijesekera-fashion-designer-label-sri-lanka/",
+            "logo_filename": "amesh-press-logo-29.png"
           }
         },
         "t32": {
@@ -297,7 +328,8 @@
             "image_filename": "amesh-press-32.jpg",
             "column": "2",
             "tile_height": "270",
-            "link": "https://www.vogue.it/vogue-talents/article/mercedes-benz-berlin-fashion-week-fw-20192020"
+            "link": "https://www.vogue.it/vogue-talents/article/mercedes-benz-berlin-fashion-week-fw-20192020",
+            "logo_filename": "amesh-press-logo-30.png"
           }
         },
         "t33": {
@@ -306,7 +338,8 @@
             "image_filename": "amesh-press-33.jpg",
             "column": "3",
             "tile_height": "540",
-            "link": "shopify://pages/another-magazine"
+            "link": "shopify://pages/another-magazine",
+            "logo_filename": "amesh-press-logo-31.webp"
           }
         },
         "t34": {
@@ -315,7 +348,8 @@
             "image_filename": "amesh-press-34.jpg",
             "column": "4",
             "tile_height": "270",
-            "link": "shopify://pages/indie-magazine-ulgly-world-wide"
+            "link": "shopify://pages/indie-magazine-ulgly-world-wide",
+            "logo_filename": "amesh-press-logo-32.png"
           }
         },
         "t35": {
@@ -324,7 +358,8 @@
             "image_filename": "amesh-press-35.jpg",
             "column": "5",
             "tile_height": "450",
-            "link": "https://www.somersethouse.org.uk/whats-on/international-fashion-showcase-2019"
+            "link": "https://www.somersethouse.org.uk/whats-on/international-fashion-showcase-2019",
+            "logo_filename": "amesh-press-logo-33.png"
           }
         },
         "t36": {
@@ -333,7 +368,8 @@
             "image_filename": "amesh-press-36.jpg",
             "column": "1",
             "tile_height": "270",
-            "link": "shopify://pages/ben-hurst-poscript"
+            "link": "shopify://pages/ben-hurst-poscript",
+            "logo_filename": "amesh-press-logo-34.png"
           }
         },
         "t37": {
@@ -342,7 +378,8 @@
             "image_filename": "amesh-press-37.jpg",
             "column": "2",
             "tile_height": "450",
-            "link": "shopify://pages/cap-2"
+            "link": "shopify://pages/cap-2",
+            "logo_filename": "amesh-press-logo-35.png"
           }
         },
         "t38": {
@@ -351,7 +388,8 @@
             "image_filename": "amesh-press-38.jpg",
             "column": "3",
             "tile_height": "270",
-            "link": "shopify://pages/berliner-2"
+            "link": "shopify://pages/berliner-2",
+            "logo_filename": "amesh-press-logo-36.png"
           }
         },
         "t39": {
@@ -360,7 +398,8 @@
             "image_filename": "amesh-press-39.jpg",
             "column": "4",
             "tile_height": "540",
-            "link": "shopify://pages/gay-times-2"
+            "link": "shopify://pages/gay-times-2",
+            "logo_filename": "amesh-press-logo-37.png"
           }
         },
         "t40": {
@@ -369,7 +408,8 @@
             "image_filename": "amesh-press-40.jpg",
             "column": "5",
             "tile_height": "270",
-            "link": "shopify://pages/wgsn-2"
+            "link": "shopify://pages/wgsn-2",
+            "logo_filename": "amesh-press-logo-38.png"
           }
         }
       },
@@ -424,7 +464,11 @@
       "settings": {
         "heading": "Discover more",
         "min_height_px": 150,
-        "heading_line_height_px": 36
+        "heading_line_height_px": 36,
+        "product_1": "silver-fringe-knit-top-cotton-blue-crop-top",
+        "product_2": "handloom-jacket-orange-knit-cardigan-blue-knit-top",
+        "product_3": "handwoven-vest-floral-shirt-lace-shorts",
+        "product_4": "handwoven-knit-ruby-jacket"
       }
     }
   },

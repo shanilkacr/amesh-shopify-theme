@@ -97,13 +97,18 @@
         "height": "100vh",
         "padding_top": 0,
         "padding_bottom": 0,
-        "mobile_height": "50vh"
+        "mobile_height": "50vh",
+        "tablet_height": "60vh"
       }
     },
     "discover-more": {
       "type": "amesh-discover-more",
       "settings": {
-        "heading": "Discover more"
+        "heading": "Discover more",
+        "product_1": "silver-fringe-knit-top-cotton-blue-crop-top",
+        "product_2": "handloom-jacket-orange-knit-cardigan-blue-knit-top",
+        "product_3": "handwoven-vest-floral-shirt-lace-shorts",
+        "product_4": "handwoven-knit-ruby-jacket"
       }
     }
   },
