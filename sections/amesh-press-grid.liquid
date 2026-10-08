@@ -18,6 +18,24 @@
   {%- endfor -%}
 </div>
 
+{%- comment -%} Phone layout: 3 columns, tiles dealt out in order (1st, 2nd, 3rd, 1st ...) {%- endcomment -%}
+<div class="amesh-press-grid amesh-press-grid--phone" style="--amesh-press-overlay: {{ section.settings.overlay_opacity | divided_by: 100.0 }};">
+  {%- for col in (0..2) -%}
+    <div class="amesh-press-grid__column">
+      {%- for block in section.blocks -%}
+        {%- assign slot = forloop.index0 | modulo: 3 -%}
+        {%- if slot == col -%}
+          {%- assign link = block.settings.link -%}
+          <{% if link != blank %}a href="{{ link }}"{% if link contains 'http' %} target="_blank" rel="noopener"{% endif %}{% else %}div{% endif %}
+            class="amesh-press-grid__tile amesh-press-grid__tile--h{{ block.settings.tile_height }}"
+            style="background-image: url({{ block.settings.image_filename | asset_url }});"
+          ><span class="amesh-press-grid__veil" aria-hidden="true"></span>{% if block.settings.logo_filename != blank %}<img class="amesh-press-grid__logo" src="{{ block.settings.logo_filename | asset_url }}" alt="" loading="lazy">{% endif %}</{% if link != blank %}a{% else %}div{% endif %}>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  {%- endfor -%}
+</div>
+
 {% schema %}
 {
   "name": "AMESH press grid",

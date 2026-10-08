@@ -36,22 +36,6 @@
   opacity: 0;
 }
 
-@media screen and (max-width: 749px) {
-  .amesh-press-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: 10px;
-    row-gap: 10px;
-  }
-
-  .amesh-press-grid__column {
-    display: contents;
-  }
-
-  .amesh-press-grid__tile {
-    height: calc(var(--amesh-press-height, 270px) * 0.6);
-  }
-}
-
 .amesh-press-grid__logo {
   position: absolute;
   top: 50%;
@@ -61,4 +45,47 @@
   transform: translate(-50%, -50%);
   object-fit: contain;
   pointer-events: none;
+}
+
+.amesh-press-grid--phone {
+  display: none;
+}
+
+/* Phones, from the live site (375px): 3 columns, 5px gaps; tile shape follows the desktop height class */
+@media screen and (max-width: 749px) {
+  .amesh-press-grid:not(.amesh-press-grid--phone) {
+    display: none;
+  }
+
+  .amesh-press-grid--phone {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 5px;
+  }
+
+  .amesh-press-grid--phone .amesh-press-grid__column {
+    gap: 5px;
+  }
+
+  .amesh-press-grid--phone .amesh-press-grid__tile {
+    height: auto;
+  }
+
+  .amesh-press-grid__tile--h270 {
+    aspect-ratio: 1 / 1.6;
+  }
+
+  .amesh-press-grid__tile--h450 {
+    aspect-ratio: 1 / 2;
+  }
+
+  .amesh-press-grid__tile--h540 {
+    aspect-ratio: 1 / 3;
+  }
+
+  .amesh-press-grid--phone .amesh-press-grid__logo {
+    width: 94px;
+    height: auto;
+    max-height: 94px;
+  }
 }
