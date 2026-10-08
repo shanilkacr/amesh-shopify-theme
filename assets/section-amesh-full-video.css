@@ -38,3 +38,9 @@
 .amesh-full-video:hover::after {
   opacity: 0;
 }
+
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+  .amesh-full-video {
+    height: var(--amesh-t-height, 50vh);
+  }
+}

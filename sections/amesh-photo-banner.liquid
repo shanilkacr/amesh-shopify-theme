@@ -12,6 +12,14 @@
     }
   }
 
+  {%- if section.settings.tablet_height != blank -%}
+  @media screen and (min-width: 750px) and (max-width: 1024px) {
+    .amesh-photo-banner-{{ section.id }} .amesh-photo-banner__item {
+      height: {{ section.settings.tablet_height }};
+    }
+  }
+  {%- endif -%}
+
   {%- if section.settings.mobile_height != blank -%}
   @media screen and (max-width: 749px) {
     .amesh-photo-banner-{{ section.id }} .amesh-photo-banner__item {
@@ -85,6 +93,12 @@
         { "value": "full-width", "label": "Full width" }
       ],
       "default": "two-column"
+    },
+    {
+      "type": "text",
+      "id": "tablet_height",
+      "label": "Tablet height",
+      "info": "CSS height on tablets (750-1024px), e.g. 50vh. Empty = same as desktop"
     },
     {
       "type": "text",

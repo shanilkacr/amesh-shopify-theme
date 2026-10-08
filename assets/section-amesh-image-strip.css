@@ -50,3 +50,10 @@
     width: 50cqw;
   }
 }
+
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+  .amesh-image-strip__item {
+    aspect-ratio: auto;
+    height: 50vh;
+  }
+}

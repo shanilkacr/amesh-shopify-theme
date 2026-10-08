@@ -1,6 +1,6 @@
 {{ 'section-amesh-full-video.css' | asset_url | stylesheet_tag }}
 
-<div class="amesh-full-video" style="--amesh-overlay: {{ section.settings.overlay_opacity | default: 0 | divided_by: 100.0 }};{% if section.settings.mobile_height != blank %} --amesh-m-height: {{ section.settings.mobile_height }};{% endif %}">
+<div class="amesh-full-video" style="--amesh-overlay: {{ section.settings.overlay_opacity | default: 0 | divided_by: 100.0 }};{% if section.settings.mobile_height != blank %} --amesh-m-height: {{ section.settings.mobile_height }};{% endif %}{% if section.settings.tablet_height != blank %} --amesh-t-height: {{ section.settings.tablet_height }};{% endif %}">
   <video
     class="amesh-full-video__video"
     autoplay
@@ -24,6 +24,7 @@
       "info": "Filename of a .webm video already uploaded to the theme's assets folder"
     },
     { "type": "text", "id": "mobile_height", "label": "Phone height", "info": "CSS height, e.g. 60vh. Empty = 40vh" },
+    { "type": "text", "id": "tablet_height", "label": "Tablet height", "info": "CSS height on 750-1024px, e.g. 60vh. Empty = 50vh" },
     {
       "type": "number",
       "id": "overlay_opacity",

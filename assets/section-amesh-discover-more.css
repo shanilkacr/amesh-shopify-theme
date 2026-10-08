@@ -37,3 +37,15 @@
     line-height: 20px;
   }
 }
+
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+  .amesh-discover-more {
+    min-height: 104px;
+    padding: 40px 20px 0;
+  }
+
+  .amesh-discover-more__heading {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

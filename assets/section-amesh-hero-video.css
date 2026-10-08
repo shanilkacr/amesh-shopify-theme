@@ -71,3 +71,26 @@
     line-height: 77px;
   }
 }
+
+/* Home hero length and the space under it, from the live site */
+@media screen and (max-width: 749px) {
+  .amesh-hero__scroll-area {
+    height: 131.5vh;
+  }
+
+  .amesh-hero__tagline {
+    box-sizing: border-box;
+    min-height: 171px;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+  .amesh-hero__scroll-area {
+    height: 132.7vh;
+  }
+
+  .amesh-hero__tagline {
+    box-sizing: border-box;
+    min-height: 215px;
+  }
+}

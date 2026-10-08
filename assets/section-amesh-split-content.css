@@ -105,7 +105,7 @@
   margin-top: 1em;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 750px) {
   .amesh-split--natural-media {
     min-height: var(--amesh-split-row-height, 100vh);
   }
@@ -218,5 +218,11 @@
 
   .amesh-split--natural-media .amesh-split__text p:last-child {
     margin-bottom: 14px;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+  .amesh-split--natural-media {
+    min-height: var(--amesh-split-row-t, 60vh);
   }
 }
