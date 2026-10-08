@@ -5221,3 +5221,16 @@ body * {
     display: none !important;
   }
 }
+
+/* desktop/tablet product cards, from the live site: fixed 540px image box, white info panel overlapping its bottom by 71px */
+@media screen and (min-width: 768px) {
+  .card__inner.ratio::before {
+    padding-bottom: 540px !important;
+  }
+
+  .card__information {
+    position: relative;
+    margin-top: -71px;
+    background: #ffffff;
+  }
+}
