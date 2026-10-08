@@ -4848,3 +4848,42 @@ body * {
   font-weight: 300 !important;
   line-height: 25.6px !important;
 }
+
+.product__info-container product-form,
+.product__info-container product-form form,
+.product__info-container .product-form__buttons {
+  margin: 0 !important;
+}
+
+.product-form__quantity .quantity__input {
+  flex: 0 0 58px !important;
+  width: 58px !important;
+}
+
+/* Desktop: info column sits 60% across and is 30% wide, like the live page */
+@media screen and (min-width: 750px) {
+  .template-product .page-width,
+  product-info .page-width {
+    max-width: none;
+    padding: 0;
+  }
+
+  product-info .product.grid {
+    margin: 0;
+    width: 100%;
+  }
+
+  product-info .product__media-wrapper {
+    flex: 0 0 60%;
+    width: 60%;
+    max-width: 60%;
+    padding-right: 0;
+  }
+
+  product-info .product__info-wrapper {
+    flex: 0 0 30%;
+    width: 30%;
+    max-width: 30%;
+    padding: 80px 0 0 0;
+  }
+}
