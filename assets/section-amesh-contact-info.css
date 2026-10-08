@@ -46,14 +46,32 @@
 
 @media screen and (max-width: 749px) {
   .amesh-contact-info {
-    margin-top: 40px;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    margin-top: 50px;
+    padding: 10px 10px 10px;
+  }
+
+  .amesh-contact-info__heading {
+    font-size: 18px;
+    line-height: 18px;
   }
 
   .amesh-contact-info__links {
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: 0;
+    margin-top: 30px;
+    padding: 0;
+  }
+
+  .amesh-contact-info__links li:nth-child(2) {
+    margin-top: 10px;
+  }
+
+  .amesh-contact-info__links li:nth-child(3) {
+    margin-top: 20px;
+  }
+
+  .amesh-contact-info__note {
+    margin-top: 20px;
   }
 }
