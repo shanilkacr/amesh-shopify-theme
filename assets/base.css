@@ -4902,3 +4902,23 @@ body * {
   width: 118px !important;
   max-width: 118px !important;
 }
+
+.product__info-container > div:has(> product-form),
+.product__info-container > div:has(> .product-form) {
+  flex: 0 0 177px !important;
+  width: 177px !important;
+}
+
+@media screen and (min-width: 768px) {
+  .product__info-container > div:has(> product-form),
+  .product__info-container > div:has(> .product-form) {
+    flex: 0 0 280px !important;
+    width: 280px !important;
+  }
+}
+
+/* sold out: the wrapper holds just the red text */
+.product__info-container > div:has(.product-form__submit[disabled]) {
+  flex: 0 0 100% !important;
+  width: 100% !important;
+}
