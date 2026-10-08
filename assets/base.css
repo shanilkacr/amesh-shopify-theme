@@ -4480,15 +4480,15 @@ body * {
 
 
 /* Empty cart page, from the live site: "Cart" title, pale notice with a blue top edge, grey "Return to shop" button */
-.amesh-cart-empty {
+.cart__warnings.amesh-cart-empty {
   max-width: 1140px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 !important;
   text-align: center;
 }
 
 .amesh-cart-empty__title {
-  margin: 40px 0 0;
+  margin: 30px 0 0;
   font-family: var(--font-body-family);
   font-size: 32px;
   font-weight: 400;
@@ -4498,14 +4498,14 @@ body * {
 }
 
 .amesh-cart-empty__widget {
-  margin: 60px 0 367px;
-  padding: 0 20px 34px;
+  margin: 0 0 367px;
+  padding: 160px 20px 34px;
   text-align: left;
 }
 
 .amesh-cart-empty__info {
   position: relative;
-  margin-top: 100px;
+  margin: 0;
   padding: 16px 32px 16px 56px;
   background: #f6f5f8;
   border-top: 3px solid #1e85be;
@@ -4543,20 +4543,16 @@ body * {
 }
 
 @media screen and (max-width: 749px) {
-  .amesh-cart-empty {
-    padding: 0 10px;
+  .cart__warnings.amesh-cart-empty {
+    padding: 0 10px !important;
   }
 
   .amesh-cart-empty__title {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .amesh-cart-empty__widget {
-    margin: 10px 0 264px;
-    padding: 0 10px 34px;
-  }
-
-  .amesh-cart-empty__info {
-    margin-top: 60px;
+    margin: 0 0 264px;
+    padding: 70px 10px 34px;
   }
 }
