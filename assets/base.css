@@ -4387,28 +4387,27 @@ body * {
 /* Phone menu: Shop opens a small floating list under the item, over the other links, like the live site */
 @media screen and (max-width: 989px) {
   .menu-drawer__navigation > .menu-drawer__menu > li {
-    position: relative;
+    position: relative !important;
   }
 
-  .js .menu-drawer__submenu {
-    position: absolute;
-    top: calc(100% + 10px);
-    bottom: auto;
-    left: 10px;
-    width: 130px;
-    height: auto;
-    transform: none;
+  .js .menu-drawer .menu-drawer__submenu {
+    position: absolute !important;
+    top: calc(100% + 10px) !important;
+    bottom: auto !important;
+    left: 10px !important;
+    width: 130px !important;
+    height: auto !important;
+    transform: none !important;
     visibility: hidden;
-    overflow: visible;
-    background: #ffffff;
+    overflow: visible !important;
+    background: #ffffff !important;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
     z-index: 5;
   }
 
-  .js details[open] > .menu-drawer__submenu,
-  .js details[open].menu-opening > .menu-drawer__submenu {
-    visibility: visible;
-    transform: none;
+  .js .menu-drawer details[open] > .menu-drawer__submenu,
+  .js .menu-drawer details[open].menu-opening > .menu-drawer__submenu {
+    visibility: visible !important;
   }
 
   .js .menu-drawer__navigation .submenu-open {
@@ -4416,21 +4415,21 @@ body * {
   }
 
   .menu-drawer__submenu .menu-drawer__close-button {
-    display: none;
+    display: none !important;
   }
 
   .menu-drawer__submenu .menu-drawer__inner-submenu {
-    height: auto;
-    overflow: visible;
+    height: auto !important;
+    overflow: visible !important;
   }
 
   .menu-drawer__submenu .menu-drawer__menu {
-    padding: 0;
+    padding: 0 !important;
   }
 
   .menu-drawer .menu-drawer__submenu .menu-drawer__menu-item {
     padding: 0 11px !important;
-    line-height: 40px;
+    line-height: 40px !important;
     font-size: 14px !important;
     white-space: nowrap;
   }
