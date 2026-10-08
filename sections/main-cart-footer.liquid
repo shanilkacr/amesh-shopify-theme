@@ -58,9 +58,14 @@
                   {%- endif -%}
                 </div>
 
-                <div class="totals">
+                <h2 class="amesh-cart-totals__title">Cart Totals</h2>
+                <div class="totals amesh-cart-totals__row">
+                  <h2 class="totals__total">Subtotal</h2>
+                  <p class="totals__total-value">{{ cart.items_subtotal_price | money_without_trailing_zeros }}</p>
+                </div>
+                <div class="totals amesh-cart-totals__row">
                   <h2 class="totals__total">{{ 'sections.cart.estimated_total' | t }}</h2>
-                  <p class="totals__total-value">{{ cart.total_price | money_with_currency }}</p>
+                  <p class="totals__total-value">{{ cart.total_price | money_without_trailing_zeros }}</p>
                 </div>
 
                 <small class="tax-note caption-large rte">
