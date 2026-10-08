@@ -294,3 +294,25 @@
     line-height: 24px;
   }
 }
+
+/* Tablet (768-1024px), from the live site: 24px titles, text kept 48px in from the sides */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .amesh-project__text {
+    padding: 10px 48px;
+  }
+
+  .amesh-project__heading,
+  .amesh-campaign__heading:not(.amesh-campaign__heading--left) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .amesh-campaign__credits {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .amesh-press-detail__single {
+    padding: 10px;
+  }
+}

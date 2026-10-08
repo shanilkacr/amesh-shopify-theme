@@ -75,3 +75,10 @@
     margin-top: 20px;
   }
 }
+
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+  .amesh-contact-info__links {
+    gap: 56px;
+    margin-top: 34px;
+  }
+}
