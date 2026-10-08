@@ -4888,6 +4888,17 @@ body * {
     flex: 0 0 30%;
     width: 30%;
     max-width: 30%;
-    padding: 70px 0 0 0 !important;
+    padding: 50px 0 0 0 !important;
   }
+}
+
+.product__info-container > .product-form__quantity {
+  flex: 0 0 118px !important;
+  width: 118px !important;
+  max-width: 118px !important;
+}
+
+.product-form__quantity quantity-input.quantity {
+  width: 118px !important;
+  max-width: 118px !important;
 }
