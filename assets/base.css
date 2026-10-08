@@ -5238,7 +5238,7 @@ body * {
 
 /* collection pages on desktop, from the live site: no gap between cards, 20px page gutters, grid starts 130px down */
 @media screen and (min-width: 1025px) {
-  .collection .product-grid {
+  main:not([data-template="index"]) .collection .product-grid {
     gap: 0 !important;
     column-gap: 0 !important;
     row-gap: 0 !important;
@@ -5246,7 +5246,7 @@ body * {
     width: auto !important;
   }
 
-  .collection .product-grid .grid__item {
+  main:not([data-template="index"]) .collection .product-grid .grid__item {
     width: 25% !important;
     max-width: 25% !important;
   }
