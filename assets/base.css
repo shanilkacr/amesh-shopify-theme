@@ -5235,3 +5235,19 @@ body * {
     background: #ffffff;
   }
 }
+
+/* collection pages on desktop, from the live site: no gap between cards, 20px page gutters, grid starts 130px down */
+@media screen and (min-width: 1025px) {
+  .collection .product-grid {
+    gap: 0;
+    column-gap: 0;
+    row-gap: 0;
+    margin: 30px 20px 0;
+    width: auto;
+  }
+
+  .collection .product-grid .grid__item {
+    width: 25% !important;
+    max-width: 25% !important;
+  }
+}
