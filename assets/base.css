@@ -4483,7 +4483,7 @@ body * {
 .cart__warnings.amesh-cart-empty {
   position: relative;
   left: 50%;
-  width: min(1124px, 100%);
+  width: min(1124px, 100vw);
   max-width: none;
   margin: 0;
   padding: 0 !important;
@@ -4557,7 +4557,7 @@ body * {
   }
 
   .amesh-cart-empty__widget {
-    margin: 0 0 241px;
+    margin: 0 0 228px;
     padding: 70px 20px 34px;
   }
 }
