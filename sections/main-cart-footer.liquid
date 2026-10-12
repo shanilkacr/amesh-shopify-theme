@@ -111,7 +111,7 @@
             {%- else -%}
               <div class="cart__ctas" {{ block.shopify_attributes }}>
                 <a
-                  href="{{ routes.root_url }}pages/checkout"
+                  href="{% unless pages.checkout.empty? %}{{ routes.root_url }}pages/checkout{% else %}{{ routes.root_url }}checkout{% endunless %}"
                   id="checkout"
                   class="cart__checkout-button button"
                   {% if cart == empty %}
