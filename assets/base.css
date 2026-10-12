@@ -5349,3 +5349,25 @@ body * {
     padding-right: 5px !important;
   }
 }
+
+/* search on phones, from the live site: the dark overlay covers the whole screen (not just the menu panel), the input shows the browser's own
+   focus ring, and the cart icon stays visible above the overlay */
+@media screen and (max-width: 1024px) {
+  .menu-drawer:has(.search-modal) {
+    transition: none !important;
+  }
+
+  details[open] > .menu-drawer:has(details[open] .search-modal) {
+    transform: none !important;
+  }
+
+  .menu-drawer__search-cart-row .header__icon--cart {
+    position: relative;
+    z-index: 9999;
+  }
+}
+
+.header__search .search-modal .field__input:focus,
+.header__search .search-modal .field__input:focus-visible {
+  outline: auto 1px -webkit-focus-ring-color !important;
+}
