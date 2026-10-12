@@ -67,7 +67,7 @@ if (!customElements.get('product-form')) {
               soldOutMessage.classList.remove('hidden');
               this.error = true;
               return;
-            } else if (!this.cart) {
+            } else if (!this.cart || !this.closest('quick-add-modal')) {
               this.resolveCartLinesUpdate(linesUpdateDeferred);
               window.location = window.routes.cart_url;
               return;
