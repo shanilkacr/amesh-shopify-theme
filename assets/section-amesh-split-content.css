@@ -250,3 +250,13 @@
     margin-bottom: 10px;
   }
 }
+
+/* live phone pages (Our Story, Craft, Circularity) centre the text and headings in these blocks */
+@media screen and (max-width: 749px) {
+  .amesh-split__content,
+  .amesh-split__heading,
+  .amesh-split__text,
+  .amesh-split__text p {
+    text-align: center;
+  }
+}
