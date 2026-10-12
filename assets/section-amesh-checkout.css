@@ -1,0 +1,308 @@
+.amesh-checkout {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 10px 80px;
+  font-family: var(--font-body-family);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22.4px;
+  color: #000000;
+}
+
+.amesh-checkout__title {
+  margin: 0 0 40px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: none;
+  color: #1d1d1d;
+}
+
+.amesh-checkout__empty {
+  text-align: center;
+  font-size: 16px;
+}
+
+.amesh-checkout__form {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.amesh-checkout__card {
+  box-sizing: border-box;
+  margin: 0 0 24px;
+  padding: 35px;
+  border: 1px solid #d5d8dc;
+  border-radius: 3px;
+  background: #ffffff;
+}
+
+.amesh-checkout__card-title {
+  margin: 0 0 30px;
+  font-family: var(--font-body-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  letter-spacing: normal;
+  text-transform: none;
+  color: #1d1d1d;
+}
+
+.amesh-checkout__fields {
+  padding-top: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 22px;
+}
+
+.amesh-checkout__row {
+  width: 100%;
+  margin: 0 0 11px;
+}
+
+.amesh-checkout__row--half {
+  width: calc(50% - 11px);
+}
+
+.amesh-checkout__row label {
+  display: block;
+  margin: 0 0 3px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 28px;
+  color: #1d1d1d;
+}
+
+.amesh-checkout__row abbr {
+  color: #e2401c;
+  text-decoration: none;
+}
+
+.amesh-checkout__optional {
+  color: #6d6d6d;
+}
+
+.amesh-checkout__row--hide-label label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.amesh-checkout__row input[type="text"],
+.amesh-checkout__row input[type="tel"],
+.amesh-checkout__row input[type="email"],
+.amesh-checkout__row select,
+.amesh-checkout__row textarea {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 49px;
+  padding: 16px;
+  border: 0;
+  border-radius: 0;
+  background: #f9fafa;
+  font-family: var(--font-body-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  color: #69727d;
+  box-shadow: none;
+  outline: none;
+}
+
+.amesh-checkout__row select {
+  appearance: none;
+  padding-right: 40px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%231d1d1d' stroke-width='1.5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+}
+
+.amesh-checkout__row textarea {
+  height: auto;
+  min-height: 97px;
+  resize: vertical;
+}
+
+.amesh-checkout__row input:focus,
+.amesh-checkout__row select:focus,
+.amesh-checkout__row textarea:focus {
+  background: #f1f3f4;
+}
+
+.amesh-checkout__row ::placeholder {
+  color: #69727d;
+  opacity: 0.8;
+}
+
+.amesh-checkout__table {
+  width: 100%;
+  border: 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.amesh-checkout__table th {
+  padding: 0 12px 15px 0;
+  border: 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.5px;
+  text-align: left;
+  color: #1d1d1d;
+}
+
+.amesh-checkout__table th:first-child,
+.amesh-checkout__table td:first-child {
+  width: 68%;
+}
+
+.amesh-checkout__table td {
+  padding: 13px 40px 13px 0;
+  border: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #1d1d1d;
+}
+
+.amesh-checkout__table td strong {
+  font-weight: 700;
+}
+
+.amesh-checkout__pay-label {
+  margin: 0 0 3px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 28px;
+  color: #1d1d1d;
+}
+
+.amesh-checkout__pay-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 0 16px;
+}
+
+.amesh-checkout__pay-box {
+  box-sizing: border-box;
+  padding: 16px;
+  margin: 0 0 25px;
+  background: #f9fafa;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  color: #69727d;
+}
+
+.amesh-checkout__privacy {
+  margin: 0 0 23px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22.4px;
+  color: #1d1d1d;
+}
+
+.amesh-checkout a {
+  color: #0b79a5;
+  text-decoration: none;
+}
+
+.amesh-checkout__terms {
+  margin: 0 0 15px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22.4px;
+}
+
+.amesh-checkout__terms label {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  color: #1d1d1d;
+}
+
+.amesh-checkout__terms input {
+  flex: 0 0 auto;
+  margin: 5px 0 0;
+}
+
+.amesh-checkout__terms abbr {
+  color: #e2401c;
+  text-decoration: none;
+}
+
+.amesh-checkout__error {
+  margin: 0 0 12px;
+  font-size: 14px;
+  color: #aa0000;
+}
+
+.amesh-checkout__submit {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 47px;
+  padding: 15px;
+  border: 1px solid #1d1d1d;
+  border-radius: 0;
+  background: #1d1d1d;
+  font-family: var(--font-body-family);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: normal;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.amesh-checkout__submit:hover {
+  background: #000000;
+}
+
+@media screen and (min-width: 1025px) {
+  .amesh-checkout {
+    padding-top: 30px;
+  }
+
+  .amesh-checkout__title {
+    margin-bottom: 115px;
+  }
+
+  .amesh-checkout__form {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .amesh-checkout__col--start {
+    flex: 0 0 616px;
+  }
+
+  .amesh-checkout__col--end {
+    flex: 0 0 460px;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .amesh-checkout__card {
+    padding: 20px;
+  }
+
+  .amesh-checkout__row--half {
+    width: 100%;
+  }
+
+  .amesh-checkout__table td {
+    padding-right: 12px;
+  }
+}

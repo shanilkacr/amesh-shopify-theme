@@ -110,18 +110,17 @@
               </div>
             {%- else -%}
               <div class="cart__ctas" {{ block.shopify_attributes }}>
-                <button
-                  type="submit"
+                <a
+                  href="{{ routes.root_url }}pages/checkout"
                   id="checkout"
                   class="cart__checkout-button button"
-                  name="checkout"
                   {% if cart == empty %}
-                    disabled
+                    aria-disabled="true"
+                    style="pointer-events: none; opacity: 0.5;"
                   {% endif %}
-                  form="cart"
                 >
                   {{ 'sections.cart.checkout' | t }}
-                </button>
+                </a>
               </div>
 
               {%- if additional_checkout_buttons -%}

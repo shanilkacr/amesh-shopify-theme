@@ -1,0 +1,124 @@
+{{ 'section-amesh-checkout.css' | asset_url | stylesheet_tag }}
+
+<div class="amesh-checkout" data-amesh-checkout data-checkout-url="{{ routes.root_url }}checkout" data-cart-update-url="{{ routes.cart_update_url }}.js">
+  <h1 class="amesh-checkout__title">{{ section.settings.heading }}</h1>
+
+  {%- if cart.item_count == 0 -%}
+    <p class="amesh-checkout__empty">Your cart is currently empty. <a href="{{ routes.all_products_collection_url }}">Return to shop</a></p>
+  {%- else -%}
+    <form class="amesh-checkout__form" novalidate>
+      <div class="amesh-checkout__col amesh-checkout__col--start">
+        <div class="amesh-checkout__card">
+          <h3 class="amesh-checkout__card-title">Billing Details</h3>
+          <div class="amesh-checkout__fields">
+            <p class="amesh-checkout__row amesh-checkout__row--half">
+              <label for="amesh-first-name">First Name&nbsp;<abbr title="required">*</abbr></label>
+              <input type="text" id="amesh-first-name" name="first_name" placeholder="First Name" autocomplete="given-name" required>
+            </p>
+            <p class="amesh-checkout__row amesh-checkout__row--half">
+              <label for="amesh-last-name">Last Name&nbsp;<abbr title="required">*</abbr></label>
+              <input type="text" id="amesh-last-name" name="last_name" placeholder="Last Name" autocomplete="family-name" required>
+            </p>
+            <p class="amesh-checkout__row">
+              <label for="amesh-company">Company Name&nbsp;<span class="amesh-checkout__optional">(optional)</span></label>
+              <input type="text" id="amesh-company" name="company" placeholder="Company Name" autocomplete="organization">
+            </p>
+            <p class="amesh-checkout__row">
+              <label for="amesh-country">Country / Region&nbsp;<abbr title="required">*</abbr></label>
+              <select id="amesh-country" name="country" autocomplete="country-name" required>
+                {%- if localization.available_countries.size > 0 -%}
+                  {%- for country in localization.available_countries -%}
+                    <option value="{{ country.name | escape }}"{% if country.iso_code == 'LK' %} selected{% endif %}>{{ country.name }}</option>
+                  {%- endfor -%}
+                {%- else -%}
+                  <option value="Sri Lanka" selected>Sri Lanka</option>
+                {%- endif -%}
+              </select>
+            </p>
+            <p class="amesh-checkout__row">
+              <label for="amesh-address1">Street address&nbsp;<abbr title="required">*</abbr></label>
+              <input type="text" id="amesh-address1" name="address1" placeholder="House number and street name" autocomplete="address-line1" required>
+            </p>
+            <p class="amesh-checkout__row amesh-checkout__row--hide-label">
+              <label for="amesh-address2">Apartment, suite, unit, etc. <span class="amesh-checkout__optional">(optional)</span></label>
+              <input type="text" id="amesh-address2" name="address2" placeholder="Apartment, suite, unit, etc. (optional)" autocomplete="address-line2">
+            </p>
+            <p class="amesh-checkout__row">
+              <label for="amesh-city">Town / City&nbsp;<abbr title="required">*</abbr></label>
+              <input type="text" id="amesh-city" name="city" autocomplete="address-level2" required>
+            </p>
+            <p class="amesh-checkout__row">
+              <label for="amesh-zip">Postcode / ZIP&nbsp;<abbr title="required">*</abbr></label>
+              <input type="text" id="amesh-zip" name="zip" autocomplete="postal-code" required>
+            </p>
+            <p class="amesh-checkout__row">
+              <label for="amesh-phone">Phone&nbsp;<abbr title="required">*</abbr></label>
+              <input type="tel" id="amesh-phone" name="phone" placeholder="Phone" autocomplete="tel" required>
+            </p>
+            <p class="amesh-checkout__row">
+              <label for="amesh-email">Email Address&nbsp;<abbr title="required">*</abbr></label>
+              <input type="email" id="amesh-email" name="email" placeholder="Email Address" autocomplete="email" required>
+            </p>
+          </div>
+        </div>
+
+        <div class="amesh-checkout__card">
+          <div class="amesh-checkout__fields">
+            <p class="amesh-checkout__row">
+              <label for="amesh-notes">Order notes&nbsp;<span class="amesh-checkout__optional">(optional)</span></label>
+              <textarea id="amesh-notes" name="note" rows="2" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="amesh-checkout__col amesh-checkout__col--end">
+        <div class="amesh-checkout__card">
+          <h3 class="amesh-checkout__card-title">Your Order</h3>
+          <table class="amesh-checkout__table">
+            <thead>
+              <tr><th>Product</th><th>Subtotal</th></tr>
+            </thead>
+            <tbody>
+              {%- for item in cart.items -%}
+                <tr>
+                  <td>{{ item.product.title | escape }}&nbsp;<strong>&times;&nbsp;{{ item.quantity }}</strong></td>
+                  <td>{{ item.final_line_price | money_without_trailing_zeros }}</td>
+                </tr>
+              {%- endfor -%}
+              <tr><td>Subtotal</td><td>{{ cart.items_subtotal_price | money_without_trailing_zeros }}</td></tr>
+              <tr class="amesh-checkout__total"><td>Total</td><td><strong>{{ cart.total_price | money_without_trailing_zeros }}</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="amesh-checkout__card amesh-checkout__payment">
+          <p class="amesh-checkout__pay-label">Pay online</p>
+          <img class="amesh-checkout__pay-logo" src="{{ 'amesh-checkout-webxpay.jpg' | asset_url }}" alt="Accepted cards" loading="lazy">
+          <div class="amesh-checkout__pay-box">Visa / MasterCard / Amex</div>
+          <p class="amesh-checkout__privacy">Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our <a href="{{ routes.root_url }}pages/privacy-policy">privacy policy</a>.</p>
+          <p class="amesh-checkout__terms">
+            <label>
+              <input type="checkbox" name="terms" required>
+              <span>I have read and agree to the website <a href="{{ routes.root_url }}pages/returns-shipping">terms and conditions</a>&nbsp;<abbr title="required">*</abbr></span>
+            </label>
+          </p>
+          <p class="amesh-checkout__error" role="alert" hidden></p>
+          <button type="submit" class="amesh-checkout__submit">Place order</button>
+        </div>
+      </div>
+    </form>
+  {%- endif -%}
+</div>
+
+<script src="{{ 'amesh-checkout.js' | asset_url }}" defer="defer"></script>
+
+{% schema %}
+{
+  "name": "AMESH checkout",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Checkout" }
+  ],
+  "presets": [{ "name": "AMESH checkout" }]
+}
+{% endschema %}

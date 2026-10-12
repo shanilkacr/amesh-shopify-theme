@@ -1,0 +1,13 @@
+{
+  "sections": {
+    "checkout": {
+      "type": "amesh-checkout",
+      "settings": {
+        "heading": "Checkout"
+      }
+    }
+  },
+  "order": [
+    "checkout"
+  ]
+}
