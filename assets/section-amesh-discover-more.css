@@ -114,3 +114,9 @@
     min-height: 104px;
   }
 }
+
+@media screen and (max-width: 749px) {
+  main[data-suffix="press"] .amesh-discover-more__heading {
+    line-height: 30px;
+  }
+}

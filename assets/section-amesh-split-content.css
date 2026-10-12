@@ -242,3 +242,11 @@
     line-height: 1.5;
   }
 }
+
+/* live circularity page: the 20px phone headings sit in 30px lines */
+@media screen and (max-width: 749px) {
+  main[data-suffix="circularity"] .amesh-split--natural-media .amesh-split__heading:not(.amesh-split__heading--logo) {
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+}
