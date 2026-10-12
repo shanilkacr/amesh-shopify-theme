@@ -45,7 +45,7 @@
         "content_vertical_align": "start",
         "mobile_text_first": true,
         "mobile_pad_top": 30,
-        "mobile_pad_bottom": 20,
+        "mobile_pad_bottom": 0,
         "mobile_pad_side": 30,
         "tablet_row_height": "540px"
       }

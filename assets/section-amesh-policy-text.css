@@ -104,7 +104,64 @@
 
 @media screen and (max-width: 749px) {
   .amesh-policy {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 20px 10px 40px;
   }
+}
+
+/* live headings are paragraphs, so they keep a paragraph's 14.4px gap below; paragraphs use 14.4px too */
+.amesh-policy--returns .amesh-policy__body p,
+.amesh-policy--returns .amesh-policy__body ul,
+.amesh-policy--returns .amesh-policy__body ol,
+.amesh-policy--returns .amesh-policy__body h2,
+.amesh-policy--returns .amesh-policy__body h3,
+.amesh-policy--returns .amesh-policy__body h4 {
+  margin-bottom: 14.4px;
+}
+
+.amesh-policy--returns .amesh-policy__body > h3:first-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 749px) {
+  .amesh-policy--returns .amesh-policy__body ul,
+  .amesh-policy--returns .amesh-policy__body ol {
+    margin-bottom: 19.4px;
+  }
+
+  .amesh-policy--returns {
+    padding-bottom: 10px;
+  }
+}
+
+/* privacy policy on phones, from the live site: title right under the header, text 341px wide starting at x 9 */
+@media screen and (max-width: 749px) {
+  .amesh-policy--privacy {
+    padding-top: 0;
+  }
+
+  .amesh-policy--privacy .amesh-policy__title {
+    margin-bottom: 2px;
+  }
+
+  .amesh-policy--privacy .amesh-policy__body {
+    margin: 0 15px 0 -1px;
+  }
+
+  .amesh-policy--privacy .amesh-policy__body p {
+    margin-bottom: 14.4px;
+  }
+
+  .amesh-policy--privacy .amesh-policy__body ul,
+  .amesh-policy--privacy .amesh-policy__body ol {
+    margin-bottom: 0;
+  }
+}
+
+.amesh-policy__body ul,
+.amesh-policy__body ol {
+  list-style-position: outside;
+}
+
+.amesh-policy__body li {
+  list-style-position: outside;
 }

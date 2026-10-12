@@ -4147,8 +4147,8 @@ details[open]:hover > summary.header__menu-item {
   text-align: right;
 }
 
-.featured-collection .center .button,
-.featured-collection .center .button:hover {
+.collection__view-all .button,
+.collection__view-all .button:hover {
   background: transparent;
   border: 0;
   box-shadow: none;
@@ -4163,12 +4163,12 @@ details[open]:hover > summary.header__menu-item {
   min-width: 0;
 }
 
-.featured-collection .center .button::before,
-.featured-collection .center .button::after {
+.collection__view-all .button::before,
+.collection__view-all .button::after {
   display: none !important;
 }
 
-.featured-collection .center {
+.collection__view-all {
   margin-top: 36px;
 }
 
@@ -5273,5 +5273,83 @@ body * {
 @media screen and (min-width: 1025px) {
   main[data-collection="all"] .collection .product-grid {
     margin: 10px 0 0 !important;
+  }
+}
+
+/* Collection and home product grids on phones, from the live site: 10px page gutters and 10px between cards */
+@media screen and (max-width: 767px) {
+  .product-grid {
+    gap: 10px !important;
+    column-gap: 10px !important;
+    row-gap: 10px !important;
+  }
+
+  main:not([data-template="index"]) .collection .product-grid {
+    margin: 10px 10px 0 !important;
+    width: auto !important;
+  }
+
+  main[data-collection="all"] .collection .product-grid {
+    margin-top: 7px !important;
+  }
+
+  main[data-template="index"] .product-grid {
+    padding: 0 10px !important;
+  }
+
+  .product-grid > .grid__item {
+    width: calc(50% - 5px) !important;
+    max-width: calc(50% - 5px) !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card__information {
+    row-gap: 0 !important;
+  }
+
+  .card__information .amesh-card__soldout {
+    margin-top: 8px;
+  }
+
+  .card__information .amesh-card__type {
+    margin-top: 12px;
+  }
+
+  .card__information .card-information {
+    margin-top: 5px;
+  }
+}
+
+/* Home product row on phones, from the live site: grid 10px under the banner, "Shop all" 20px link in an 80px block, 40px before the next banner */
+@media screen and (max-width: 767px) {
+  main[data-template="index"] slider-component {
+    padding: 0 !important;
+    margin: -30px 0 0 !important;
+  }
+
+  main[data-template="index"] .product-grid {
+    margin: 0 !important;
+    padding: 0 10px !important;
+  }
+
+  .collection__view-all {
+    box-sizing: border-box;
+    height: 80px;
+    margin: 0 0 60px;
+    padding-top: 38px;
+  }
+
+  .collection__view-all .button {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+/* product page on phones, from the live site: text column has 20px gutters */
+@media screen and (max-width: 749px) {
+  .product__info-wrapper {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
   }
 }
