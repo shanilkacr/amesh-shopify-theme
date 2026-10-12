@@ -5325,7 +5325,7 @@ body * {
 @media screen and (max-width: 767px) {
   main[data-template="index"] slider-component {
     padding: 0 !important;
-    margin: -30px 0 0 !important;
+    margin: 10px 0 0 !important;
   }
 
   main[data-template="index"] .product-grid {
@@ -5336,7 +5336,7 @@ body * {
   .collection__view-all {
     box-sizing: border-box;
     height: 80px;
-    margin: 18px 0 60px;
+    margin: 0 0 40px;
     padding-top: 28px;
   }
 
