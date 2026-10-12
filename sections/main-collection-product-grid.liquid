@@ -161,7 +161,13 @@
                 "
               >
                 {% assign skip_card_product_styles = false %}
-                {%- for product in collection.products -%}
+                {%- capture amesh_order -%}{%- render 'amesh-product-order', key: collection.handle -%}{%- endcapture -%}
+                {%- assign amesh_in_collection = collection.products | map: 'handle' -%}
+                {%- assign amesh_loop_handles = amesh_in_collection -%}
+                {%- if amesh_order != blank -%}{%- assign amesh_loop_handles = amesh_order | split: ',' -%}{%- endif -%}
+                {%- for amesh_handle in amesh_loop_handles -%}
+                  {%- unless amesh_in_collection contains amesh_handle -%}{%- continue -%}{%- endunless -%}
+                  {%- assign product = all_products[amesh_handle] -%}
                   {% assign lazy_load = false %}
                   {%- if forloop.index > 2 -%}
                     {%- assign lazy_load = true -%}

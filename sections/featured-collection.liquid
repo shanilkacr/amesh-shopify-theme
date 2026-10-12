@@ -104,8 +104,14 @@
 
         {%- if section.settings.collection.products.size > 0 -%}
           {% assign lazy_load = false %}
+          {%- capture amesh_order -%}{%- if template == 'index' -%}{%- render 'amesh-product-order', key: 'home' -%}{%- endif -%}{%- endcapture -%}
+          {%- assign amesh_in_collection = section.settings.collection.products | map: 'handle' -%}
+          {%- assign amesh_loop_handles = amesh_in_collection -%}
+          {%- if amesh_order != blank -%}{%- assign amesh_loop_handles = amesh_order | split: ',' -%}{%- endif -%}
           {% paginate section.settings.collection.products by section.settings.products_to_show %}
-            {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
+            {%- for amesh_handle in amesh_loop_handles limit: section.settings.products_to_show -%}
+              {%- unless amesh_in_collection contains amesh_handle -%}{%- continue -%}{%- endunless -%}
+              {%- assign product = all_products[amesh_handle] -%}
               {% if lazy_load == false and forloop.index > max_columns_to_show %}
                 {% assign lazy_load = true %}
               {% endif %}
