@@ -20,6 +20,14 @@
   }
   {%- endif -%}
 
+  {%- if section.settings.mobile_image_position_y != blank -%}
+  @media screen and (max-width: 749px) {
+    .amesh-photo-banner-{{ section.id }} .amesh-photo-banner__media {
+      background-position: center {{ section.settings.mobile_image_position_y }}% !important;
+    }
+  }
+  {%- endif -%}
+
   {%- if section.settings.mobile_height != blank -%}
   @media screen and (max-width: 749px) {
     .amesh-photo-banner-{{ section.id }} .amesh-photo-banner__item {
@@ -99,6 +107,12 @@
       "id": "tablet_height",
       "label": "Tablet height",
       "info": "CSS height on tablets (750-1024px), e.g. 50vh. Empty = same as desktop"
+    },
+    {
+      "type": "number",
+      "id": "mobile_image_position_y",
+      "label": "Phone image vertical position (%)",
+      "info": "Leave empty to use the image vertical position"
     },
     {
       "type": "text",

@@ -30,7 +30,8 @@
         "padding_top": 0,
         "padding_bottom": 0,
         "mobile_height": "40vh",
-        "tablet_height": "50vh"
+        "tablet_height": "50vh",
+        "mobile_image_position_y": 0
       }
     },
     "info": {
