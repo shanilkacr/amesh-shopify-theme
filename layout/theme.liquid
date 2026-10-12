@@ -357,6 +357,7 @@
       role="main"
       tabindex="-1"
       data-template="{{ template.name }}"
+      {% if collection %}data-collection="{{ collection.handle }}"{% endif %}
     >
       {{ content_for_layout }}
     </main>

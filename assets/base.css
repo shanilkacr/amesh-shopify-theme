@@ -5268,3 +5268,10 @@ body * {
     z-index: 1;
   }
 }
+
+/* Shop all (live /shop-all/): edge to edge like the home row, grid starts 10px lower than the header */
+@media screen and (min-width: 1025px) {
+  main[data-collection="all"] .collection .product-grid {
+    margin: 10px 0 0 !important;
+  }
+}
