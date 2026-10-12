@@ -86,6 +86,13 @@
 
 /* Home hero length and the space under it, from the live site */
 @media screen and (max-width: 749px) {
+  /* live phone: the 111.5px text box starts 90px (24vw) from the left and the word runs past it */
+  .amesh-hero__sticky-wrap {
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding-left: 24vw;
+  }
+
   .amesh-hero__scroll-area {
     height: 131.5vh;
   }
