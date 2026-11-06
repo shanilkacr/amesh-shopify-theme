@@ -1,0 +1,135 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "project": {
+      "type": "amesh-project",
+      "blocks": {
+        "i01": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-cdc-01.webp"
+          }
+        },
+        "i02": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-cdc-02.jpg"
+          }
+        },
+        "i03": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-cdc-03.jpg"
+          }
+        },
+        "i04": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-cdc-04.jpg"
+          }
+        },
+        "i05": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-cdc-05.webp"
+          }
+        },
+        "i06": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-cdc-06.jpg"
+          }
+        },
+        "i07": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-cdc-07.jpg"
+          }
+        },
+        "i08": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-cdc-08.webp"
+          }
+        },
+        "i09": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-cdc-09.jpg"
+          }
+        },
+        "i10": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-cdc-10.jpg"
+          }
+        },
+        "i11": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-cdc-11.webp"
+          }
+        },
+        "i12": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-cdc-12.webp"
+          }
+        },
+        "i13": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-cdc-13.jpg"
+          }
+        },
+        "i14": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-cdc-14.jpg"
+          }
+        },
+        "i15": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-cdc-15.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "i01",
+        "i02",
+        "i03",
+        "i04",
+        "i05",
+        "i06",
+        "i07",
+        "i08",
+        "i09",
+        "i10",
+        "i11",
+        "i12",
+        "i13",
+        "i14",
+        "i15"
+      ],
+      "settings": {
+        "heading": "Circular Design Challenge India 2023",
+        "text": "<p>Amesh Wijesekera became the first UK winner and finalist for India’s largest sustainability award Circular Design Challenge in partnership with British Council, United Nations in India and Lakmé Fashion Week x FDCI, presented by R|Elan™.</p>",
+        "video_filename": "amesh-project-cdc-video.webm",
+        "poster_filename": "amesh-project-cdc-hero.jpg",
+        "video_start": 1
+      }
+    }
+  },
+  "order": [
+    "project"
+  ]
+}

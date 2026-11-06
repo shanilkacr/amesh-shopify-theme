@@ -1,0 +1,146 @@
+{{ 'section-amesh-split-content.css' | asset_url | stylesheet_tag }}
+
+<div
+  style="{% if section.settings.text_max_width > 0 %}--amesh-split-text-width: {{ section.settings.text_max_width }}px;{% endif %}{% if section.settings.desktop_row_height > 0 %} --amesh-split-row-height: {{ section.settings.desktop_row_height }}vh;{% endif %}{% if section.settings.text_padding_percent > 0 %} --amesh-split-pad: {{ section.settings.text_padding_percent }}%;{% endif %}{% if section.settings.heading_size_px > 0 %} --amesh-split-heading-size: {{ section.settings.heading_size_px }}px;{% endif %}{% if section.settings.heading_line_height_px > 0 %} --amesh-split-heading-lh: {{ section.settings.heading_line_height_px }}px;{% endif %}{% if section.settings.tablet_pad_side != blank %} --amesh-t-pad-side: {{ section.settings.tablet_pad_side }}px;{% endif %}{% if section.settings.tablet_heading_size != blank %} --amesh-t-heading: {{ section.settings.tablet_heading_size }}px;{% endif %}{% if section.settings.tablet_row_height != blank %} --amesh-split-row-t: {{ section.settings.tablet_row_height }};{% endif %}{% if section.settings.mobile_image_height != blank %} --amesh-m-img: {{ section.settings.mobile_image_height }};{% endif %}{% if section.settings.mobile_top_padding > 0 %} --amesh-m-top: {{ section.settings.mobile_top_padding }}px;{% endif %}{% if section.settings.mobile_pad_top != blank %} --amesh-m-pad-top: {{ section.settings.mobile_pad_top }}px;{% endif %}{% if section.settings.mobile_pad_bottom != blank %} --amesh-m-pad-bottom: {{ section.settings.mobile_pad_bottom }}px;{% endif %}{% if section.settings.mobile_pad_side != blank %} --amesh-m-pad-side: {{ section.settings.mobile_pad_side }}px;{% endif %}"
+  class="amesh-split{% if section.settings.tablet_pad_side != blank %} amesh-split--t-pad{% endif %}{% if section.settings.mobile_text_first %} amesh-split--m-text-first{% endif %} amesh-split--image-{{ section.settings.image_position }}{% if section.settings.text_padding_percent > 0 %} amesh-split--pad-pct{% endif %}{% if section.settings.image_height_mode == 'natural' %} amesh-split--natural-media{% endif %}"
+>
+  {%- if section.settings.image_height_mode == 'natural' -%}
+    <div class="amesh-split__media amesh-split__media--natural" style="--amesh-overlay: {{ section.settings.overlay_opacity | default: 0 | divided_by: 100.0 }};">
+      <img
+        class="amesh-split__image amesh-split__image--natural"
+        src="{{ section.settings.image_filename | asset_url }}"
+        alt=""
+        loading="lazy"
+      >
+    </div>
+  {%- else -%}
+    <div class="amesh-split__media" style="--amesh-overlay: {{ section.settings.overlay_opacity | default: 0 | divided_by: 100.0 }};">
+      <div
+        class="amesh-split__image"
+        style="background-image: url({{ section.settings.image_filename | asset_url }});"
+      ><span aria-hidden="true"></span></div>
+    </div>
+  {%- endif -%}
+  <div class="amesh-split__content amesh-split__content--{{ section.settings.content_vertical_align }}">
+    {%- if section.settings.heading != blank -%}
+      {%- if section.settings.image_height_mode == 'natural' and section.settings.heading == 'AMESH' -%}
+        <h2 class="amesh-split__heading amesh-split__heading--logo"><img src="{{ 'amesh-logo.webp' | asset_url }}" alt="AMESH" width="87" height="27" loading="lazy"></h2>
+      {%- else -%}
+        <h2 class="amesh-split__heading">{{ section.settings.heading }}</h2>
+      {%- endif -%}
+    {%- endif -%}
+    {%- if section.settings.text != blank -%}
+      <div class="amesh-split__text rte">{{ section.settings.text }}</div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "AMESH split content",
+  "settings": [
+    {
+      "type": "text",
+      "id": "image_filename",
+      "label": "Image asset filename"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image position",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "select",
+      "id": "image_height_mode",
+      "label": "Image height",
+      "options": [
+        { "value": "fixed_ratio", "label": "Fixed 4:3 crop" },
+        { "value": "natural", "label": "Natural image height" }
+      ],
+      "info": "Natural height lets the image's own aspect ratio set the row height, matching the source site's tall portrait shots",
+      "default": "fixed_ratio"
+    },
+    {
+      "type": "number",
+      "id": "text_max_width",
+      "label": "Desktop text width (px)",
+      "info": "Leave empty for automatic"
+    },
+    {
+      "type": "number",
+      "id": "text_padding_percent",
+      "label": "Desktop text side padding (%)",
+      "info": "Percent of the column width, so text width scales with the screen. Overrides the fixed text width"
+    },
+    {
+      "type": "number",
+      "id": "heading_line_height_px",
+      "label": "Heading line height (px)",
+      "info": "Leave empty for the default 25px"
+    },
+    {
+      "type": "number",
+      "id": "heading_size_px",
+      "label": "Heading size (px)",
+      "info": "Leave empty for the default 25px"
+    },
+    {
+      "type": "range",
+      "id": "desktop_row_height",
+      "label": "Desktop row height",
+      "info": "0 = full screen. Only applies with natural image height",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "vh",
+      "default": 0
+    },
+    { "type": "number", "id": "mobile_top_padding", "label": "Phone: space above the image (px)" },
+    { "type": "number", "id": "tablet_pad_side", "label": "Tablet: text side padding (px)" },
+    { "type": "number", "id": "tablet_heading_size", "label": "Tablet: heading size (px)" },
+    { "type": "text", "id": "tablet_row_height", "label": "Tablet: row height", "info": "CSS height on 750-1024px, e.g. 50vh. Empty = 60vh" },
+    { "type": "text", "id": "mobile_image_height", "label": "Phone: image height", "info": "CSS height, e.g. 50vh. Empty = 40vh" },
+    { "type": "number", "id": "mobile_pad_top", "label": "Phone: text padding top (px)", "info": "Empty = 40" },
+    { "type": "number", "id": "mobile_pad_bottom", "label": "Phone: text padding bottom (px)", "info": "Empty = 40" },
+    { "type": "number", "id": "mobile_pad_side", "label": "Phone: text padding sides (px)", "info": "Empty = 20" },
+    { "type": "checkbox", "id": "mobile_text_first", "label": "Phone: show the text above the image", "default": false },
+    {
+      "type": "number",
+      "id": "overlay_opacity",
+      "label": "Dark overlay (%)",
+      "info": "Black overlay over the image that fades out on hover"
+    },
+    {
+      "type": "select",
+      "id": "content_vertical_align",
+      "label": "Content vertical alignment",
+      "options": [
+        { "value": "start", "label": "Top" },
+        { "value": "center", "label": "Center" },
+        { "value": "end", "label": "Bottom" }
+      ],
+      "default": "center"
+    }
+  ],
+  "presets": [
+    {
+      "name": "AMESH split content"
+    }
+  ]
+}
+{% endschema %}

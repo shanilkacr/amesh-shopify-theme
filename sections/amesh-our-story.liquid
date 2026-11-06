@@ -1,0 +1,117 @@
+{{ 'section-amesh-our-story.css' | asset_url | stylesheet_tag }}
+
+<section
+  class="amesh-our-story"
+  style="
+    --amesh-our-story-image-width: {{ section.settings.image_width }}%;
+    --amesh-our-story-content-top: {{ section.settings.content_top_spacing }}px;
+    --amesh-our-story-content-left: {{ section.settings.content_left_spacing }}px;
+    --amesh-our-story-heading-size: {{ section.settings.heading_size }}px;
+    --amesh-our-story-body-size: {{ section.settings.body_text_size }}px;
+  "
+>
+  <div class="amesh-our-story__media">
+    {%- if section.settings.image -%}
+      {{
+        section.settings.image
+        | image_url: width: 2000
+        | image_tag:
+          loading: 'eager',
+          sizes: '(min-width: 750px) 50vw, 100vw',
+          widths: '375, 750, 1100, 1500, 2000',
+          class: 'amesh-our-story__image',
+          alt: section.settings.image.alt | default: section.settings.heading
+      }}
+    {%- else -%}
+      {{ 'lifestyle-1' | placeholder_svg_tag: 'amesh-our-story__image amesh-our-story__image--placeholder' }}
+    {%- endif -%}
+  </div>
+  <div class="amesh-our-story__content">
+    {%- if section.settings.heading != blank -%}
+      <h1 class="amesh-our-story__heading">{{ section.settings.heading }}</h1>
+    {%- endif -%}
+    {%- if section.settings.text != blank -%}
+      <div class="amesh-our-story__bio rte">{{ section.settings.text }}</div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "AMESH our story",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Main image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "AMESH"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Biography text",
+      "default": "<p>London-born Amesh Wijesekera, a BA graduate from the Academy of Design in Colombo, apprenticed with Future Laboratory, Edeline Lee, and Dame Zandra Rhodes in London before launching his eponymous label in 2019.</p>"
+    },
+    {
+      "type": "range",
+      "id": "image_width",
+      "label": "Desktop image width",
+      "min": 30,
+      "max": 70,
+      "step": 1,
+      "unit": "%",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "content_top_spacing",
+      "label": "Content top spacing",
+      "min": 0,
+      "max": 300,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "content_left_spacing",
+      "label": "Content left spacing",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size",
+      "min": 24,
+      "max": 96,
+      "step": 2,
+      "unit": "px",
+      "default": 44
+    },
+    {
+      "type": "range",
+      "id": "body_text_size",
+      "label": "Body text size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    }
+  ],
+  "presets": [
+    {
+      "name": "AMESH our story"
+    }
+  ]
+}
+{% endschema %}

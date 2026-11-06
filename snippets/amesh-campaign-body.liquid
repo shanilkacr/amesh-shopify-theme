@@ -1,0 +1,41 @@
+{%- comment -%}
+  Campaign page body: hero (video or image), title + text, justified gallery, credits.
+  Params: video, poster, poster_position, heading, text, credits, images (array of asset filenames)
+{%- endcomment -%}
+{{ 'section-amesh-project.css' | asset_url | stylesheet_tag }}
+
+<div class="amesh-project amesh-campaign" data-amesh-project>
+  <div
+    class="amesh-project__hero"
+    style="{% if poster != blank %}background-image: url({{ poster | asset_url }});{% endif %} background-position: {{ poster_position | default: 'center center' }};"
+  >
+    {%- if video != blank -%}
+      <video class="amesh-project__video" autoplay muted loop playsinline preload="auto">
+        <source src="{{ video | asset_url }}" type="video/webm">
+      </video>
+    {%- endif -%}
+  </div>
+
+  <div class="amesh-project__text amesh-campaign__text">
+    <div class="amesh-campaign__heading">{{ heading }}</div>
+    {%- if text != blank -%}<div class="amesh-campaign__copy">{{ text }}</div>{%- endif -%}
+  </div>
+
+  <div class="amesh-project__gallery" data-gallery>
+    {%- for image in images -%}
+      {%- assign file = image | strip -%}
+      {%- if file != blank -%}
+        <a class="amesh-project__item" href="{{ file | asset_url }}">
+          <img src="{{ file | asset_url }}" alt="" decoding="async">
+        </a>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+
+  <div class="amesh-campaign__credits">
+    <div class="amesh-campaign__heading amesh-campaign__heading--left">In collaboration with</div>
+    <div class="amesh-campaign__copy amesh-campaign__copy--left">{{ credits }}</div>
+  </div>
+</div>
+
+<script src="{{ 'section-amesh-project.js' | asset_url }}" defer></script>

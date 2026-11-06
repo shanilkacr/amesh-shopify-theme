@@ -1,0 +1,46 @@
+.amesh-full-video {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.amesh-full-video__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media screen and (max-width: 749px) {
+  .amesh-full-video {
+    height: var(--amesh-m-height, 40vh);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .amesh-full-video {
+    height: 100vh;
+  }
+}
+
+.amesh-full-video::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #000000;
+  opacity: var(--amesh-overlay, 0);
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.amesh-full-video:hover::after {
+  opacity: 0;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+  .amesh-full-video {
+    height: var(--amesh-t-height, 50vh);
+  }
+}

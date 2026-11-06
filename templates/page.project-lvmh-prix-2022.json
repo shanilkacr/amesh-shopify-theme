@@ -1,0 +1,50 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "project": {
+      "type": "amesh-project",
+      "blocks": {
+        "i01": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-lvmh-01.webp"
+          }
+        },
+        "i02": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-lvmh-02.webp"
+          }
+        },
+        "i03": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-lvmh-03.webp"
+          }
+        }
+      },
+      "block_order": [
+        "i01",
+        "i02",
+        "i03"
+      ],
+      "settings": {
+        "heading": "LVMH PRIX 2022",
+        "text": "<p>AMESH became the first Sri Lankan Semi-Finalist to be shortlisted for the prestigious LVMH prize in Paris among 19 other global designers for its 9th edition.</p>",
+        "video_filename": "amesh-project-lvmh-video.webm",
+        "poster_filename": "amesh-project-lvmh-hero.png"
+      }
+    }
+  },
+  "order": [
+    "project"
+  ]
+}

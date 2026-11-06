@@ -1,0 +1,82 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "amesh-video-hero",
+      "settings": {
+        "video_filename": "amesh-page-craft-video-1.webm",
+        "heading": "Craft",
+        "heading_color": "#FFFFFF",
+        "heading_blend_mode": "difference"
+      }
+    },
+    "intro": {
+      "type": "amesh-text-block",
+      "settings": {
+        "heading": "Heritage Crafts",
+        "text": "<p>AMESH was built around celebrating the Artisanal techniques of the island, which include hand weaving, hand knitting, and crochet patterns. This has been the core of the brand. An intimate collaboration between our craft communities and contemporary design thinking. This partnership enables us to develop one-of-a-kind bespoke textiles. Every textile begins with a thread until it’s passed through multiple hands to create its own identity and unique story. Our work aims to preserve, promote, inspire and revive Sri Lankan heritage craft textiles globally.</p>"
+      }
+    },
+    "knitting": {
+      "type": "amesh-split-content",
+      "settings": {
+        "overlay_opacity": 14,
+        "image_filename": "amesh-page-craft-knitting.jpeg",
+        "image_position": "right",
+        "heading": "Hand Knitting & Crochet",
+        "text": "<p>AMESH ARTISANAL knitwear is crafted using deadstock wool and cotton yarns, sourced from local knitting centres in Sri Lanka. These high-quality yarns originate from the Scandinavian region and comply with strict EU standards for harvesting and processing. Because only limited quantities are available for commercial-scale production, our designs are shaped by the materials we can access.</p><p>This intentional limitation drives our creativity, allowing us to produce truly one-of-a-kind pieces that reflect the values of slow fashion. Each garment is handmade by skilled, home-based female knitters—empowering them with financial independence and the ability to support their families.</p>",
+        "image_height_mode": "natural",
+        "content_vertical_align": "center",
+        "desktop_row_height": 70,
+        "text_padding_percent": 21
+      }
+    },
+    "weaving-text": {
+      "type": "amesh-split-content",
+      "settings": {
+        "overlay_opacity": 14,
+        "image_filename": "amesh-page-craft-weaving.webp",
+        "image_position": "left",
+        "heading": "Handloom Weaving",
+        "text": "<p>With origins tracing back centuries, the art of handloom weaving has been preserved and passed down through generations of master weavers. We are committed to adapting new and traditional techniques while preserving and reviving a once-dying heritage. Made entirely by hand using ethically sourced fibres consuming minimum energy and resources to produce. First hand dyed, then hand spun and meticulously handwoven on a traditional handloom, these textiles are made with expert precision and care. AMESH is committed to adapting new and traditional techniques that are both sustainable and help improve their livelihood from the grassroot level and upwards.</p>",
+        "image_height_mode": "natural",
+        "content_vertical_align": "center",
+        "desktop_row_height": 70,
+        "text_padding_percent": 21
+      }
+    },
+    "weaving-video": {
+      "type": "amesh-full-video",
+      "settings": {
+        "overlay_opacity": 15,
+        "video_filename": "amesh-page-craft-video-2.webm"
+      }
+    },
+    "discover-more": {
+      "type": "amesh-discover-more",
+      "settings": {
+        "heading": "Discover more",
+        "product_1": "silver-fringe-knit-top-cotton-blue-crop-top",
+        "product_2": "handloom-jacket-orange-knit-cardigan-blue-knit-top",
+        "product_3": "handwoven-vest-floral-shirt-lace-shorts",
+        "product_4": "handwoven-knit-ruby-jacket"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "intro",
+    "knitting",
+    "weaving-text",
+    "weaving-video",
+    "discover-more"
+  ]
+}

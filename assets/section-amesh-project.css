@@ -1,0 +1,331 @@
+.amesh-project__hero {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.amesh-project__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.amesh-project__text {
+  max-width: 1120px;
+  margin: 60px auto 0;
+  padding: 10px 0;
+  text-align: center;
+  color: #1d1d1d;
+}
+
+.amesh-project__heading {
+  margin: 0;
+  font-family: var(--font-body-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: normal;
+  text-transform: none;
+  text-align: center;
+}
+
+.amesh-project__copy {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.amesh-project__copy p {
+  margin: 0 0 14px;
+}
+
+.amesh-project__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  width: 100%;
+}
+
+.amesh-project__gallery:not(.is-laid-out) {
+  visibility: hidden;
+}
+
+.amesh-project__item {
+  position: relative;
+  display: block;
+  flex: none;
+  overflow: hidden;
+  width: 25%;
+  aspect-ratio: 2 / 3;
+}
+
+.amesh-project__item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.amesh-project__item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  pointer-events: none;
+}
+
+.amesh-project__item:hover::after,
+.amesh-project__item:focus-visible::after {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .amesh-project__hero {
+    min-height: 50vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .amesh-project__text {
+    padding: 10px 20px;
+  }
+}
+
+.amesh-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.amesh-lightbox.is-open {
+  display: flex;
+}
+
+.amesh-lightbox__img {
+  max-width: 90vw;
+  max-height: 85vh;
+  display: block;
+}
+
+.amesh-lightbox__count {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  color: #ffffff;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.amesh-lightbox__btn {
+  position: absolute;
+  background: none;
+  border: 0;
+  color: #ffffff;
+  font-size: 28px;
+  line-height: 1;
+  padding: 14px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.amesh-lightbox__btn:hover {
+  opacity: 1;
+}
+
+.amesh-lightbox__close {
+  top: 4px;
+  right: 8px;
+}
+
+.amesh-lightbox__prev {
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.amesh-lightbox__next {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.amesh-press-detail {
+  padding-top: var(--amesh-press-top, 0px);
+}
+
+.amesh-press-detail__single {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.amesh-press-detail__single img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  width: var(--amesh-w, auto);
+  height: var(--amesh-h, auto);
+}
+
+.amesh-press-detail__gallery {
+  margin-top: 0;
+}
+
+.amesh-campaign .amesh-project__hero {
+  min-height: 100vh;
+}
+
+.amesh-campaign__heading {
+  font-family: -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #333333;
+  text-align: center;
+}
+
+.amesh-campaign__heading--left {
+  text-align: left;
+  line-height: 16px;
+}
+
+.amesh-campaign__copy {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1d1d1d;
+  text-align: center;
+}
+
+.amesh-campaign__copy--left {
+  text-align: left;
+}
+
+.amesh-campaign__copy p {
+  margin: 0 0 14.4px;
+}
+
+.amesh-campaign__credits {
+  max-width: 1120px;
+  margin: 60px auto 60px;
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .amesh-campaign .amesh-project__hero {
+    min-height: 50vh;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .amesh-campaign__credits {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* Dawn hides every empty div; an image-only hero has no children */
+.amesh-project .amesh-project__hero {
+  display: block;
+}
+
+.amesh-project__copy--flush p {
+  margin: 0;
+}
+
+/* Phones, from the live site (375px): text blocks get 20px side padding and a 24px title,
+   the gallery sits straight under the text with no top gap */
+@media screen and (max-width: 767px) {
+  .amesh-campaign__text {
+    margin-top: 0;
+    padding: 60px 20px 10px;
+  }
+
+  .amesh-campaign__heading {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .amesh-campaign__heading--left {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .amesh-project .amesh-project__gallery,
+  .amesh-campaign .amesh-project__gallery {
+    margin-top: 0;
+  }
+
+  .amesh-campaign__credits {
+    margin: 0 auto;
+    padding: 10px 20px;
+  }
+
+  .amesh-press-detail__single {
+    padding: 10px;
+  }
+
+  .amesh-press-detail__single img {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .amesh-project:not(.amesh-campaign) .amesh-project__text {
+    margin-top: 0;
+    padding: 60px 20px 40px;
+  }
+
+  .amesh-project:not(.amesh-campaign) .amesh-project__heading {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+/* Tablet (768-1024px), from the live site: 24px titles, text kept 48px in from the sides */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .amesh-project__text {
+    padding: 10px 48px;
+  }
+
+  .amesh-project__heading,
+  .amesh-campaign__heading:not(.amesh-campaign__heading--left) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .amesh-campaign__credits {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .amesh-press-detail__single {
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .amesh-press-detail {
+    padding-top: var(--amesh-press-top-t, var(--amesh-press-top, 0px));
+  }
+
+  .amesh-press-detail__single img {
+    width: var(--amesh-w-t, var(--amesh-w, auto));
+    height: var(--amesh-h-t, var(--amesh-h, auto));
+  }
+}

@@ -1,0 +1,106 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "project": {
+      "type": "amesh-project",
+      "blocks": {
+        "i01": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-homecoming-01.jpg"
+          }
+        },
+        "i02": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-homecoming-02.jpeg"
+          }
+        },
+        "i03": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-homecoming-03.webp"
+          }
+        },
+        "i04": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-homecoming-04.webp"
+          }
+        },
+        "i05": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-homecoming-05.jpg"
+          }
+        },
+        "i06": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-homecoming-06.webp"
+          }
+        },
+        "i07": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-homecoming-07.webp"
+          }
+        },
+        "i08": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-homecoming-08.webp"
+          }
+        },
+        "i09": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-homecoming-09.webp"
+          }
+        },
+        "i10": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-homecoming-10.webp"
+          }
+        },
+        "i11": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-homecoming-11.webp"
+          }
+        }
+      },
+      "block_order": [
+        "i01",
+        "i02",
+        "i03",
+        "i04",
+        "i05",
+        "i06",
+        "i07",
+        "i08",
+        "i09",
+        "i10",
+        "i11"
+      ],
+      "settings": {
+        "heading": "“Homecoming” Barefoot Gallery 2024",
+        "text": "<p>Barefoot Gallery is pleased to present Homecoming, designer Amesh Wijesekera’s debut solo exhibition which explores his early relationships with textiles and technology, through his archival material of knitwear, photographs, and textile processing techniques. Homecoming showcases Amesh’s evolution as an artist through a vast array of sculptural canvases and photographic tapestries. Each piece is a fusion of artisanal craftsmanship and a personal journey, encapsulating the essence of his past collections while pushing the boundaries of textile artistry. The exhibit celebrates the intricate dialogue between textile craftsmanship and the traditional practices known to the island. As the title suggests, Amesh has returned to his roots to explore the next step in his artistic endeavour. The artist drew early inspiration from the renowned photographer Lionel Wendt and studied the male gaze through his photographs concerning unconventional beauty and gender-based social constructs, creating captivating gender-nonconforming art. His creative process features studio waste material used for his past work, knit experiments, apparel industry surplus, crochet, and fabric process techniques such as acid-washing, dying, and sublimation printing.   This exhibition serves as a renaissance of Amesh’s creative journey, offering viewers a glimpse into the intricate layers of his artistic progression and the boundless possibilities of textiles and print as a medium of expression.  A series of public panel discussions will take place over the course of the exhibition. The exhibition is curated by Vidhi Todi, with the Barefoot Gallery Colombo.</p>",
+        "poster_filename": "amesh-project-homecoming-hero.jpeg",
+        "flush_text": true
+      }
+    }
+  },
+  "order": [
+    "project"
+  ]
+}

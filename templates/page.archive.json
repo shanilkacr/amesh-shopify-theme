@@ -1,0 +1,152 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gallery": {
+      "type": "amesh-photo-banner",
+      "blocks": {
+        "b1": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-page-archive-1.webp",
+            "heading": "The lotus pond",
+            "hover_image_filename": "amesh-page-archive-hover-1.webp",
+            "overlay_opacity": 14,
+            "link": "shopify://pages/the-lotus-pond-2023"
+          }
+        },
+        "b2": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-page-archive-2.webp",
+            "heading": "Paddy field play",
+            "hover_image_filename": "amesh-page-archive-hover-2.webp",
+            "overlay_opacity": 14,
+            "link": "shopify://pages/paddy-field-play-2022"
+          }
+        },
+        "b3": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-page-archive-3.webp",
+            "heading": "A sunrise pilgrimage",
+            "hover_image_filename": "amesh-page-archive-hover-3.webp",
+            "overlay_opacity": 14,
+            "link": "shopify://pages/a-sunrise-pilgrimage-berlin-x-colombo-2025"
+          }
+        },
+        "b4": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-page-archive-4.webp",
+            "heading": "Under the mango tree",
+            "hover_image_filename": "amesh-page-archive-hover-4.webp",
+            "overlay_opacity": 14,
+            "link": "shopify://pages/under-the-mango-tree-2021"
+          }
+        },
+        "b5": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-page-archive-5.webp",
+            "heading": "Beyond borders",
+            "hover_image_filename": "amesh-page-archive-hover-5.webp",
+            "overlay_opacity": 14,
+            "link": "shopify://pages/beyond-borders-2023"
+          }
+        },
+        "b6": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-page-archive-6.webp",
+            "heading": "Flower boys",
+            "hover_image_filename": "amesh-page-archive-hover-6.webp",
+            "overlay_opacity": 14,
+            "link": "shopify://pages/flower-boys-2020"
+          }
+        },
+        "b7": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-page-archive-7.jpeg",
+            "heading": "Journey of hope",
+            "hover_image_filename": "amesh-page-archive-hover-7.webp",
+            "overlay_opacity": 14,
+            "link": "shopify://pages/journey-of-hope-2023"
+          }
+        },
+        "b8": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-page-archive-8.webp",
+            "heading": "Bengaluru",
+            "hover_image_filename": "amesh-page-archive-hover-8.jpeg",
+            "overlay_opacity": 14,
+            "link": "shopify://pages/bengaluru"
+          }
+        },
+        "b9": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-page-archive-9.webp",
+            "heading": "Shanoli",
+            "hover_image_filename": "amesh-page-archive-hover-9.jpeg",
+            "overlay_opacity": 14,
+            "link": "shopify://pages/shanoli-london-2022"
+          }
+        },
+        "b10": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-page-archive-10.webp",
+            "heading": "Tamil Nadu",
+            "hover_image_filename": "amesh-page-archive-hover-10.webp",
+            "overlay_opacity": 14,
+            "link": "shopify://pages/tamil-nadu-2025"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8",
+        "b9",
+        "b10"
+      ],
+      "settings": {
+        "layout": "two-column",
+        "height": "100vh",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "mobile_height": "30vh",
+        "tablet_height": "50vh"
+      }
+    },
+    "discover-more": {
+      "type": "amesh-discover-more",
+      "settings": {
+        "heading": "Discover more",
+        "product_1": "silver-fringe-knit-top-cotton-blue-crop-top",
+        "product_2": "handloom-jacket-orange-knit-cardigan-blue-knit-top",
+        "product_3": "handwoven-vest-floral-shirt-lace-shorts",
+        "product_4": "handwoven-knit-ruby-jacket"
+      }
+    }
+  },
+  "order": [
+    "gallery",
+    "discover-more"
+  ]
+}

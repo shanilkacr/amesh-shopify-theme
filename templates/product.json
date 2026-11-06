@@ -1,0 +1,129 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "shipping_note": {
+          "type": "text",
+          "settings": {
+            "text": "Free worldwide shipping",
+            "text_style": "body"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "details_tab": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Details",
+            "icon": "none",
+            "content": "<p>One of a kind — no two pieces are exactly alike. Handcrafted by artisan knitters in Sri Lanka using deadstock and upcycled yarns.</p>"
+          }
+        },
+        "size_fit_tab": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Size & Fit",
+            "icon": "none",
+            "content": "<p>This piece is designed with a relaxed, versatile fit. Refer to the product description for specific details, or contact us for sizing guidance.</p>"
+          }
+        },
+        "care_tab": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Care",
+            "icon": "none",
+            "content": "<p>Hand wash cold or dry clean only. Reshape and dry flat. Do not tumble dry, bleach, or iron directly on embellishments.</p>"
+          }
+        },
+        "note_tab": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Note",
+            "icon": "none",
+            "content": "<p>As each piece is handmade, slight variations in colour, texture and embellishment are part of its one-of-a-kind character.</p>"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "description",
+        "shipping_note",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "details_tab",
+        "size_fit_tab",
+        "care_tab",
+        "note_tab"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "related-products": {
+      "type": "amesh-discover-more",
+      "settings": {
+        "heading": "Discover more",
+        "product_1": "silver-fringe-knit-top-cotton-blue-crop-top",
+        "product_2": "handloom-jacket-orange-knit-cardigan-blue-knit-top",
+        "product_3": "handwoven-vest-floral-shirt-lace-shorts",
+        "product_4": "handwoven-knit-ruby-jacket"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products"
+  ]
+}

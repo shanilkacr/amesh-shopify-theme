@@ -1,0 +1,99 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "amesh-photo-banner",
+      "blocks": {
+        "b1": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-page-circularity-hero.webp"
+          }
+        }
+      },
+      "block_order": [
+        "b1"
+      ],
+      "settings": {
+        "layout": "full-width",
+        "height": "100vh",
+        "overlay_heading": "Circularity",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "image_position_y": 62,
+        "mobile_height": "50vh",
+        "tablet_height": "50vh"
+      }
+    },
+    "tackling": {
+      "type": "amesh-split-content",
+      "settings": {
+        "image_filename": "amesh-page-circularity-waste.webp",
+        "image_position": "right",
+        "image_height_mode": "natural",
+        "content_vertical_align": "center",
+        "heading": "Tackling Sri Lanka’s textile waste mountains",
+        "text": "<p>At the heart of our mission is the belief that social and environmental responsibility are inseparable. We create innovative, sustainable design solutions that prioritize the well-being of people, the planet, and our ecosystems. Guided by the principles of reclaiming, reusing and repurposing we craft beautiful, functional products that make a positive impact.</p><p>Sri Lanka’s textile industry produces over 30.000 tonnes of waste annually with over 300 factories operating in the garment industry. AMESH secondary textiles are sourced as pre-consumer textiles and waste materials collected locally. Every piece we create is made from upcycled, deadstock, and end-roll materials, along with trims salvaged from Sri Lanka’s textile markets—materials once discarded as waste and destined for landfills. Through thoughtful reconditioning, reprinting, and embellishment techniques, we breathe new life into these resources, transforming them into unique, one-of-a-kind products.</p>",
+        "text_padding_percent": 16,
+        "heading_size_px": 24,
+        "desktop_row_height": 80,
+        "heading_line_height_px": 36,
+        "mobile_text_first": true,
+        "mobile_image_height": "50vh",
+        "tablet_pad_side": 29,
+        "tablet_heading_size": 24
+      }
+    },
+    "responsible": {
+      "type": "amesh-split-content",
+      "settings": {
+        "image_filename": "amesh-page-circularity-responsible.webp",
+        "image_position": "left",
+        "image_height_mode": "natural",
+        "content_vertical_align": "center",
+        "heading": "Responsible production",
+        "text": "<p>AMESH is on a continuous journey of exploring innovative approaches to sourcing, making, and crafting. With “resourcefulness” at its core, the brand reimagines traditional artisan techniques through refined detailing, vibrant colour, and a celebration of homemaking. Studio leftovers are re-woven into new textures and patterns, turning waste into beauty.</p><p>In partnership with local SMEs, AMESH ensures fair compensation above industry standards, fostering financial stability for its makers. A flexible, work-from-home model supports craftswomen—particularly mothers—enabling them to balance work and family life.</p><p>The brand rejects mass production in favour of limited-edition capsule collections, offering trans-seasonal pieces designed for a shared wardrobe concept.</p><p>AMESH exists to educate, empower, and inspire a new Sri Lankan identity.</p>",
+        "text_padding_percent": 13,
+        "heading_size_px": 24,
+        "desktop_row_height": 70,
+        "heading_line_height_px": 36,
+        "mobile_text_first": true,
+        "mobile_image_height": "50vh",
+        "tablet_pad_side": 29,
+        "tablet_heading_size": 24
+      }
+    },
+    "gallery": {
+      "type": "amesh-image-strip",
+      "settings": {
+        "image_filenames": "amesh-circularity-strip-01.webp\namesh-circularity-strip-02.webp\namesh-circularity-strip-03.webp\namesh-circularity-strip-04.webp\namesh-circularity-strip-05.webp\namesh-circularity-strip-06.webp\namesh-circularity-strip-07.webp\namesh-circularity-strip-08.webp\namesh-circularity-strip-09.webp\namesh-circularity-strip-10.webp\namesh-circularity-strip-11.webp\namesh-circularity-strip-12.webp\namesh-circularity-strip-13.jpeg\namesh-circularity-strip-14.webp\namesh-circularity-strip-15.webp\namesh-circularity-strip-16.webp\namesh-circularity-strip-17.webp",
+        "duration": 90
+      }
+    },
+    "discover-more": {
+      "type": "amesh-discover-more",
+      "settings": {
+        "heading": "Discover more",
+        "product_1": "silver-fringe-knit-top-cotton-blue-crop-top",
+        "product_2": "handloom-jacket-orange-knit-cardigan-blue-knit-top",
+        "product_3": "handwoven-vest-floral-shirt-lace-shorts",
+        "product_4": "handwoven-knit-ruby-jacket"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "tackling",
+    "responsible",
+    "gallery",
+    "discover-more"
+  ]
+}

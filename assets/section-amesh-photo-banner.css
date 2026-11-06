@@ -1,0 +1,155 @@
+.amesh-photo-banner-wrap {
+  position: relative;
+}
+
+.amesh-photo-banner {
+  display: grid;
+  gap: 0;
+  width: 100%;
+}
+
+.amesh-photo-banner--two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.amesh-photo-banner--three-column {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.amesh-photo-banner--four-column {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.amesh-photo-banner--full-width {
+  grid-template-columns: 1fr;
+}
+
+.amesh-photo-banner__item {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  color: #ffffff;
+  text-decoration: none;
+  height: 60vh;
+}
+
+.amesh-photo-banner__media {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.4s ease;
+}
+
+.amesh-photo-banner__item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: #000000;
+  opacity: var(--amesh-overlay, 0);
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.amesh-photo-banner__item:hover::after {
+  opacity: 0;
+}
+
+.amesh-photo-banner .amesh-photo-banner__media--hover {
+  display: block;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.amesh-photo-banner__item--has-hover:hover .amesh-photo-banner__media--hover {
+  opacity: 1;
+}
+
+.amesh-photo-banner__item--has-hover:hover .amesh-photo-banner__media {
+  transform: none;
+}
+
+.amesh-photo-banner__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.amesh-photo-banner__caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-body-family);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: normal;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.amesh-photo-banner__overlay-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: #ffffff;
+  font-family: var(--font-body-family);
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 400;
+  letter-spacing: normal;
+  text-align: center;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+/*
+ * On mobile the source site keeps the same column count as desktop for these
+ * galleries (it never collapses to a single column) but swaps the tall,
+ * viewport-height panels for a compact, roughly-square tile so the grid stays
+ * scannable. The `height` setting from the section (100vh/80vh/60vh/40vh) is a
+ * desktop-only concept, so it's overridden here rather than reused at a smaller
+ * unit.
+ */
+@media screen and (max-width: 749px) {
+  .amesh-photo-banner__item {
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .amesh-photo-banner--full-width .amesh-photo-banner__item {
+    aspect-ratio: 4 / 3;
+  }
+
+  .amesh-photo-banner__caption {
+    font-size: 1.6rem;
+  }
+
+  .amesh-photo-banner__overlay-heading {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .amesh-photo-banner--four-column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .amesh-photo-banner__overlay-heading {
+    font-size: 48px;
+    line-height: 48px;
+  }
+}

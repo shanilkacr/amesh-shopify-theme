@@ -1,0 +1,212 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "project": {
+      "type": "amesh-project",
+      "blocks": {
+        "i01": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-berlin-01.webp"
+          }
+        },
+        "i02": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-berlin-02.webp"
+          }
+        },
+        "i03": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-berlin-03.webp"
+          }
+        },
+        "i04": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-berlin-04.webp"
+          }
+        },
+        "i05": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-berlin-05.webp"
+          }
+        },
+        "i06": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-berlin-06.webp"
+          }
+        },
+        "i07": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-berlin-07.webp"
+          }
+        },
+        "i08": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-berlin-08.webp"
+          }
+        },
+        "i09": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-berlin-09.webp"
+          }
+        },
+        "i10": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-berlin-10.webp"
+          }
+        },
+        "i11": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-berlin-11.webp"
+          }
+        },
+        "i12": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-berlin-12.webp"
+          }
+        },
+        "i13": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-berlin-13.webp"
+          }
+        },
+        "i14": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-berlin-14.webp"
+          }
+        },
+        "i15": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-berlin-15.webp"
+          }
+        },
+        "i16": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-berlin-16.webp"
+          }
+        },
+        "i17": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-berlin-17.webp"
+          }
+        },
+        "i18": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-berlin-18.webp"
+          }
+        },
+        "i19": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-berlin-19.webp"
+          }
+        },
+        "i20": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-berlin-20.webp"
+          }
+        },
+        "i21": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-berlin-21.webp"
+          }
+        },
+        "i22": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-berlin-22.webp"
+          }
+        },
+        "i23": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-berlin-23.webp"
+          }
+        },
+        "i24": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-berlin-24.webp"
+          }
+        },
+        "i25": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-berlin-25.webp"
+          }
+        },
+        "i26": {
+          "type": "image",
+          "settings": {
+            "image_filename": "amesh-project-berlin-26.webp"
+          }
+        }
+      },
+      "block_order": [
+        "i01",
+        "i02",
+        "i03",
+        "i04",
+        "i05",
+        "i06",
+        "i07",
+        "i08",
+        "i09",
+        "i10",
+        "i11",
+        "i12",
+        "i13",
+        "i14",
+        "i15",
+        "i16",
+        "i17",
+        "i18",
+        "i19",
+        "i20",
+        "i21",
+        "i22",
+        "i23",
+        "i24",
+        "i25",
+        "i26"
+      ],
+      "settings": {
+        "heading": "MBFW Berlin 2019",
+        "text": "<p>Amesh Wijesekera had his solo runway debut at Mercedes Benz Fashion week Berlin as the winner of the “International design exchange programme” with support from the German Embassy in Colombo.</p>",
+        "video_filename": "amesh-project-berlin-video.webm",
+        "video_start": 1,
+        "video_end": 9
+      }
+    }
+  },
+  "order": [
+    "project"
+  ]
+}

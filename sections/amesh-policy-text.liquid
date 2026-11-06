@@ -1,0 +1,31 @@
+{{ 'section-amesh-policy-text.css' | asset_url | stylesheet_tag }}
+
+<section class="amesh-policy amesh-policy--{{ section.settings.variant }}">
+  <div class="amesh-policy__inner">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="amesh-policy__title">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+    <div class="amesh-policy__body rte">{{ section.settings.text }}</div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "AMESH policy text",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "richtext", "id": "text", "label": "Text" },
+    {
+      "type": "select",
+      "id": "variant",
+      "label": "Style",
+      "options": [
+        { "value": "returns", "label": "Returns & Shipping (13px text)" },
+        { "value": "privacy", "label": "Privacy Policy (16px text)" }
+      ],
+      "default": "returns"
+    }
+  ],
+  "presets": [{ "name": "AMESH policy text" }]
+}
+{% endschema %}

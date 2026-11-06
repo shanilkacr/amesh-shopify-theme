@@ -1,0 +1,176 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "amesh-hero-video",
+      "settings": {
+        "heading": "AMESH",
+        "tagline": "A Celebration of Colour, Culture, Community and Craftsmanship"
+      }
+    },
+    "story_craft": {
+      "type": "amesh-photo-banner",
+      "blocks": {
+        "our_story": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-our-story.webp",
+            "overlay_opacity": 14,
+            "heading": "Our Story",
+            "link": "/pages/our-story"
+          }
+        },
+        "craft": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-craft.webp",
+            "overlay_opacity": 14,
+            "heading": "Craft",
+            "link": "/pages/craft"
+          }
+        }
+      },
+      "block_order": [
+        "our_story",
+        "craft"
+      ],
+      "settings": {
+        "layout": "two-column",
+        "height": "100vh",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "mobile_height": "40vh",
+        "tablet_height": "50vh"
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 16,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "swipe_on_mobile": false,
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "archive_banner": {
+      "type": "amesh-photo-banner",
+      "blocks": {
+        "archive": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-archive.webp",
+            "overlay_opacity": 15,
+            "heading": "Archive",
+            "link": "/pages/archive"
+          }
+        }
+      },
+      "block_order": [
+        "archive"
+      ],
+      "settings": {
+        "layout": "full-width",
+        "height": "100vh",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "mobile_height": "40vh",
+        "tablet_height": "50vh"
+      }
+    },
+    "circularity_banner": {
+      "type": "amesh-photo-banner",
+      "blocks": {
+        "circularity": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-circularity.webp",
+            "overlay_opacity": 5,
+            "heading": "Circularity",
+            "link": "/pages/circularity"
+          }
+        }
+      },
+      "block_order": [
+        "circularity"
+      ],
+      "settings": {
+        "layout": "full-width",
+        "height": "80vh",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "mobile_height": "50vh",
+        "tablet_height": "80vh"
+      }
+    },
+    "press_global": {
+      "type": "amesh-photo-banner",
+      "blocks": {
+        "press": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-press.webp",
+            "overlay_opacity": 14,
+            "heading": "Press",
+            "link": "/pages/press"
+          }
+        },
+        "amesh_global": {
+          "type": "banner",
+          "settings": {
+            "image_filename": "amesh-global.webp",
+            "overlay_opacity": 14,
+            "heading": "AMESH Global",
+            "link": "/pages/amesh-global"
+          }
+        }
+      },
+      "block_order": [
+        "press",
+        "amesh_global"
+      ],
+      "settings": {
+        "layout": "two-column",
+        "height": "100vh",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "mobile_height": "40vh",
+        "tablet_height": "50vh"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "story_craft",
+    "featured_collection",
+    "archive_banner",
+    "circularity_banner",
+    "press_global"
+  ]
+}

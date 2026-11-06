@@ -1,0 +1,61 @@
+{% comment %}
+  Renders a standard dropdown style menu for the header.
+
+  Usage:
+  {% render 'header-dropdown-menu' %}
+{% endcomment %}
+
+{%- assign amesh_menu = 'Shop|/collections/all|Shop all=/collections/all;One of a kind=/collections/one-of-a-kind;Knitwear=/collections/knitwear;Shirts=/collections/shirts;Jackets=/collections/jackets;Shorts=/collections/shorts;Trousers=/collections/trousers;Accessories=/collections/accessories,Our Story|/pages/our-story,Craft|/pages/craft,Circularity|/pages/circularity,AMESH Global|/pages/amesh-global,Archive|/pages/archive,Press|/pages/press' | split: ',' -%}
+<nav class="header__inline-menu">
+  <ul class="list-menu list-menu--inline" role="list">
+    {%- for item in amesh_menu -%}
+      {%- assign parts = item | split: '|' -%}
+      {%- assign item_title = parts[0] -%}
+      {%- assign item_url = parts[1] -%}
+      {%- assign item_handle = item_title | handleize -%}
+      {%- assign is_current = false -%}
+      {%- if request.path == item_url and item_url != '/collections/all' -%}{%- assign is_current = true -%}{%- endif -%}
+      <li>
+        {%- if parts[2] != blank -%}
+          {%- assign kids = parts[2] | split: ';' -%}
+          <header-menu>
+            <details id="Details-HeaderMenu-{{ forloop.index }}">
+              <summary id="HeaderMenu-{{ item_handle }}" class="header__menu-item list-menu__item link focus-inset">
+                <span>{{- item_title -}}</span>
+                {{- 'icon-caret.svg' | inline_asset_content -}}
+              </summary>
+              <ul
+                id="HeaderMenu-MenuList-{{ forloop.index }}"
+                class="header__submenu list-menu list-menu--disclosure color-{{ section.settings.menu_color_scheme }} gradient caption-large motion-reduce global-settings-popup"
+                role="list"
+                tabindex="-1"
+              >
+                {%- for kid in kids -%}
+                  {%- assign kid_parts = kid | split: '=' -%}
+                  <li>
+                    <a
+                      id="HeaderMenu-{{ item_handle }}-{{ kid_parts[0] | handleize }}"
+                      href="{{ kid_parts[1] }}"
+                      class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if request.path == kid_parts[1] %} list-menu__item--active{% endif %}"
+                    >
+                      {{ kid_parts[0] }}
+                    </a>
+                  </li>
+                {%- endfor -%}
+              </ul>
+            </details>
+          </header-menu>
+        {%- else -%}
+          <a
+            id="HeaderMenu-{{ item_handle }}"
+            href="{{ item_url }}"
+            class="header__menu-item list-menu__item link link--text focus-inset"
+            {% if is_current %}aria-current="page"{% endif %}
+          >
+            <span{% if is_current %} class="header__active-menu-item"{% endif %}>{{- item_title -}}</span>
+          </a>
+        {%- endif -%}
+      </li>
+    {%- endfor -%}
+  </ul>
+</nav>

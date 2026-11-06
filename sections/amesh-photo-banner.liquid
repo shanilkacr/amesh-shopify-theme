@@ -1,0 +1,231 @@
+{{ 'section-amesh-photo-banner.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .amesh-photo-banner-{{ section.id }} .amesh-photo-banner__item {
+      height: {{ section.settings.height }};
+    }
+  }
+
+  {%- if section.settings.tablet_height != blank -%}
+  @media screen and (min-width: 750px) and (max-width: 1024px) {
+    .amesh-photo-banner-{{ section.id }} .amesh-photo-banner__item {
+      height: {{ section.settings.tablet_height }};
+    }
+  }
+  {%- endif -%}
+
+  {%- if section.settings.mobile_image_position_y != blank -%}
+  @media screen and (max-width: 749px) {
+    .amesh-photo-banner-{{ section.id }} .amesh-photo-banner__media {
+      background-position: center {{ section.settings.mobile_image_position_y }}% !important;
+    }
+  }
+  {%- endif -%}
+
+  {%- if section.settings.mobile_height != blank -%}
+  @media screen and (max-width: 749px) {
+    .amesh-photo-banner-{{ section.id }} .amesh-photo-banner__item {
+      height: {{ section.settings.mobile_height }} !important;
+      aspect-ratio: auto !important;
+      width: 100%;
+      min-width: 0;
+    }
+  }
+  {%- endif -%}
+{%- endstyle -%}
+
+<div class="amesh-photo-banner-wrap amesh-photo-banner-{{ section.id }} section-{{ section.id }}-padding">
+  {%- if section.settings.overlay_heading != blank -%}
+    <span class="amesh-photo-banner__overlay-heading">{{ section.settings.overlay_heading }}</span>
+  {%- endif -%}
+  <div class="amesh-photo-banner amesh-photo-banner--{{ section.settings.layout }}">
+    {%- for block in section.blocks -%}
+      {%- assign overlay_pct = block.settings.overlay_opacity | default: section.settings.overlay_opacity | default: 0 -%}
+      <a
+        style="--amesh-overlay: {{ overlay_pct | divided_by: 100.0 }};"
+        href="{{ block.settings.link }}"
+        class="amesh-photo-banner__item{% if block.settings.hover_image_filename != blank %} amesh-photo-banner__item--has-hover{% endif %}"
+        {{ block.shopify_attributes }}
+      >
+        <div
+          class="amesh-photo-banner__media"
+          style="background-image: url({{ block.settings.image_filename | asset_url }}); background-size: {{ section.settings.image_fit }}; background-position: center {% if block.settings.image_position_y != blank %}{{ block.settings.image_position_y }}{% else %}{{ section.settings.image_position_y }}{% endif %}%;{% if section.settings.image_fit == 'contain' %} background-color: #f3f3f3;{% endif %}"
+        ><span aria-hidden="true"></span></div>
+        {%- if block.settings.hover_image_filename != blank -%}
+          <div
+            class="amesh-photo-banner__media amesh-photo-banner__media--hover"
+            style="background-image: url({{ block.settings.hover_image_filename | asset_url }}); background-size: {{ section.settings.image_fit }}; background-position: center {% if block.settings.image_position_y != blank %}{{ block.settings.image_position_y }}{% else %}{{ section.settings.image_position_y }}{% endif %}%;"
+            aria-hidden="true"
+          ><span aria-hidden="true"></span></div>
+        {%- endif -%}
+        {%- if block.settings.video_filename != blank -%}
+          <video
+            class="amesh-photo-banner__video"
+            style="object-position: center {% if block.settings.image_position_y != blank %}{{ block.settings.image_position_y }}{% else %}{{ section.settings.image_position_y }}{% endif %}%;"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-hidden="true"
+          >
+            <source src="{{ block.settings.video_filename | asset_url }}" type="video/webm">
+          </video>
+        {%- endif -%}
+        {%- if block.settings.heading != blank -%}
+          <span class="amesh-photo-banner__caption">{{ block.settings.heading }}</span>
+        {%- endif -%}
+      </a>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "AMESH photo banner",
+  "settings": [
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Layout",
+      "options": [
+        { "value": "two-column", "label": "Two columns" },
+        { "value": "three-column", "label": "Three columns" },
+        { "value": "four-column", "label": "Four columns" },
+        { "value": "full-width", "label": "Full width" }
+      ],
+      "default": "two-column"
+    },
+    {
+      "type": "text",
+      "id": "tablet_height",
+      "label": "Tablet height",
+      "info": "CSS height on tablets (750-1024px), e.g. 50vh. Empty = same as desktop"
+    },
+    {
+      "type": "number",
+      "id": "mobile_image_position_y",
+      "label": "Phone image vertical position (%)",
+      "info": "Leave empty to use the image vertical position"
+    },
+    {
+      "type": "text",
+      "id": "mobile_height",
+      "label": "Phone height",
+      "info": "CSS height on phones, e.g. 40vh. Leave empty for a square tile"
+    },
+    {
+      "type": "select",
+      "id": "height",
+      "label": "Height",
+      "options": [
+        { "value": "100vh", "label": "Full screen" },
+        { "value": "80vh", "label": "Large" },
+        { "value": "60vh", "label": "Medium" },
+        { "value": "50vh", "label": "Half screen" },
+        { "value": "40vh", "label": "Small" }
+      ],
+      "default": "100vh"
+    },
+    {
+      "type": "text",
+      "id": "overlay_heading",
+      "label": "Overlay heading",
+      "info": "Optional heading centered across the whole banner"
+    },
+    {
+      "type": "select",
+      "id": "image_fit",
+      "label": "Image fit",
+      "options": [
+        { "value": "cover", "label": "Cover (crop to fill)" },
+        { "value": "contain", "label": "Contain (show whole image)" },
+        { "value": "100% auto", "label": "Full width (natural height)" }
+      ],
+      "default": "cover"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Dark overlay",
+      "info": "Default for every tile in this section; fades out on hover",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "%",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "image_position_y",
+      "label": "Image vertical position",
+      "info": "Which part of a cropped photo stays in view: 0% = top, 100% = bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "banner",
+      "name": "Banner",
+      "settings": [
+        { "type": "number", "id": "image_position_y", "label": "Image vertical position (%)", "info": "Leave empty to use the section setting" },
+        {
+          "type": "text",
+          "id": "image_filename",
+          "label": "Image asset filename",
+          "info": "Filename of an image already uploaded to the theme's assets folder, e.g. amesh-our-story.webp"
+        },
+        { "type": "number", "id": "overlay_opacity", "label": "Dark overlay (%)", "info": "Black overlay over the photo that fades out on hover. Leave empty to use the section setting" },
+        { "type": "text", "id": "hover_image_filename", "label": "Hover image asset filename", "info": "Optional. Shown instead of the main image while hovering" },
+        { "type": "text", "id": "video_filename", "label": "Video asset filename", "info": "Optional. Plays as a looping muted background; the image is the fallback" },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Caption"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "AMESH photo banner",
+      "blocks": [{ "type": "banner" }, { "type": "banner" }]
+    }
+  ]
+}
+{% endschema %}
